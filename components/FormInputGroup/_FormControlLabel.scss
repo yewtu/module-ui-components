@@ -1,0 +1,24 @@
+.form-control-label {
+  display: block;
+  font-size: $font-size-default;
+  margin-bottom: 3px;
+  border: 0;
+}
+
+.form-control-label--inline {
+  display: inline-block;
+}
+
+.form-control-label--hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.form-control-label--has-error {
+  color: $color-red;
+}

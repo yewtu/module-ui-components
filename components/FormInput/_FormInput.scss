@@ -1,0 +1,23 @@
+@import "../../mixins/form-controls";
+
+.form-input {
+  @include form-control;
+  background-image: none;
+  &::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+.form-input--inline {
+  display: inline-block;
+}
+
+.form-input--has-error {
+  background-color: $color-error-background;
+  border-color: $color-error-border;
+}

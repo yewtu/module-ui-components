@@ -1,0 +1,23 @@
+@mixin form-control {
+  margin: 0;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  min-height: 36px;
+  padding: 6px 12px;
+  font-family: inherit;
+  font-size: $font-size-default;
+  color: $color-gray-5;
+  background-color: $color-form-control-background;
+  border: 1px solid $color-gray-3;
+  border-radius: 0;
+  box-shadow: none;
+  transition: border-color ease-in-out 0.15s;
+  resize: vertical;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  &:disabled {
+    color: $color-gray-3;
+  }
+}

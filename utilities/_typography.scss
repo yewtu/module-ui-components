@@ -1,0 +1,39 @@
+.text {
+
+}
+
+.text--xl {
+  font-size: $font-size-xl;
+}
+
+.text--lg {
+  font-size: $font-size-lg;
+}
+
+.text--md {
+  font-size: $font-size-md;
+}
+
+.text--sm {
+  font-size: $font-size-sm;
+}
+
+.text--xs {
+  font-size: $font-size-xs;
+}
+
+.text--xxs {
+  font-size: $font-size-xxs;
+}
+
+.text--discreet {
+  color: $color-gray-3;
+}
+
+.text--bold {
+  font-weight: bold;
+}
+
+.text--italic {
+  font-style: italic;
+}

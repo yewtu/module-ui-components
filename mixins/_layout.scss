@@ -1,0 +1,31 @@
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin media-query($min-width, $max-width: false) {
+  @media screen and (min-width: $min-width) {
+    @if $max-width {
+      @media (max-width: $max-width) {
+        @content
+      }
+    } @else {
+      @content;
+    }
+  }
+}
+
+@mixin l-container-column ($breakpoint){
+  @include media-query($breakpoint) {
+    float: left;
+    margin-left: $column-gutter;
+    margin-right: $column-gutter;
+  }
+}

@@ -1,0 +1,47 @@
+@import "../variables/spacing";
+
+.heading {
+  margin: 0;
+  font-family: inherit;
+  font-size: $font-size-default;
+  font-weight: normal;
+  line-height: 1.1;
+}
+
+/* 30px */
+.heading--xxl {
+  font-size: $font-size-xxl;
+}
+
+/* 24px */
+.heading--xl {
+  font-size: $font-size-xl;
+}
+
+/* 20px */
+.heading--lg {
+  font-size: $font-size-lg;
+}
+
+/* 18px */
+.heading--md {
+  font-size: $font-size-md;
+}
+
+/* 14px */
+.heading--sm {
+  font-size: $font-size-sm;
+}
+
+.heading--underline {
+  border-bottom: 1px solid $color-border;
+  margin-bottom: $spacing-md;
+  padding-bottom: $spacing-xs;
+  &.heading--md {
+    padding-bottom: $spacing-sm;
+  }
+}
+
+.heading--bold {
+  font-weight: bold;
+}

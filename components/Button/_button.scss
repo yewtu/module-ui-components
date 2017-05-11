@@ -1,0 +1,67 @@
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+.btn::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+// Completely unstyled button, so either link or button styles can be layered on top
+.btn {
+  color: inherit;
+  font-family: inherit;
+  font-size: 1rem;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  border-width: 0;
+  border-style: none;
+  border-radius: 0;
+  cursor: pointer;
+  background: transparent none;
+  overflow: visible;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-appearance: none;
+  white-space: nowrap;
+  &:hover {
+    cursor: pointer;
+    text-decoration: none;
+  }
+  &:focus,
+  &:active {
+    box-shadow: none;
+    outline: 0;
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+
+@mixin button-like {
+  height: 36px;
+  border: 1px solid transparent;
+  padding: 6px 18px;
+  text-align: center;
+  font-size: $font-size-default;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.btn--primary {
+  @include button-like;
+  color: $color-white;
+  &:hover, &:active, &:focus {
+    border-color: transparent;
+    color: $color-white;
+  }
+}
+
+.btn--block {
+  display: block;
+  width: 100%;
+}

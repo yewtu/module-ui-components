@@ -1,0 +1,62 @@
+.icon {
+  display: inline-block;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-indent: -10rem;
+  overflow: hidden;
+  width: 1rem;
+  height: 1rem;
+  vertical-align: middle;
+}
+
+$black-icons: chevron-down chevron-up plus;
+
+@each $icon in $black-icons {
+  .icon--#{$icon} {
+    background-image: url(/assets/icons/#{$icon}.svg);
+  }
+}
+
+.icon-text {
+  display: inline-block;
+  position: relative;
+  padding-left: 1.6em;
+  > i {
+    position: absolute;
+    padding: 0;
+    border: 0;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+  }
+}
+
+.icon-text--xxs {
+  padding-left: 0.8em;
+}
+
+.icon--lg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.icon--sm {
+  width: 12px;
+  height: 12px;
+}
+
+.icon--xs {
+  width: 10px;
+  height: 10px;
+}
+
+.icon--xxs {
+  width: 8px;
+  height: 8px;
+}
+
+.icon--semi-transparent {
+  opacity: 0.5;
+}

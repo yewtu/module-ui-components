@@ -1,0 +1,11 @@
+
+.form-select {
+  @include form-control;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSIzMCIgdmlld0JveD0iMCAwIDQ4IDMwIj4gIDxwb2x5Z29uIGZpbGw9IiM2MzUxRTIiIHBvaW50cz0iOSAtMyAxNS4xMTQgLTkgMzkgMTUgMTUuMTE0IDM5IDkgMzMgMjcgMTUiIHRyYW5zZm9ybT0icm90YXRlKDkwIDI0IDE1KSIvPjwvc3ZnPg==);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 15px) 62%;
+  /* Hides dropdown arrow on IE11 */
+  &::-ms-expand  {
+    display: none;
+  }
+}
