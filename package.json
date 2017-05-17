@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Shared UI components and SASS for YewTu apps",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel ./components --out-dir ./dist --presets env,react"
   },
   "repository": {
     "type": "git",
@@ -14,5 +15,15 @@
   "bugs": {
     "url": "https://github.com/yewtu/module-ui-components/issues"
   },
-  "homepage": "https://github.com/yewtu/module-ui-components#readme"
+  "homepage": "https://github.com/yewtu/module-ui-components#readme",
+  "main": "index.js",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-react": "^6.24.1"
+  },
+  "dependencies": {
+    "prop-types": "^15.5.10",
+    "react": "^15.5.4"
+  }
 }
