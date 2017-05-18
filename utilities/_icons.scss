@@ -10,11 +10,11 @@
   vertical-align: middle;
 }
 
-$black-icons: chevron-down chevron-up plus;
+$black-icons: chevron-down chevron-up plus error shopping-cart health;
 
 @each $icon in $black-icons {
   .icon--#{$icon} {
-    background-image: url(/assets/icons/#{$icon}.svg);
+    background-image: url(/icons/#{$icon}.svg);
   }
 }
 
