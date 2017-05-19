@@ -1,19 +1,37 @@
+$color-gray-98: #FAFAFA;
+$color-gray-96: #F5F5F5;
+$color-gray-94: #F0F0F0;
+$color-gray-90: #E6E6E6;
+$color-gray-80: #CCCCCC;
+$color-gray-70: #B3B3B3;
+$color-gray-60: #999999;
+$color-gray-50: #808080;
+$color-gray-30: #4D4D4D;
+$color-gray-20: #333333;
+$color-gray-15: #262626;
+$color-gray-10: #1A1A1A;
 
 $color-white: #FFFFFF;
-$color-gray-5: #222222;
-$color-gray-3: #5C656E;
-$color-gray-2: #AAAAAA;
-$color-gray-1: #F9F9F9;
-$color-red: #fb0305;
-$color-pink: #fbcdc9;
-$color-blue-pale: #e4f9fb;
-$color-green: #7CFC00;
 
-$color-text-default: $color-gray-5;
+$color-purple: #581845;
+$color-purple-light: #874470;
+$color-purple-dark: #3F002A;
+
+$color-orange: #FF5733;
+$color-orange-light: #FF8A5F;
+$color-orange-dark: #C41C04;
+
+$color-yellow: #FFC300;
+
+$color-green: #B4C445;
+$color-brown: #D79D56;
+$color-pink: #900C3F;
+
+$color-text-default: $color-gray-15;
 $color-background-default: $color-white;
-$color-border: $color-gray-2;
-$color-link: $color-gray-3;
-$color-form-control-background: $color-blue-pale;
+$color-border: $color-gray-70;
+$color-link: $color-gray-30;
+$color-form-control-background: $color-gray-94;
 $color-error-background: $color-pink;
-$color-error-border: $color-red;
+$color-error-border: $color-orange-dark;
 $color-success-background: $color-green;
