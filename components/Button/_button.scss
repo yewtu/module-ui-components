@@ -63,9 +63,18 @@
 
 .btn--confirm {
   @include button-like;
-  display: inline-block;
   color: $color-white;
-  background: $color-success-background;
+  background: $color-orange;
+  &:hover, &:active, &:focus {
+    border-color: transparent;
+    color: $color-white;
+  }
+}
+
+.btn--cancel {
+  @include button-like;
+  color: $color-white;
+  background: $color-gray-60;
   &:hover, &:active, &:focus {
     border-color: transparent;
     color: $color-white;
