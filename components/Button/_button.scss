@@ -61,6 +61,17 @@
   }
 }
 
+.btn--confirm {
+  @include button-like;
+  display: inline-block;
+  color: $color-white;
+  background: $color-success-background;
+  &:hover, &:active, &:focus {
+    border-color: transparent;
+    color: $color-white;
+  }
+}
+
 .btn--block {
   display: block;
   width: 100%;
