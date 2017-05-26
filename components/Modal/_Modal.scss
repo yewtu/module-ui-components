@@ -1,0 +1,20 @@
+.modal {
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  z-index: 9999;
+  display: none;
+  box-shadow: 0 5px 10px $color-gray-20;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  margin: 0;
+  padding: 0;
+  width: 70%;
+  max-width: 800px;
+  height: auto;
+  background-color: $color-white;
+  &.active {
+    display: block;
+  }
+}
