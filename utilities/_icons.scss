@@ -10,7 +10,7 @@
   vertical-align: middle;
 }
 
-$black-icons: chevron-down chevron-up plus error shopping-cart health;
+$black-icons: chevron-down chevron-up plus error shopping-cart health arrow-back arrow-forward;
 
 @each $icon in $black-icons {
   .icon--#{$icon} {
