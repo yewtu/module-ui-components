@@ -37,3 +37,27 @@
 .text--italic {
   font-style: italic;
 }
+
+.text--white {
+  color: $color-white;
+}
+
+.text--gray-40 {
+  color: $color-gray-40;
+}
+
+.text--gray-50 {
+  color: $color-gray-50;
+}
+
+.text--left {
+  text-align: left;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.text--right {
+  text-align: right;
+}
