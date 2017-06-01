@@ -3,6 +3,8 @@
 .form-input {
   @include form-control;
   background-image: none;
+  border-radius: 2px;
+  border: 1px solid $color-gray-80;
   &::-webkit-calendar-picker-indicator {
     display: none;
   }

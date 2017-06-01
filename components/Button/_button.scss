@@ -45,18 +45,41 @@
 @mixin button-like {
   height: 36px;
   border: 1px solid transparent;
-  padding: 6px 18px;
+  padding: 6px 12px;
+  min-width: 110px;
   text-align: center;
-  font-size: $font-size-default;
+  font-size: $font-size-sm;
+  border-radius: 2px;
   font-weight: 700;
   line-height: 1.2;
 }
 
 .btn--primary {
   @include button-like;
+  background-color: $color-red;
   color: $color-white;
   &:hover, &:active, &:focus {
     border-color: transparent;
+    color: $color-white;
+  }
+}
+
+.btn--secondary {
+  @include button-like;
+  background-color: $color-yellow-dark;
+  color: $color-gray-30;
+  &:hover, &:active, &:focus {
+    background-color: $color-brown-dark;
+    color: $color-white;
+  }
+}
+
+.btn--tertiary {
+  @include button-like;
+  background-color: $color-gray-60;
+  color: $color-gray-96;
+  &:hover, &:active, &:focus {
+    background-color: $color-gray-40;
     color: $color-white;
   }
 }
@@ -84,4 +107,27 @@
 .btn--block {
   display: block;
   width: 100%;
+}
+
+.btn--lg {
+  font-size: $font-size-lg;
+}
+
+.btn--gray-40.btn--gray-40 {
+  color: $color-gray-40;
+}
+
+
+.btn--icon {
+  position: relative;
+  padding-right: 1.2em;
+  > i {
+    position: absolute;
+    padding: 0;
+    border: 0;
+    right: 0;
+    top: 60%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+  }
 }

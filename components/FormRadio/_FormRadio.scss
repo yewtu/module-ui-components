@@ -1,0 +1,29 @@
+.form-radio {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  padding-left: 20px;
+  .icon {
+    transform: translateY(-50%);
+    top: 50%;
+    position: absolute;
+    left: 0;
+    display: none;
+  }
+  [type="radio"] {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px; margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    & ~ .form-radio__icon-inactive {
+      display: inline-block;
+    }
+    &:checked ~ .form-radio__icon-active {
+      display: inline-block;
+    }
+  }
+}
+
