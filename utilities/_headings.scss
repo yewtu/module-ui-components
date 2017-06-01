@@ -1,4 +1,5 @@
 @import "../variables/spacing";
+@import "../variables/typography";
 
 .heading {
   margin: 0;
@@ -43,5 +44,13 @@
 }
 
 .heading--bold {
-  font-weight: bold;
+  font-weight: $font-weight-bold;
+}
+
+.heading--semibold {
+  font-weight: $font-weight-semibold;
+}
+
+.heading--gray-40 {
+  color: $color-gray-40;
 }
