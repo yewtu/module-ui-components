@@ -1,3 +1,13 @@
+@import "../variables/colors";
+
 .bg-default {
   background-color: $color-background-default;
+}
+
+.bg-gray-98 {
+  background-color: $color-gray-98;
+}
+
+.bg-gray-60 {
+  background-color: $color-gray-60;
 }
