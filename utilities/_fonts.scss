@@ -1,9 +1,49 @@
+
 @font-face {
   font-family: Catamaran;
-  src: url("/fonts/Catamaran.ttf");
+  src: url("/fonts/catamaran-regular.woff2") format('woff2');
+  font-weight: $font-weight-regular;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Catamaran;
+  src: url("/fonts/catamaran-light.woff2") format('woff2');
+  font-weight: $font-weight-light;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Catamaran;
+  src: url("/fonts/catamaran-bold.woff2") format('woff2');
+  font-weight: $font-weight-bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Catamaran;
+  src: url("/fonts/catamaran-semibold.woff2") format('woff2');
+  font-weight: $font-weight-semibold;
+  font-style: normal;
 }
 
 @font-face {
   font-family: Lato;
-  src: url("/fonts/Lato.ttf");
+  src: url("/fonts/lato-regular.woff2") format('woff2');
+  font-weight: $font-weight-regular;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url("/fonts/lato-light.woff2") format('woff2');
+  font-weight: $font-weight-light;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url("/fonts/lato-bold.woff2") format('woff2');
+  font-weight: $font-weight-bold;
+  font-style: normal;
 }
