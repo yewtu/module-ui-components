@@ -37,3 +37,61 @@ $layout-breakpoint: $screen-sm-min;
     margin-right: 0;
   }
 }
+
+.l-inline-parent {
+  font-size: 0;
+}
+
+.l-inline-child {
+  font-size: 1rem;
+  display: inline-block;
+}
+
+.l-inline-child-valign-center {
+  vertical-align: middle;
+}
+
+.l-inline-child-valign-top {
+  vertical-align: top;
+}
+
+.l-hcenter-children {
+  text-align: center;
+}
+
+.l-hcentered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.l-width-10 {
+  width: 10%;
+}
+
+.l-width-20 {
+  width: 20%;
+}
+
+.l-width-30 {
+  width: 30%;
+}
+
+.l-width-40 {
+  width: 40%;
+}
+
+.l-width-50 {
+  width: 50%;
+}
+
+.l-width-60 {
+  width: 60%;
+}
+
+.l-width-80 {
+  width: 80%;
+}
+
+.l-push-10 {
+  margin-left: 10%;
+}
