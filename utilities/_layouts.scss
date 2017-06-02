@@ -103,3 +103,13 @@ $layout-breakpoint: $screen-sm-min;
 .l-push-10 {
   margin-left: 10%;
 }
+
+.l-width-70 {
+  width: 70%;
+}
+
+.l-width-sm-50 {
+  @include media-query($screen-md-min) {
+    width: 50%;
+  }
+}
