@@ -21,6 +21,9 @@
     & ~ .form-radio__icon-inactive {
       display: inline-block;
     }
+    &:checked ~ .form-radio__icon-inactive {
+      display: none;
+    }
     &:checked ~ .form-radio__icon-active {
       display: inline-block;
     }
