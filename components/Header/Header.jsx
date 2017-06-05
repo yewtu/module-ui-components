@@ -27,5 +27,6 @@ export default class Header extends React.Component {
 
 Header.defaultProps = {
   loggedIn: false,
-  type: ''
+  type: '',
+  navItems: []
 };

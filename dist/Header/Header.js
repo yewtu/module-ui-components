@@ -87,5 +87,6 @@ exports.default = Header;
 
 Header.defaultProps = {
   loggedIn: false,
-  type: ''
+  type: '',
+  navItems: []
 };
