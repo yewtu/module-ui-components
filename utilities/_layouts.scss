@@ -25,7 +25,6 @@ $layout-breakpoint: $screen-sm-min;
 
 .l-content {
   @include l-container-column($layout-breakpoint);
-  background-color: $color-white;
   margin-bottom: $column-gutter;
   @include media-query($layout-breakpoint) {
     width: calc(100% - #{$nav-width} - (#{$column-gutter} * 2));
