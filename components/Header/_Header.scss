@@ -22,9 +22,6 @@
 
 .header {
   color: $color-white;
-  padding-left: 40px;
-  position: relative;
-  @include vertically-centre;
 }
 
 .header--marketplace-intro {
@@ -37,6 +34,12 @@
 
 .header--farm {
   background-color: $color-bluegreen;
+}
+
+.header__inner {
+  @include vertically-centre;
+  @include l-container;
+  position: relative;
 }
 
 .header__title {
@@ -83,7 +86,7 @@
     position: absolute;
     bottom: 0;
     top: 0;
-    right: 40px;
+    right: $column-gutter * 2;
     @include vertically-centre;
   }
 }

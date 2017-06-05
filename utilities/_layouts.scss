@@ -8,13 +8,9 @@ $layout-breakpoint: $screen-sm-min;
 
 .l-container {
   @include clearfix;
-  max-width: $screen-lg-min;
-  width: 100%;
-  margin: 0 auto;
+  @include l-container;
   padding-top: $spacing-md;
   padding-bottom: $spacing-md;
-  padding-left: $column-gutter;
-  padding-right: $column-gutter;
 }
 
 .l-nav {

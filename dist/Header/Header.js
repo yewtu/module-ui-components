@@ -34,41 +34,45 @@ var Header = function (_React$Component) {
         "header",
         { className: "header header--" + this.props.type },
         _react2.default.createElement(
-          "h1",
-          { className: "header__title heading heading--lg" },
-          this.props.title
-        ),
-        _react2.default.createElement(
           "div",
-          { className: "header__links" },
-          this.props.navItems.map(function (item, idx) {
-            return _react2.default.createElement(
-              "a",
-              { href: "#",
-                className: "header__link header__link-first " + (idx === 0 ? ' active' : '') },
-              item
-            );
-          })
-        ),
-        _react2.default.createElement(
-          "div",
-          { className: "header__user" },
-          _react2.default.createElement("i", { className: "header__avatar icon icon--account-circle icon--white icon--xxxl" }),
+          { className: "header__inner" },
           _react2.default.createElement(
-            "div",
-            { className: "header__auth-links" },
-            _react2.default.createElement(
-              "strong",
-              null,
-              "Sign up"
-            ),
-            _react2.default.createElement("br", null),
-            "or Log in"
+            "h1",
+            { className: "header__title heading heading--lg" },
+            this.props.title
           ),
           _react2.default.createElement(
-            "a",
-            { href: "#", className: "header__basket" },
-            _react2.default.createElement("i", { className: "header__basket-icon icon icon--shopping-cart icon--white icon--xxl" })
+            "div",
+            { className: "header__links" },
+            this.props.navItems.map(function (item, idx) {
+              return _react2.default.createElement(
+                "a",
+                { key: idx, href: "#",
+                  className: "header__link header__link-first " + (idx === 0 ? ' active' : '') },
+                item
+              );
+            })
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "header__user" },
+            _react2.default.createElement("i", { className: "header__avatar icon icon--account-circle icon--white icon--xxxl" }),
+            _react2.default.createElement(
+              "div",
+              { className: "header__auth-links" },
+              _react2.default.createElement(
+                "strong",
+                null,
+                "Sign up"
+              ),
+              _react2.default.createElement("br", null),
+              "or Log in"
+            ),
+            _react2.default.createElement(
+              "a",
+              { href: "#", className: "header__basket" },
+              _react2.default.createElement("i", { className: "header__basket-icon icon icon--shopping-cart icon--white icon--xxl" })
+            )
           )
         )
       );
