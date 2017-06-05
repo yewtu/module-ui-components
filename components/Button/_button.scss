@@ -66,10 +66,10 @@
 
 .btn--secondary {
   @include button-like;
-  background-color: $color-yellow-dark;
+  background-color: $color-yellow;
   color: $color-gray-30;
   &:hover, &:active, &:focus {
-    background-color: $color-brown-dark;
+    background-color: $color-yellow-dark;
     color: $color-white;
   }
 }
