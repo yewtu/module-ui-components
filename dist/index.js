@@ -31,6 +31,15 @@ Object.defineProperty(exports, 'FormCheckbox', {
   }
 });
 
+var _FormRadio = require('./FormRadio/FormRadio');
+
+Object.defineProperty(exports, 'FormRadio', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_FormRadio).default;
+  }
+});
+
 var _Header = require('./Header/Header');
 
 Object.defineProperty(exports, 'Header', {

@@ -9,7 +9,7 @@
   height: 1rem;
 }
 
-$icons: account-circle checkbox-checked checkbox-unchecked chevron-down chevron-up plus alert shopping-cart health arrow-back arrow-forward done more close radio-button-checked radio-button-unchecked beefchart;
+$icons: account-circle checkbox-checked checkbox-unchecked chevron-down chevron-up plus alert shopping-cart health arrow-back arrow-forward done more close radio-checked radio-unchecked beefchart;
 
 @each $icon in $icons {
   .icon--#{$icon} {
