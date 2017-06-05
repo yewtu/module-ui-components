@@ -7,7 +7,7 @@ export default class Header extends React.Component {
         <h1 className="header__title heading heading--lg">{this.props.title}</h1>
         <div className="header__links">
           {
-            this.props.navItems.map((item, idx) => <a href="#"
+            this.props.navItems.map((item, idx) => <a key={idx} href="#"
                                                       className={`header__link header__link-first ${idx === 0 ? ' active' : ''}`}>{item}</a>)
           }
         </div>
