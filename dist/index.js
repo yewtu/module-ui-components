@@ -22,6 +22,15 @@ Object.defineProperty(exports, 'FormInput', {
   }
 });
 
+var _FormCheckbox = require('./FormCheckbox/FormCheckbox');
+
+Object.defineProperty(exports, 'FormCheckbox', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_FormCheckbox).default;
+  }
+});
+
 var _Header = require('./Header/Header');
 
 Object.defineProperty(exports, 'Header', {

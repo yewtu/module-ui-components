@@ -1,3 +1,32 @@
 .form-checkbox {
-  margin: 0;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  padding-left: 20px;
+  .icon {
+    transform: translateY(-50%);
+    top: 50%;
+    position: absolute;
+    left: 0;
+    display: none;
+  }
+  [type="checkbox"] {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px; margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    & ~ .form-checkbox__icon-inactive {
+      display: inline-block;
+    }
+    &:checked ~ .form-checkbox__icon-inactive {
+      display: none;
+    }
+    &:checked ~ .form-checkbox__icon-active {
+      display: inline-block;
+    }
+  }
 }
+
