@@ -29,7 +29,7 @@ $layout-breakpoint: $screen-sm-min;
   background-color: $color-white;
   margin-bottom: $column-gutter;
   @include media-query($layout-breakpoint) {
-    width: calc(100% - #{$nav-width} - (#{$column-gutter} * 4));
+    width: calc(100% - #{$nav-width} - (#{$column-gutter} * 2));
     margin-right: 0;
   }
 }
