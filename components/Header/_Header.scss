@@ -1,9 +1,115 @@
-.header {
-  background-color: $color-purple-light;
-  color: $color-white;
+@mixin divider-left {
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    left: 0;
+    top: 10px;
+    bottom: 10px;
+    width: 1px
+  }
 }
 
-.header a {
+@mixin vertically-centre {
+  &:before {
+    content: '';
+    vertical-align: middle;
+    height: 100%;
+    display: inline-block;
+  }
+}
+
+.header {
   color: $color-white;
-  text-decoration: none
+  padding-left: 40px;
+  position: relative;
+  @include vertically-centre;
+}
+
+.header--marketplace-intro {
+  background-color: $color-lilac;
+}
+
+.header--marketplace-search {
+  background-color: $color-purple;
+}
+
+.header--farm {
+  background-color: $color-bluegreen;
+}
+
+.header__title {
+  font-family: $heading-font-stack;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-xxl;
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.header__links {
+  display: inline-block;
+  margin-left: 20px;
+  @include divider-left;
+}
+
+.header__link {
+  color: $color-white;
+  font-size: $font-size-md;
+  display: inline-block;
+  line-height: 50px;
+  position: relative;
+  margin-left: 40px;
+  text-decoration: none;
+  &.active {
+    font-weight: $font-weight-bold;
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background-color: $color-white;
+    }
+  }
+}
+
+.header__user {
+  display: none;
+  @include media-query($screen-md-min) {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 40px;
+    @include vertically-centre;
+  }
+}
+
+.header__avatar {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.header__auth-links {
+  display: inline-block;
+  font-size: $font-size-xxs;
+  vertical-align: middle;
+  line-height: 1.2;
+  margin-left: 10px;
+}
+
+.header__basket {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 50px;
+  padding-left: 22px;
+  margin-left: 22px;
+  @include divider-left;
+}
+
+.header__basket-icon {
+  vertical-align: middle;
 }
