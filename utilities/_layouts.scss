@@ -3,7 +3,7 @@
 @import "../variables/colors";
 @import "../mixins/layout";
 
-$nav-width: 200px;
+$nav-width: 244px;
 $layout-breakpoint: $screen-sm-min;
 
 .l-container {
@@ -15,7 +15,6 @@ $layout-breakpoint: $screen-sm-min;
 
 .l-nav {
   @include l-container-column($layout-breakpoint);
-  background-color: $color-white;
   display: none;
   @include media-query($layout-breakpoint) {
     display: block;
