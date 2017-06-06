@@ -22,6 +22,7 @@
 
 .header {
   color: $color-white;
+  height: 58px;
 }
 
 .header--marketplace {
@@ -36,6 +37,7 @@
   @include vertically-centre;
   @include l-container;
   position: relative;
+  height: 100%;
 }
 
 .header__title {
@@ -44,6 +46,7 @@
   font-size: $font-size-xxl;
   display: inline-block;
   padding-right: 20px;
+  line-height: 50px;
 }
 
 .header__links {
