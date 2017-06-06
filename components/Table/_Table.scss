@@ -1,0 +1,32 @@
+.table {
+  background-color: $color-white;
+  font-size: $font-size-sm;
+  color: $color-gray-40;
+  table-layout: fixed;
+  width: 100%;
+  th {
+    font-family: $heading-font-stack;
+    font-size: $font-size-xs;
+    color: $color-gray-60;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  td {
+    font-weight: bold;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  th,
+  td {
+    border-bottom: 2px solid $color-gray-96;
+    text-align: left;
+  }
+  th > *,
+  td > * {
+    vertical-align: middle;
+  }
+}
+
+.table__first-col {
+  padding-left: 24px;
+}
