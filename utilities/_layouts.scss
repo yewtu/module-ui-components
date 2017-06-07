@@ -111,6 +111,24 @@ $layout-breakpoint: $screen-sm-min;
   width: 70%;
 }
 
+.l-width-sm-30 {
+  @include media-query($screen-sm-min) {
+    width: 30%;
+  }
+}
+
+.l-width-sm-50 {
+  @include media-query($screen-sm-min) {
+    width: 50%;
+  }
+}
+
+.l-width-md-30 {
+  @include media-query($screen-md-min) {
+    width: 30%;
+  }
+}
+
 .l-width-md-50 {
   @include media-query($screen-md-min) {
     width: 50%;
