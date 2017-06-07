@@ -34,6 +34,11 @@
   font-weight: bold;
 }
 
+.text--semibold {
+  font-family: $heading-font-stack;
+  font-weight: $font-weight-semibold;
+}
+
 .text--italic {
   font-style: italic;
 }
@@ -48,6 +53,14 @@
 
 .text--gray-50 {
   color: $color-gray-50;
+}
+
+.text--gray-60 {
+  color: $color-gray-60;
+}
+
+.text--capitalized {
+  text-transform: uppercase;
 }
 
 .text--left {
