@@ -36,6 +36,15 @@ $layout-breakpoint: $screen-sm-min;
   font-size: 0;
 }
 
+.l-vcenter-children {
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+}
+
 .l-inline-child {
   font-size: 1rem;
   display: inline-block;
