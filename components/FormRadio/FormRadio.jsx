@@ -2,13 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const FormRadio = ({name, value, checked, onChange, label}) => {
+  // if an onChange prop has been passed, make this a controlled component
+  const checkedProp = {
+    [onChange ? 'checked' : 'defaultChecked']: checked
+  };
   return (
     <label className="form-radio">
       <input name={name}
              type="radio"
              value={value}
-             defaultChecked={checked}
-             onChange={onChange} />
+             onChange={onChange}
+             {...checkedProp} />
       <i
         className="form-radio__icon-active icon icon--radio-checked icon--lilac"/>
       <i
@@ -27,7 +31,6 @@ FormRadio.propTypes = {
 };
 
 FormRadio.defaultProps = {
-  onChange: () => {},
   checked: false
 };
 
