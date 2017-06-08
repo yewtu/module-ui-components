@@ -59,6 +59,10 @@
   color: $color-gray-60;
 }
 
+.text--red {
+  color: $color-red;
+}
+
 .text--capitalized {
   text-transform: uppercase;
 }
@@ -73,4 +77,11 @@
 
 .text--right {
   text-align: right;
+}
+
+.text--capitals {
+  color: $color-gray-60;
+  font-size: $font-size-xxs;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
 }

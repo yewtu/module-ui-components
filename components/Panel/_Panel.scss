@@ -18,3 +18,17 @@
     border-bottom: 2px solid $color-gray-96;
   }
 }
+
+.panel--bordered {
+  border: 2px solid $color-gray-96;
+  padding: 0;
+}
+
+.panel__header {
+  background-color: $color-gray-98;
+  padding: 24px;
+}
+
+.panel--bordered .panel__body {
+  padding: 24px;
+}
