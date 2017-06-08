@@ -56,17 +56,31 @@ var Header = function (_React$Component) {
           _react2.default.createElement(
             "div",
             { className: "header__user" },
-            _react2.default.createElement("i", { className: "header__avatar icon icon--account-circle icon--white icon--xxxl" }),
-            _react2.default.createElement(
+            this.props.loggedIn ? _react2.default.createElement(
               "div",
-              { className: "header__auth-links" },
+              { className: "header__auth" },
               _react2.default.createElement(
-                "strong",
-                null,
-                "Sign up"
+                "span",
+                { className: "text text--lg text--semibold padding-right-md" },
+                "Hello, David"
               ),
-              _react2.default.createElement("br", null),
-              "or Log in"
+              _react2.default.createElement("img", { className: "header__avatar", src: "/images/avatar.jpg" })
+            ) : _react2.default.createElement(
+              "div",
+              { className: "header__auth" },
+              _react2.default.createElement("i", {
+                className: "header__avatar-icon icon icon--account-circle icon--white icon--xxxl" }),
+              _react2.default.createElement(
+                "div",
+                { className: "header__auth-links" },
+                _react2.default.createElement(
+                  "strong",
+                  null,
+                  "Sign up"
+                ),
+                _react2.default.createElement("br", null),
+                "or Log in"
+              )
             ),
             _react2.default.createElement(
               "a",

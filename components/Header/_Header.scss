@@ -90,9 +90,17 @@
   }
 }
 
-.header__avatar {
+.header__auth,
+.header__avatar,
+.header__avatar-icon {
   vertical-align: middle;
   display: inline-block;
+}
+
+.header__avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 19px;
 }
 
 .header__auth-links {

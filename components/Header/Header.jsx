@@ -13,8 +13,18 @@ export default class Header extends React.Component {
             }
           </div>
           <div className="header__user">
-            <i className="header__avatar icon icon--account-circle icon--white icon--xxxl"/>
-            <div className="header__auth-links"><strong>Sign up</strong><br/>or Log in</div>
+            {
+              this.props.loggedIn ?
+                <div className="header__auth">
+                  <span className="text text--lg text--semibold padding-right-md">Hello, David</span>
+                  <img className="header__avatar" src="/images/avatar.jpg"/>
+                </div>
+                :
+                <div className="header__auth"><i
+                  className="header__avatar-icon icon icon--account-circle icon--white icon--xxxl"/>
+                  <div className="header__auth-links"><strong>Sign up</strong><br/>or Log in</div>
+                </div>
+            }
             <a href="#" className="header__basket">
               <i className="header__basket-icon icon icon--shopping-cart icon--white icon--xxl"/>
             </a>
