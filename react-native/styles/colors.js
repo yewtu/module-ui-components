@@ -18,6 +18,7 @@ const colors = {
   purpleDark: '#49599A',
   blue: '#CBE2FD',
   blueLight: '#E1EDFF',
+  blueDark: '#006896',
   orange: '#FF8A65',
   orangeLight: '#FFBB93',
   orangeDark: '#C75B39',
