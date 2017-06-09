@@ -24,7 +24,7 @@ var Progress = function Progress(_ref) {
     steps.map(function (step, idx) {
       return _react2.default.createElement(
         'button',
-        { type: 'button',
+        { key: idx, type: 'button',
           className: 'l-inline-child l-inline-child-valign-center btn progress__step ' + (currentStepIndex === idx ? ' active' : '') },
         _react2.default.createElement(
           'span',
