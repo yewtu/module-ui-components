@@ -9,7 +9,7 @@
   height: 1rem;
 }
 
-$icons: account-circle checkbox-checked checkbox-unchecked chevron-down chevron-up cross plus alert shopping-cart health arrow-back arrow-forward done location-symbol more close radio-checked radio-unchecked star-full star-empty star-half beefchart cullcow market;
+$icons: account-circle check-circle checkbox-checked checkbox-unchecked chevron-down chevron-up cross plus alert shopping-cart health arrow-back arrow-forward done location-symbol more close radio-checked radio-unchecked star-full star-empty star-half beefchart cullcow market;
 
 @each $icon in $icons {
   .icon--#{$icon} {
@@ -52,6 +52,11 @@ $icons: account-circle checkbox-checked checkbox-unchecked chevron-down chevron-
 
 .icon-text--xxs {
   padding-left: 0.8em;
+}
+
+.icon--xxxxl {
+  width: 75px;
+  height: 75px;
 }
 
 .icon--xxxl {
