@@ -138,3 +138,23 @@ $layout-breakpoint: $screen-sm-min;
     width: 50%;
   }
 }
+
+.l-align-center {
+  text-align: center;
+}
+
+.l-align-right {
+  text-align: right;
+}
+
+.l-position-context {
+  position: relative;
+}
+
+.l-overlay-top-center {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}

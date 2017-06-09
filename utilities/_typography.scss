@@ -2,6 +2,14 @@
 
 }
 
+.text--xxxl {
+  font-size: $font-size-xxxl;
+}
+
+.text--xxl {
+  font-size: $font-size-xxl;
+}
+
 .text--xl {
   font-size: $font-size-xl;
 }
@@ -47,6 +55,10 @@
   color: $color-white;
 }
 
+.text--gray-30 {
+  color: $color-gray-30;
+}
+
 .text--gray-40 {
   color: $color-gray-40;
 }
@@ -57,6 +69,10 @@
 
 .text--gray-60 {
   color: $color-gray-60;
+}
+
+.text--gray-80 {
+  color: $color-gray-80;
 }
 
 .text--red {
