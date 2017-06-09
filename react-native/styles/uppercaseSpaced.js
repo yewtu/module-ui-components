@@ -1,0 +1,1 @@
+export default label => label.toUpperCase().split('').join('\u200A');
