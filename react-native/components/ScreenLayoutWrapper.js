@@ -6,13 +6,13 @@ import {
 import Header from './Header/Header';
 import {globalStyles as styles} from '../styles'
 
-export const ScreenLayoutWrapper = (WrappedComponent, options) => {
+export default ScreenLayoutWrapper = (WrappedComponent, options) => {
 	return class extends React.Component {
 		static navigationOptions = {header: null};
 		render() {
 			return (
         <View style={styles.screenContainer}>
-            <Header {...options} navigation={this.props.navigation} />
+            <Header appId={options.appId} title={options.title} />
             <WrappedComponent {...this.props} />
         </View>
 			)
