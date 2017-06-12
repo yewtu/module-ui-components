@@ -20,6 +20,7 @@ const colors = {
 	blue: '#CBE2FD',
 	blueLight: '#E1EDFF',
 	blueDark: '#006896',
+	blueDarker: '#005174',
 	orange: '#FF8A65',
 	orangeLight: '#FFBB93',
 	orangeDark: '#C75B39',
