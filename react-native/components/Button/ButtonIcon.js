@@ -12,7 +12,7 @@ import {globalStyles} from '../../styles'
 
 export default class ButtonIcon extends React.Component {
   render() {
-    const {size, iconSize, icon, onPress} = this.props;
+    const {size, iconSize, icon, iconColor, onPress} = this.props;
     return (
       <View style={{flexDirection: 'row', justifyContent: this.props.align || 'flex-start'}}>
         <TouchableOpacity
@@ -21,7 +21,7 @@ export default class ButtonIcon extends React.Component {
           <Icon
             name={icon}
             size={iconSize || (size === 'large' ? 20 : 14)}
-            color={colors.gray60}/>
+            color={iconColor}/>
         </TouchableOpacity>
       </View>
     )
@@ -29,7 +29,15 @@ export default class ButtonIcon extends React.Component {
 }
 
 ButtonIcon.propTypes = {
+  size: PropTypes.string,
+  iconSize: PropTypes.number,
+  icon: PropTypes.string.isRequired,
+  iconColor: PropTypes.string,
   onPress: PropTypes.func.isRequired
+};
+
+ButtonIcon.defaultProps = {
+  iconColor: colors.gray60
 };
 
 const styles = StyleSheet.create({
