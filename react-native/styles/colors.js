@@ -12,6 +12,7 @@ const colors = {
 	gray20: '#333333',
 	gray15: '#262626',
 	gray10: '#1A1A1A',
+	black: '#000000',
 	white: '#FFFFFF',
 	purple: '#7986CB',
 	purpleLight: '#AAB6FE',

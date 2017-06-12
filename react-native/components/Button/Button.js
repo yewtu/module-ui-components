@@ -51,6 +51,14 @@ const styles = StyleSheet.create({
     borderRadius: 2,
     backgroundColor: colors.gray60
   },
+  primaryGreen: {
+    borderRadius: 4,
+    backgroundColor: colors.greenDark,
+    paddingTop: 12,
+    paddingBottom: 0,
+    paddingLeft: 20,
+    paddingRight: 20
+  },
   disabled: {
     backgroundColor: colors.gray90
   },
@@ -69,6 +77,11 @@ const styles = StyleSheet.create({
   },
   primaryGrayButtonText: {
     color: colors.white
+  },
+  primaryGreenButtonText: {
+    fontSize: 13,
+    color: colors.white,
+    lineHeight: 16
   },
   secondaryButtonText: {
     color: colors.red
@@ -94,3 +107,4 @@ const styles = StyleSheet.create({
     lineHeight: 16
   }
 });
+
