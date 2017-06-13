@@ -10,7 +10,7 @@ export const fonts = {
 
 const size = {
 	h1: 20,
-	h2: 34,
+	h2: 18,
 	h3: 30,
 	h4: 26,
 	h5: 20,
@@ -28,7 +28,7 @@ export default {
 		fontSize: size.h1
 	},
 	h2: {
-		fontWeight: 'bold',
+		fontFamily: fonts.subtitle,
 		fontSize: size.h2
 	},
 	h3: {
