@@ -12,11 +12,11 @@ import uppercaseSpaced from '../../styles/uppercaseSpaced'
 
 export default class Button extends React.Component {
   render() {
-    const {type, size, label, onPress, align, formatLabel, disabled} = this.props;
+    const {type, size, label, onPress, align, formatLabel, disabled, isActive} = this.props;
     return (
       <View style={{flexDirection: 'row', justifyContent: align || 'flex-start'}}>
         <TouchableHighlight
-          style={[styles.button, styles[size], styles[type], disabled ? styles.disabled : {}]}
+          style={[styles.button, styles[size], styles[type], disabled ? styles.disabled : {}, isActive ? styles[`${type}Active`] : {}]}
           onPress={onPress}
           underlayColor={disabled ? colors.gray90 : colors.orangeDark}>
           <Text
@@ -59,6 +59,18 @@ const styles = StyleSheet.create({
     paddingLeft: 20,
     paddingRight: 20
   },
+  tag: {
+    borderRadius: 15,
+    backgroundColor: colors.greenDark,
+    height: 30,
+    paddingTop: 8,
+    paddingBottom: 0,
+    paddingLeft: 15,
+    paddingRight: 15
+  },
+  tagActive: {
+    backgroundColor: colors.blueDark
+  },
   disabled: {
     backgroundColor: colors.gray90
   },
@@ -85,6 +97,11 @@ const styles = StyleSheet.create({
   },
   secondaryButtonText: {
     color: colors.red
+  },
+  tagButtonText: {
+    color: colors.white,
+    fontSize: 11,
+    lineHeight: 11
   },
   small: {
     paddingTop: 4,
