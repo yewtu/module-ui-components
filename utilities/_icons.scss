@@ -9,7 +9,7 @@
   height: 1rem;
 }
 
-$icons: account-circle check-circle checkbox-checked checkbox-unchecked chevron-down chevron-up cross plus alert shopping-cart health arrow-back arrow-forward done location-symbol more close radio-checked radio-unchecked star-full star-empty star-half beefchart cullcow market live weather-sun;
+$icons: account-circle check-circle checkbox-checked checkbox-unchecked chevron-down chevron-up cross plus alert shopping-cart health arrow-back arrow-forward done location-symbol more close radio-checked radio-unchecked star-full star-empty star-half beefchart cullcow market live weather-day-atmosphere weather-day-clear weather-day-clouds weather-day-drizzle weather-day-rain weather-day-snow weather-day-thunderstorm weather-night-atmosphere weather-night-clear weather-night-clouds weather-night-drizzle weather-night-rain weather-night-snow weather-night-thunderstorm;
 
 @each $icon in $icons {
   .icon--#{$icon} {

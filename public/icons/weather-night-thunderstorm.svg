@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="72px" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>11n</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="-110.546875%" x2="50%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#EAEAEA" offset="0%"></stop>
+            <stop stop-color="#D0D0D0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="6.57474508%" y1="6.48982806%" x2="93.5330342%" y2="93.9532646%" id="linearGradient-2">
+            <stop stop-color="#FFC671" offset="0%"></stop>
+            <stop stop-color="#FFAF38" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-3" points="30 23.0556381 30 37.6350011 33.5802603 37.6350011 33.5802603 51 44.2138473 31.9139623 37.7363132 31.9139623 42.6748057 23.0556381"></polygon>
+        <filter x="-38.7%" y="-19.7%" width="177.4%" height="139.4%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="5" operator="erode" in="SourceAlpha" result="shadowSpreadInner1"></feMorphology>
+            <feOffset dx="-4" dy="-6" in="shadowSpreadInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 0.722150843   0 0 0 0 0.308850221  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Weather-Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="11n">
+            <g transform="translate(3.000000, 11.000000)">
+                <path d="M22.3333333,32 C17.1786667,32 13,27.8213333 13,22.6666667 C13,17.512 17.1786667,13.3333333 22.3333333,13.3333333 C22.3333333,8.91533333 25.9153333,5.33333333 30.3333333,5.33333333 C32.7286667,5.33333333 34.8673333,6.39466667 36.3333333,8.06266667 C37.9653333,3.37333333 42.4213333,0 47.6666667,0 C54.294,0 59.6666667,5.37266667 59.6666667,12 C59.6666667,12.196 59.6546667,12.3893333 59.646,12.5833333 C63.544,13.9466667 66.3333333,17.6253333 66.3333333,22 C66.3333333,27.54 61.874,32 56.3333333,32 L39,32 L22.3333333,32 Z" id="Light-Cloud" fill="#FFFFFF" fill-rule="evenodd"></path>
+                <path d="M7,32 C3.134,32 0,28.866 0,25 C0,21.134 3.134,18 7,18 C7,14.6865 9.6865,12 13,12 C14.7965,12 16.4005,12.796 17.5,14.047 C18.724,10.53 22.066,8 26,8 C30.9705,8 35,12.0295 35,17 C35,17.147 34.991,17.292 34.9845,17.4375 C37.908,18.46 40,21.219 40,24.5 C40,28.655 36.6555,32 32.5,32 L19.5,32 L7,32 Z" id="Dark-Cloud" fill="url(#linearGradient-1)" fill-rule="evenodd" transform="translate(20.000000, 20.000000) scale(-1, 1) translate(-20.000000, -20.000000) "></path>
+                <g id="Page-1">
+                    <use fill="url(#linearGradient-2)" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

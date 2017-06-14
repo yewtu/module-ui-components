@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="72px" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>09d</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 19.3289066 0 0.176014795 13.7099129 0.176014795 13.7099129 19.3289066"></polygon>
+        <linearGradient x1="50%" y1="-110.546875%" x2="50%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#EAEAEA" offset="0%"></stop>
+            <stop stop-color="#D0D0D0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Weather-Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="09d">
+            <g transform="translate(-2.000000, 11.000000)">
+                <g>
+                    <path d="M27.3333333,30.6666667 C22.1786667,30.6666667 18,26.6621111 18,21.7222222 C18,16.7823333 22.1786667,12.7777778 27.3333333,12.7777778 C27.3333333,8.54386111 30.9153333,5.11111111 35.3333333,5.11111111 C37.7286667,5.11111111 39.8673333,6.12822222 41.3333333,7.72672222 C42.9653333,3.23277778 47.4213333,0 52.6666667,0 C59.294,0 64.6666667,5.14880556 64.6666667,11.5 C64.6666667,11.6878333 64.6546667,11.8731111 64.646,12.0590278 C68.544,13.3655556 71.3333333,16.8909444 71.3333333,21.0833333 C71.3333333,26.3925 66.874,30.6666667 61.3333333,30.6666667 L44,30.6666667 L27.3333333,30.6666667 Z" id="Light-Cloud" fill="#FFFFFF"></path>
+                    <g id="Page-1" stroke-width="1" transform="translate(8.000000, 23.000000)">
+                        <g id="Group-3" transform="translate(0.000000, 0.645232)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Clip-2"></g>
+                        </g>
+                        <g id="Group-6" transform="translate(15.428571, 0.645232)"></g>
+                    </g>
+                    <path d="M12,30.6666667 C8.134,30.6666667 5,27.66325 5,23.9583333 C5,20.2534167 8.134,17.25 12,17.25 C12,14.0745625 14.6865,11.5 18,11.5 C19.7965,11.5 21.4005,12.2628333 22.5,13.4617083 C23.724,10.09125 27.066,7.66666667 31,7.66666667 C35.9705,7.66666667 40,11.5282708 40,16.2916667 C40,16.4325417 39.991,16.5715 39.9845,16.7109375 C42.908,17.6908333 45,20.334875 45,23.4791667 C45,27.4610417 41.6555,30.6666667 37.5,30.6666667 L24.5,30.6666667 L12,30.6666667 Z" id="Dark-Cloud" fill="url(#linearGradient-3)" transform="translate(25.000000, 19.166667) scale(-1, 1) translate(-25.000000, -19.166667) "></path>
+                </g>
+                <g id="Group" stroke-width="1" transform="translate(28.000000, 27.905660)" stroke="#77C0F0" stroke-linecap="round">
+                    <path d="M6.42857143,0.412398922 L0,11.5471698" id="Line" stroke-width="3"></path>
+                    <path d="M11.8571429,6.18598383 L3.42857143,21.1698113" id="Line-Copy" stroke-width="3"></path>
+                    <path d="M24.1428571,0.412398922 L17.7142857,11.5471698" id="Line-Copy-2" stroke-width="3"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
