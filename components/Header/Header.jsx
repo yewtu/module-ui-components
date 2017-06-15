@@ -2,22 +2,23 @@ import React from 'react'
 
 export default class Header extends React.Component {
   render() {
+    const { title, navItems, loggedIn, user, type:applicationType} = this.props;
     return (
-      <header className={`header header--${this.props.type}`}>
+      <header className={`header header--${applicationType}`}>
         <div className="header__inner">
-          <h1 className="header__title heading heading--lg">{this.props.title}</h1>
+          <h1 className="header__title heading heading--lg">{title}</h1>
           <div className="header__links">
             {
-              this.props.navItems.map((item, idx) => <a key={idx} href="#"
+              navItems.map((item, idx) => <a key={idx} href="#"
                                                         className={`header__link header__link-first ${idx === 0 ? ' active' : ''}`}>{item}</a>)
             }
           </div>
           <div className="header__user">
             {
-              this.props.loggedIn ?
+              loggedIn ?
                 <div className="header__auth">
-                  <span className="text text--lg text--semibold padding-right-md">Hello, David</span>
-                  <img className="header__avatar" src="/images/avatar.jpg"/>
+                  <span className="header__greeting text text--lg text--semibold padding-right-md">Hello, {user.firstName}</span>
+                  <img className="header__avatar" src={`/images/avatar-${user.role}-${user.userName}.jpg`}/>
                 </div>
                 :
                 <div className="header__auth"><i

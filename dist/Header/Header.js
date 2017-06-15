@@ -30,21 +30,28 @@ var Header = function (_React$Component) {
   _createClass(Header, [{
     key: "render",
     value: function render() {
+      var _props = this.props,
+          title = _props.title,
+          navItems = _props.navItems,
+          loggedIn = _props.loggedIn,
+          user = _props.user,
+          applicationType = _props.type;
+
       return _react2.default.createElement(
         "header",
-        { className: "header header--" + this.props.type },
+        { className: "header header--" + applicationType },
         _react2.default.createElement(
           "div",
           { className: "header__inner" },
           _react2.default.createElement(
             "h1",
             { className: "header__title heading heading--lg" },
-            this.props.title
+            title
           ),
           _react2.default.createElement(
             "div",
             { className: "header__links" },
-            this.props.navItems.map(function (item, idx) {
+            navItems.map(function (item, idx) {
               return _react2.default.createElement(
                 "a",
                 { key: idx, href: "#",
@@ -56,15 +63,16 @@ var Header = function (_React$Component) {
           _react2.default.createElement(
             "div",
             { className: "header__user" },
-            this.props.loggedIn ? _react2.default.createElement(
+            loggedIn ? _react2.default.createElement(
               "div",
               { className: "header__auth" },
               _react2.default.createElement(
                 "span",
-                { className: "text text--lg text--semibold padding-right-md" },
-                "Hello, David"
+                { className: "header__greeting text text--lg text--semibold padding-right-md" },
+                "Hello, ",
+                user.firstName
               ),
-              _react2.default.createElement("img", { className: "header__avatar", src: "/images/avatar.jpg" })
+              _react2.default.createElement("img", { className: "header__avatar", src: "/images/avatar-" + user.role + "-" + user.userName + ".jpg" })
             ) : _react2.default.createElement(
               "div",
               { className: "header__auth" },
