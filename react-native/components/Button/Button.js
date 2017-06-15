@@ -91,8 +91,8 @@ const styles = StyleSheet.create({
   },
   primaryGreenButtonText: {
     fontSize: 13,
-    color: colors.white,
-    lineHeight: 16
+    lineHeight: 13,
+    color: colors.white
   },
   secondaryButtonText: {
     color: colors.red
