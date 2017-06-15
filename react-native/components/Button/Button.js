@@ -7,7 +7,7 @@ import {
   StyleSheet
 } from 'react-native'
 import colors from '../../styles/colors'
-import typography from'../../styles/typography'
+import {fonts} from'../../styles/typography'
 import uppercaseSpaced from '../../styles/uppercaseSpaced'
 
 export default class Button extends React.Component {
@@ -35,8 +35,8 @@ const styles = StyleSheet.create({
   button: {
     paddingLeft: 30,
     paddingRight: 30,
-    paddingTop: 0,
-    paddingBottom: 0,
+    paddingTop: 12,
+    paddingBottom: 16,
     flex: 0
   },
   primary: {
@@ -54,17 +54,14 @@ const styles = StyleSheet.create({
   primaryGreen: {
     borderRadius: 4,
     backgroundColor: colors.greenDark,
-    paddingTop: 12,
-    paddingBottom: 0,
     paddingLeft: 20,
     paddingRight: 20
   },
   tag: {
     borderRadius: 15,
     backgroundColor: colors.greenDark,
-    height: 30,
     paddingTop: 8,
-    paddingBottom: 0,
+    paddingBottom: 10,
     paddingLeft: 15,
     paddingRight: 15
   },
@@ -75,12 +72,14 @@ const styles = StyleSheet.create({
     backgroundColor: colors.gray90
   },
   buttonText: {
-    ...typography.h1,
+    fontFamily: fonts.bold,
     fontSize: 12,
+    lineHeight: 12,
     color: colors.red
   },
   primaryButtonText: {
     fontSize: 14,
+    lineHeight: 14,
     color: colors.white,
     textAlign: 'center'
   },
@@ -111,14 +110,14 @@ const styles = StyleSheet.create({
   },
   large: {
     paddingTop: 14,
-    paddingBottom: 16
+    paddingBottom: 12
   },
   largeButtonText: {
     fontSize: 16,
     lineHeight: 16
   },
   smallButtonText: {
-    ...typography.normal,
+    fontFamily: fonts.body,
     fontWeight: 'bold',
     fontSize: 12,
     lineHeight: 16

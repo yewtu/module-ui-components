@@ -8,7 +8,7 @@ import {
 } from 'react-native'
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import colors from '../../styles/colors'
-import typography from '../../styles/typography'
+import {fonts} from '../../styles/typography'
 import {globalStyles} from '../../styles'
 import uppercaseSpaced from '../../styles/uppercaseSpaced'
 
@@ -32,8 +32,8 @@ export default class Button extends React.Component {
           onPress={onPress}>
           <View style={styles.row}>
             { iconAlignment === 'left' && renderIcon()}
-            <Text
-              style={[styles.buttonText, styles[`${type}ButtonText`]]}>{formatLabel ? uppercaseSpaced(label) : label}</Text>
+            <View><Text
+              style={[styles.buttonText, styles[`${type}ButtonText`]]}>{formatLabel ? uppercaseSpaced(label) : label}</Text></View>
             { iconAlignment === 'right' && renderIcon()}
           </View>
         </TouchableOpacity>
@@ -55,8 +55,8 @@ const styles = StyleSheet.create({
   },
   tagButton: {
     backgroundColor: colors.gray90,
-    paddingTop: 4,
-    paddingBottom: 4,
+    paddingTop: 6,
+    paddingBottom: 6,
     paddingLeft: 12,
     paddingRight: 12,
     borderRadius: 2
@@ -68,10 +68,11 @@ const styles = StyleSheet.create({
     paddingRight: 6
   },
   buttonText: {
-    ...typography.h1,
+    fontFamily: fonts.bold,
     color: colors.gray20,
     fontWeight: 'bold',
     fontSize: 12,
+    lineHeight: 14,
     textAlign: 'center'
   },
   grayButtonText: {
