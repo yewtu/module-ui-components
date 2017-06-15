@@ -39,6 +39,9 @@ export default {
 		fontFamily: fonts.bold,
 		fontSize: size.h6
 	},
+  bold: {
+    fontFamily: fonts.bold
+  },
 	semibold: {
 		fontFamily: fonts.semibold
 	},

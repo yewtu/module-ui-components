@@ -55,5 +55,8 @@ export default {
 	},
 	centerAligned: {
 		justifyContent: 'center'
-	}
+	},
+  topAligned: {
+    alignItems: 'flex-start'
+  }
 }

@@ -35,8 +35,8 @@ const styles = StyleSheet.create({
   button: {
     paddingLeft: 30,
     paddingRight: 30,
-    paddingTop: 8,
-    paddingBottom: 10,
+    paddingTop: 0,
+    paddingBottom: 0,
     flex: 0
   },
   primary: {
