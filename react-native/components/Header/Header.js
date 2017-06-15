@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
     ...typography.h1,
     color: colors.white,
     fontSize: 25,
-    lineHeight: 35
+    lineHeight: 25
   },
   largeHeaderText: {
     fontSize: 28,
