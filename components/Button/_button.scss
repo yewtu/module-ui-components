@@ -104,6 +104,12 @@
   }
 }
 
+.btn--link {
+  color: $color-red-dark;
+  font-size: $font-size-xs;
+  text-transform: uppercase;
+}
+
 .btn--block {
   display: block;
   width: 100%;
