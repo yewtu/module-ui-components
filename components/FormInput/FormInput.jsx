@@ -1,20 +1,34 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const FormInput = ({hasError, classNames, id, name, type, value, onChange}) => {
-  // if an onChange prop has been passed, make this a controlled component
-  const valueProp = {
-    [onChange ? 'value' : 'defaultValue']: value
-  };
+class FormInput extends React.Component {
+  componentDidMount() {
+    this.props.focus && this.input.focus();
+  }
+
+  componentDidUpdate() {
+    this.props.focus && this.input.focus();
+  }
+
+  render() {
+    const {hasError, classNames, id, name, type, value, onChange} = this.props;
+    // if an onChange prop has been passed, make this a controlled component
+    const valueProp = {
+      [onChange ? 'value' : 'defaultValue']: value
+    };
     return (
-        <input
-            id={id}
-            name={name}
-            type={type || 'text'}
-            className={`form-input ${classNames} ${hasError ? ' form-input--has-error' : ''}`}
-            onChange={onChange}
-            {...valueProp}
-        />)
+      <input
+        ref={(input) => {
+          this.input = input;
+        }}
+        id={id}
+        name={name}
+        type={type || 'text'}
+        className={`form-input ${classNames} ${hasError ? ' form-input--has-error' : ''}`}
+        onChange={onChange}
+        {...valueProp}
+      />)
+  }
 };
 
 FormInput.propTypes = {
@@ -24,7 +38,8 @@ FormInput.propTypes = {
     classNames: PropTypes.string,
     value: PropTypes.string,
     onChange: PropTypes.func,
-    hasError: PropTypes.bool
+    hasError: PropTypes.bool,
+    focus: PropTypes.bool
 };
 
 export default FormInput;

@@ -49,7 +49,7 @@ export default class Header extends React.Component {
           size='sm'
           useMask={true}>
           <div className="l-hcentered l-width-50">
-            <LoginForm />
+            <LoginForm shown={this.state.loginModalOpen} />
           </div>
         </Modal>
       </header>

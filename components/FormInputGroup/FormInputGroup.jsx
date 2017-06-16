@@ -20,7 +20,8 @@ FormInputGroup.propTypes = {
     type: PropTypes.string,
     classNames: PropTypes.string,
     value: PropTypes.string,
-    onChange: PropTypes.func
+    onChange: PropTypes.func,
+    focus: PropTypes.bool
   }),
 };
 

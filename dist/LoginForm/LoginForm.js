@@ -52,7 +52,7 @@ var LoginForm = function (_React$Component) {
           _react2.default.createElement(
             'div',
             { className: 'margin-bottom-md' },
-            _react2.default.createElement(_FormInputGroup2.default, { id: 'username', label: 'Username', input: { name: 'username' } })
+            _react2.default.createElement(_FormInputGroup2.default, { id: 'username', label: 'Username', input: { name: 'username', focus: this.props.shown } })
           ),
           _react2.default.createElement(
             'div',

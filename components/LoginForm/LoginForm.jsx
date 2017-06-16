@@ -15,7 +15,7 @@ export default class LoginForm extends React.Component {
       <div className={'login-form'}>
         <form action={this.props.formAction} method="post">
           <div className="margin-bottom-md">
-            <FormInputGroup id="username" label="Username" input={{name: 'username' }}/>
+            <FormInputGroup id="username" label="Username" input={{name: 'username', focus: this.props.shown  }}/>
           </div>
           <div className="margin-bottom-md">
             <FormInputGroup id="password" label="Password" input={{type: 'password', name: 'password' }}/>

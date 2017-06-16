@@ -132,7 +132,7 @@ var Header = function (_React$Component) {
           _react2.default.createElement(
             'div',
             { className: 'l-hcentered l-width-50' },
-            _react2.default.createElement(_LoginForm2.default, null)
+            _react2.default.createElement(_LoginForm2.default, { shown: this.state.loginModalOpen })
           )
         )
       );
