@@ -18,9 +18,19 @@ export default class LoginForm extends React.Component {
             <FormInputGroup id="username" label="Username"/>
           </div>
           <div className="margin-bottom-md">
-            <FormInputGroup id="password" label="Password" input={{type: 'password'}} />
+            <FormInputGroup id="password" label="Password" input={{type: 'password'}}/>
           </div>
-          <button type="submit" className="btn btn--primary">Log in</button>
+          <div className="l-inline-parent l-vcenter-children ">
+            <div className="l-inline-child">
+              <button type="submit" className="btn btn--primary">Log in</button>
+            </div>
+            <div className="l-inline-child padding-left-md padding-right-md">
+              or
+            </div>
+            <div className="l-inline-child">
+              <a href="#" className="btn btn--link">Sign up</a>
+            </div>
+          </div>
         </form>
       </div>
     )

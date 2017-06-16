@@ -60,9 +60,31 @@ var LoginForm = function (_React$Component) {
             _react2.default.createElement(_FormInputGroup2.default, { id: 'password', label: 'Password', input: { type: 'password' } })
           ),
           _react2.default.createElement(
-            'button',
-            { type: 'submit', className: 'btn btn--primary' },
-            'Log in'
+            'div',
+            { className: 'l-inline-parent l-vcenter-children ' },
+            _react2.default.createElement(
+              'div',
+              { className: 'l-inline-child' },
+              _react2.default.createElement(
+                'button',
+                { type: 'submit', className: 'btn btn--primary' },
+                'Log in'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'l-inline-child padding-left-md padding-right-md' },
+              'or'
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'l-inline-child' },
+              _react2.default.createElement(
+                'a',
+                { href: '#', className: 'btn btn--link' },
+                'Sign up'
+              )
+            )
           )
         )
       );
