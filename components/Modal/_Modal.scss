@@ -1,20 +1,53 @@
-.modal {
+.modal__content {
   overflow: hidden;
   position: fixed;
-  right: 0;
   z-index: 9999;
   display: none;
   box-shadow: 0 5px 10px $color-gray-20;
-  transform: translate(-50%, -50%);
   left: 50%;
+  right: 0;
   top: 50%;
+  transform: translate(-50%, -50%);
   margin: 0;
-  padding: 0;
-  width: 70%;
-  max-width: 800px;
+  padding: $spacing-lg;
   height: auto;
   background-color: $color-white;
-  &.active {
+  color: $color-gray-40;
+  border-radius: 6px;
+  .modal.active & {
     display: block;
   }
+  .modal--md & {
+    max-width: 800px;
+    width: 90%;
+    @include media-query($screen-sm-min) {
+      width: 70%;
+    }
+  }
+  .modal--sm & {
+    @include media-query($screen-md-min) {
+      width: 50%;
+    }
+  }
+}
+
+.modal__mask {
+  content: '';
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: rgba(200, 200, 200, 0.5);
+  .modal.active & {
+    display: block;
+  }
+}
+
+.modal__close {
+  position: absolute;
+  top: $spacing-sm;
+  right: $spacing-sm;
 }

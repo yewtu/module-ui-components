@@ -58,6 +58,15 @@ Object.defineProperty(exports, 'Progress', {
   }
 });
 
+var _Modal = require('./Modal/Modal');
+
+Object.defineProperty(exports, 'Modal', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_Modal).default;
+  }
+});
+
 var _LoginForm = require('./LoginForm/LoginForm');
 
 Object.defineProperty(exports, 'LoginForm', {
