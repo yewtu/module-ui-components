@@ -12,7 +12,7 @@ export default class Header extends React.Component {
   }
 
   render() {
-    const {title, navItems, loggedIn, user, type: applicationType} = this.props;
+    const {title, navItems, user, type: applicationType} = this.props;
     return (
       <header className={`header header--${applicationType}`}>
         <div className="header__inner">
@@ -25,7 +25,7 @@ export default class Header extends React.Component {
           </div>
           <div className="header__user">
             {
-              loggedIn ?
+              user ?
                 <div className="header__auth">
                   <span className="header__greeting text text--lg text--semibold padding-right-md">Hello, {user.firstName}</span>
                   <img className="header__avatar"
@@ -60,13 +60,11 @@ export default class Header extends React.Component {
 Header.propTypes = {
   title: PropTypes.string,
   navItems: PropTypes.array,
-  loggedIn: PropTypes.bool,
   user: PropTypes.object,
   type: PropTypes.string
 };
 
 Header.defaultProps = {
-  loggedIn: false,
   type: '',
   navItems: []
 };

@@ -52,7 +52,6 @@ var Header = function (_React$Component) {
       var _props = this.props,
           title = _props.title,
           navItems = _props.navItems,
-          loggedIn = _props.loggedIn,
           user = _props.user,
           applicationType = _props.type;
 
@@ -82,7 +81,7 @@ var Header = function (_React$Component) {
           _react2.default.createElement(
             'div',
             { className: 'header__user' },
-            loggedIn ? _react2.default.createElement(
+            user ? _react2.default.createElement(
               'div',
               { className: 'header__auth' },
               _react2.default.createElement(
@@ -148,13 +147,11 @@ exports.default = Header;
 Header.propTypes = {
   title: _propTypes2.default.string,
   navItems: _propTypes2.default.array,
-  loggedIn: _propTypes2.default.bool,
   user: _propTypes2.default.object,
   type: _propTypes2.default.string
 };
 
 Header.defaultProps = {
-  loggedIn: false,
   type: '',
   navItems: []
 };
