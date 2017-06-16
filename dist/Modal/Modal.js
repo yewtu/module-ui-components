@@ -64,7 +64,9 @@ var Modal = function (_React$Component) {
   }, {
     key: 'render',
     value: function render() {
-      var size = this.props.size;
+      var _props = this.props,
+          size = _props.size,
+          useMask = _props.useMask;
 
       return _react2.default.createElement(
         'div',
@@ -79,7 +81,7 @@ var Modal = function (_React$Component) {
           ),
           this.props.children
         ),
-        _react2.default.createElement('div', { className: 'modal__mask' })
+        useMask && _react2.default.createElement('div', { className: 'modal__mask' })
       );
     }
   }]);

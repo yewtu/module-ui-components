@@ -31,14 +31,14 @@ export default class Modal extends React.Component {
   }
 
   render() {
-    const { size } = this.props;
+    const { size, useMask } = this.props;
     return (
       <div className={`modal ${this.state.open ? ' active' : ''} modal--${size}`}>
         <div className="modal__content">
           <button type="button" className="modal__close btn" onClick={this.onModalClose}><i className="icon icon--close icon--xxl" /></button>
           {this.props.children}
         </div>
-        <div className="modal__mask"></div>
+        { useMask && <div className="modal__mask"></div> }
       </div>
     )
   }
