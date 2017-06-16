@@ -45,6 +45,7 @@ export default class Header extends React.Component {
         </div>
         <Modal
           open={this.state.loginModalOpen}
+          onClose={() => this.setState({loginModalOpen: false})}
           size='sm'
           useMask={true}>
           <div className="l-hcentered l-width-50">

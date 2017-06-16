@@ -124,6 +124,9 @@ var Header = function (_React$Component) {
           _Modal2.default,
           {
             open: this.state.loginModalOpen,
+            onClose: function onClose() {
+              return _this2.setState({ loginModalOpen: false });
+            },
             size: 'sm',
             useMask: true },
           _react2.default.createElement(
