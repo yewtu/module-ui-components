@@ -4,9 +4,12 @@
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  width: 70%;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
+  @include media-query($screen-md-min) {
+    width: 70%;
+  }
 }
 
 .progress__step {
@@ -45,5 +48,11 @@
 }
 
 .progress__step-label {
-
+  font-size: $font-size-xs;
+  @include media-query($screen-sm-min) {
+    font-size: $font-size-sm;
+  }
+  @include media-query($screen-md-min) {
+    font-size: $font-size-md;
+  }
 }
