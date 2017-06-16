@@ -7,7 +7,7 @@ export default class Modal extends React.Component {
     this.state = {
       open: props.open
     };
-    this.onLoginModalClose = this.onLoginModalClose.bind(this);
+    this.onModalClose = this.onModalClose.bind(this);
     this.onKeyDown = this.onKeyDown.bind(this);
   }
 
@@ -19,14 +19,14 @@ export default class Modal extends React.Component {
     this.setState({ open: nextProps.open });
   }
 
-  onLoginModalClose() {
+  onModalClose() {
     this.setState({ open: false });
     this.props.onClose();
   }
 
   onKeyDown(e) {
     if (e.keyCode === 27) {
-      this.onLoginModalClose();
+      this.onModalClose();
     }
   }
 
@@ -35,7 +35,7 @@ export default class Modal extends React.Component {
     return (
       <div className={`modal ${this.state.open ? ' active' : ''} modal--${size}`}>
         <div className="modal__content">
-          <button type="button" className="modal__close btn" onClick={this.onLoginModalClose}><i className="icon icon--close icon--xxl" /></button>
+          <button type="button" className="modal__close btn" onClick={this.onModalClose}><i className="icon icon--close icon--xxl" /></button>
           {this.props.children}
         </div>
         <div className="modal__mask"></div>

@@ -33,7 +33,7 @@ var Modal = function (_React$Component) {
     _this.state = {
       open: props.open
     };
-    _this.onLoginModalClose = _this.onLoginModalClose.bind(_this);
+    _this.onModalClose = _this.onModalClose.bind(_this);
     _this.onKeyDown = _this.onKeyDown.bind(_this);
     return _this;
   }
@@ -49,8 +49,8 @@ var Modal = function (_React$Component) {
       this.setState({ open: nextProps.open });
     }
   }, {
-    key: 'onLoginModalClose',
-    value: function onLoginModalClose() {
+    key: 'onModalClose',
+    value: function onModalClose() {
       this.setState({ open: false });
       this.props.onClose();
     }
@@ -58,7 +58,7 @@ var Modal = function (_React$Component) {
     key: 'onKeyDown',
     value: function onKeyDown(e) {
       if (e.keyCode === 27) {
-        this.onLoginModalClose();
+        this.onModalClose();
       }
     }
   }, {
@@ -74,7 +74,7 @@ var Modal = function (_React$Component) {
           { className: 'modal__content' },
           _react2.default.createElement(
             'button',
-            { type: 'button', className: 'modal__close btn', onClick: this.onLoginModalClose },
+            { type: 'button', className: 'modal__close btn', onClick: this.onModalClose },
             _react2.default.createElement('i', { className: 'icon icon--close icon--xxl' })
           ),
           this.props.children
