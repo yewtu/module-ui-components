@@ -51,7 +51,7 @@ FormInputGroup.propTypes = {
         type: _propTypes2.default.string,
         classNames: _propTypes2.default.string,
         value: _propTypes2.default.string,
-        onChange: _propTypes2.default.func.isRequired
+        onChange: _propTypes2.default.func
     })
 };
 
