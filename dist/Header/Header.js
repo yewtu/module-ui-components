@@ -95,7 +95,7 @@ var Header = function (_React$Component) {
                 src: '/images/avatar-' + user.role + '-' + user.userName + '.jpg' })
             ) : _react2.default.createElement(
               'button',
-              { onClick: function onClick() {
+              { type: 'button', onClick: function onClick() {
                   return _this2.setState({ loginModalOpen: true });
                 },
                 className: 'btn header__auth' },

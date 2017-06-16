@@ -32,7 +32,7 @@ export default class Header extends React.Component {
                        src={`/images/avatar-${user.role}-${user.userName}.jpg`}/>
                 </div>
                 :
-                <button onClick={() => this.setState({loginModalOpen: true})}
+                <button type="button" onClick={() => this.setState({loginModalOpen: true})}
                         className="btn header__auth"><i
                   className="header__avatar-icon icon icon--account-circle icon--white icon--xxxl"/>
                   <span className="header__auth-links"><strong>Sign up</strong><br/>or Log in</span>
