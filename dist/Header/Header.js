@@ -124,7 +124,8 @@ var Header = function (_React$Component) {
           _Modal2.default,
           {
             open: this.state.loginModalOpen,
-            size: 'sm' },
+            size: 'sm',
+            useMask: true },
           _react2.default.createElement(
             'div',
             { className: 'l-hcentered l-width-50' },
