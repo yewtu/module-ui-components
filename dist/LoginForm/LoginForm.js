@@ -52,12 +52,12 @@ var LoginForm = function (_React$Component) {
           _react2.default.createElement(
             'div',
             { className: 'margin-bottom-md' },
-            _react2.default.createElement(_FormInputGroup2.default, { id: 'username', label: 'Username' })
+            _react2.default.createElement(_FormInputGroup2.default, { id: 'username', label: 'Username', input: { name: 'username' } })
           ),
           _react2.default.createElement(
             'div',
             { className: 'margin-bottom-md' },
-            _react2.default.createElement(_FormInputGroup2.default, { id: 'password', label: 'Password', input: { type: 'password' } })
+            _react2.default.createElement(_FormInputGroup2.default, { id: 'password', label: 'Password', input: { type: 'password', name: 'password' } })
           ),
           _react2.default.createElement(
             'div',

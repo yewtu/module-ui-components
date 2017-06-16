@@ -22,6 +22,7 @@ var FormInput = function FormInput(_ref) {
     var hasError = _ref.hasError,
         classNames = _ref.classNames,
         id = _ref.id,
+        name = _ref.name,
         type = _ref.type,
         value = _ref.value,
         onChange = _ref.onChange;
@@ -30,6 +31,7 @@ var FormInput = function FormInput(_ref) {
     var valueProp = _defineProperty({}, onChange ? 'value' : 'defaultValue', value);
     return _react2.default.createElement('input', _extends({
         id: id,
+        name: name,
         type: type || 'text',
         className: 'form-input ' + classNames + ' ' + (hasError ? ' form-input--has-error' : ''),
         onChange: onChange
@@ -38,6 +40,7 @@ var FormInput = function FormInput(_ref) {
 
 FormInput.propTypes = {
     id: _propTypes2.default.string.isRequired,
+    name: _propTypes2.default.string.isRequired,
     type: _propTypes2.default.string,
     classNames: _propTypes2.default.string,
     value: _propTypes2.default.string,
