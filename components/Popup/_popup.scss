@@ -1,0 +1,55 @@
+.popup {
+    overflow: hidden;
+    right: 0;
+    z-index: 9999;
+    display: none;
+    margin: 0;
+    height: auto;
+    background-color: $color-white;
+    &.active {
+        display: block;
+    }
+    position: absolute;
+    transform: translate(-50%);
+    top: 30px;
+    left: -20px;
+    padding: 30px;
+    width: 654px;
+    max-width: 909px;
+    border-radius: 6px;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.05);
+    color: #4c4c4c;
+    font-family: Catamaran;
+    font-size: 14px;
+    line-height: 1.29;
+    @include media-query($screen-lg-min) {
+        width: 909px;
+    }
+    .icon--close {
+        position: absolute;
+        right: 5px;
+        top: 15px;
+        z-index: 9999;
+        width: 30px;
+        height: 30px;
+    }
+    .left,
+    .right {
+        float: left;
+        width: 50%;
+        padding-right: 20px;
+    }
+    h2 {
+        display: flex;
+        align-items: center;
+        font-family: Catamaran;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.25;
+    }
+    h3 {
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}

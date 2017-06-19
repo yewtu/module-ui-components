@@ -6,3 +6,4 @@ export {default as Header} from './Header/Header';
 export {default as Progress} from './Progress/Progress';
 export {default as Modal} from './Modal/Modal';
 export {default as LoginForm} from './LoginForm/LoginForm';
+export {default as Popup} from "./Popup/Popup";
