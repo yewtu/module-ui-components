@@ -87,11 +87,10 @@ var Header = function (_React$Component) {
               _react2.default.createElement(
                 'span',
                 { className: 'header__greeting text text--lg text--semibold padding-right-md' },
-                'Hello, ',
-                user.firstName
+                user.displayName
               ),
               _react2.default.createElement('img', { className: 'header__avatar',
-                src: '/images/avatar-' + user.role + '-' + user.userName + '.jpg' })
+                src: '/images/avatar-' + user.userName + '.jpg' })
             ) : _react2.default.createElement(
               'button',
               { type: 'button', onClick: function onClick() {
