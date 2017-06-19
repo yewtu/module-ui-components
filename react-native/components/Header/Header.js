@@ -21,7 +21,7 @@ export default class Header extends React.Component {
             <Icon name="add-alert" size={20} color={colors.white}/> : menuIcon() }
         </View>
         <View style={styles.headerTitle}>
-          <View><Text
+          <View style={[subTitle ? '' : styles.headerTitleMain]}><Text
             style={[styles.headerText, styles[`${appId}HeaderText`], styles[`${titleSize}HeaderText`]]}>{appId === 'consumer' ? title.toUpperCase() : title}</Text></View>
           {
             subTitle && <View><Text
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
     ...typography.h1,
     color: colors.white,
     fontSize: 25,
-    lineHeight: 25
+    lineHeight: 34
   },
   largeHeaderText: {
     fontSize: 28,
@@ -83,8 +83,8 @@ const styles = StyleSheet.create({
     alignItems: 'flex-end',
     width: 45
   },
-  headerTitle: {
-    alignItems: 'center'
+  headerTitleMain: {
+    bottom: -3
   },
   headerSubTitle: {
     fontSize: 10,

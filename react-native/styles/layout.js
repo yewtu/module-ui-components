@@ -22,8 +22,6 @@ export default {
 		alignItems: 'center',
 		justifyContent: 'flex-end'
 	},
-
-	// PADDING / SPACING
 	sidePadding: {
 		paddingLeft: 25,
 		paddingRight: 25
@@ -34,17 +32,9 @@ export default {
 		paddingTop: 15,
 		paddingBottom: 15
 	},
-  verticalSpacer: {
-    marginBottom: 12
-  },
-  verticalSpacerDouble: {
-    marginBottom: 24
-  },
-	// ALIGN TEXT ITEMS
 	centered: {
 		alignItems: 'center'
 	},
-	// VIEW LAYOUT
 	rowJustified: {
 		flexDirection: 'row',
 		justifyContent: 'space-between',
@@ -57,8 +47,11 @@ export default {
 	rowLeft: {
 		flexDirection: 'row'
 	},
-	rowWrapped: {
-		flexWrap: 'wrap'
+	verticalSpacer: {
+		marginBottom: 12
+	},
+	verticalSpacerDouble: {
+		marginBottom: 24
 	},
 	centerAligned: {
 		justifyContent: 'center'
