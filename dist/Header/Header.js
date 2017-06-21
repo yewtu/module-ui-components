@@ -86,11 +86,16 @@ var Header = function (_React$Component) {
               { className: 'header__auth' },
               _react2.default.createElement(
                 'span',
-                { className: 'header__greeting text text--lg text--semibold padding-right-md' },
+                { className: 'header__greeting text text--lg padding-right-md' },
                 user.displayName
               ),
               _react2.default.createElement('img', { className: 'header__avatar',
-                src: '/images/avatar-' + user.userName + '.jpg' })
+                src: '/images/avatar-' + user.userName + '.jpg' }),
+              _react2.default.createElement(
+                'a',
+                { href: '/logout', className: 'header__greeting link text text--white text--xs padding-left-md' },
+                'Log out'
+              )
             ) : _react2.default.createElement(
               'button',
               { type: 'button', onClick: function onClick() {

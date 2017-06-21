@@ -27,9 +27,10 @@ export default class Header extends React.Component {
             {
               user ?
                 <div className="header__auth">
-                  <span className="header__greeting text text--lg text--semibold padding-right-md">{user.displayName}</span>
+                  <span className="header__greeting text text--lg padding-right-md">{user.displayName}</span>
                   <img className="header__avatar"
                        src={`/images/avatar-${user.userName}.jpg`}/>
+                  <a href="/logout" className="header__greeting link text text--white text--xs padding-left-md">Log out</a>
                 </div>
                 :
                 <button type="button" onClick={() => this.setState({loginModalOpen: true})}
