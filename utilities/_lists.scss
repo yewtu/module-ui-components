@@ -1,0 +1,22 @@
+.list {}
+
+.list--inline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  .list__item {
+    display: inline-block;
+    padding-right: $spacing-sm;
+    margin-right: $spacing-sm;
+    border-right: 1px solid $color-gray-90;
+    &.list__item-lead {
+      padding-right: 0;
+      border-right: 0 none;
+    }
+    &:last-child {
+      padding-right: 0;
+      margin-right: 0;
+      border-right: 0 none;
+    }
+  }
+}
