@@ -1,0 +1,24 @@
+.popup-menu {
+  position: relative;
+}
+
+.popup-menu__panel {
+  position: absolute;
+  top: 100%;
+  display: none;
+  background-color: $color-white;
+  color: $color-gray-40;
+  padding: $spacing-md;
+  box-shadow: $box-shadow-popup-sm;
+
+  .popup-menu.active & {
+    display: block;
+  }
+  .popup-menu--right-align & {
+    right: 0;
+  }
+}
+
+.popup-menu__link {
+
+}

@@ -3,7 +3,7 @@
   position: fixed;
   z-index: 9999;
   display: none;
-  box-shadow: 0 5px 10px $color-gray-20;
+  box-shadow: $box-shadow-modal;
   left: 50%;
   right: 0;
   top: 50%;
