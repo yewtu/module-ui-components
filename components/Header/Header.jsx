@@ -67,7 +67,7 @@ export default class Header extends React.Component {
           size='sm'
           useMask={true}>
           <div className="l-hcentered l-width-80">
-            <LoginForm shown={this.state.loginModalOpen} />
+            <LoginForm shown={this.state.loginModalOpen} redirect={this.props.loginRedirect} />
           </div>
         </Modal>
       </header>
@@ -77,9 +77,11 @@ export default class Header extends React.Component {
 
 Header.propTypes = {
   title: PropTypes.string,
+  titleLink: PropTypes.string,
   navItems: PropTypes.array,
   user: PropTypes.object,
-  type: PropTypes.string
+  type: PropTypes.string,
+  loginRedirect: PropTypes.string
 };
 
 Header.defaultProps = {

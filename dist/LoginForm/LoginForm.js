@@ -61,7 +61,7 @@ var LoginForm = function (_React$Component) {
 				{ className: 'login-form' },
 				_react2.default.createElement(
 					'form',
-					{ action: this.props.formAction, method: 'post' },
+					{ action: this.props.formAction + '?redirect=' + this.props.redirect, method: 'post' },
 					_react2.default.createElement(
 						'div',
 						{ className: 'margin-bottom-md' },
@@ -145,9 +145,11 @@ exports.default = LoginForm;
 
 
 LoginForm.propTypes = {
-	formAction: _propTypes2.default.string
+	formAction: _propTypes2.default.string,
+	redirect: _propTypes2.default.string
 };
 
 LoginForm.defaultProps = {
-	formAction: '/login'
+	formAction: '/login',
+	redirect: ''
 };

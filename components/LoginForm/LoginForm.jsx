@@ -28,7 +28,7 @@ export default class LoginForm extends React.Component {
 		];
 		return (
 			<div className={'login-form'}>
-				<form action={this.props.formAction} method="post">
+				<form action={`${this.props.formAction}?redirect=${this.props.redirect}`} method="post">
 					<div className="margin-bottom-md">
 						<FormInputGroup id="username" label="Username"
 														input={{
@@ -69,9 +69,11 @@ export default class LoginForm extends React.Component {
 }
 
 LoginForm.propTypes = {
-	formAction: PropTypes.string
+	formAction: PropTypes.string,
+	redirect: PropTypes.string
 };
 
 LoginForm.defaultProps = {
-	formAction: '/login'
+	formAction: '/login',
+	redirect: ''
 };

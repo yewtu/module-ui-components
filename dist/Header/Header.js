@@ -163,7 +163,7 @@ var Header = function (_React$Component) {
           _react2.default.createElement(
             'div',
             { className: 'l-hcentered l-width-80' },
-            _react2.default.createElement(_LoginForm2.default, { shown: this.state.loginModalOpen })
+            _react2.default.createElement(_LoginForm2.default, { shown: this.state.loginModalOpen, redirect: this.props.loginRedirect })
           )
         )
       );
@@ -178,9 +178,11 @@ exports.default = Header;
 
 Header.propTypes = {
   title: _propTypes2.default.string,
+  titleLink: _propTypes2.default.string,
   navItems: _propTypes2.default.array,
   user: _propTypes2.default.object,
-  type: _propTypes2.default.string
+  type: _propTypes2.default.string,
+  loginRedirect: _propTypes2.default.string
 };
 
 Header.defaultProps = {
