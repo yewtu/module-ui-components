@@ -6,3 +6,9 @@
   }
 }
 
+.link--unstyled {
+  color: inherit;
+  &:hover {
+    text-decoration: none;
+  }
+}
