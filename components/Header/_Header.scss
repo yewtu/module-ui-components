@@ -40,12 +40,17 @@
   height: 100%;
 }
 
+.header__item-vcentered {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .header__title {
   font-family: $heading-font-stack;
   font-weight: $font-weight-bold;
   font-size: $font-size-xxl;
-  display: inline-block;
   padding-right: 20px;
+  padding-bottom: 10px;
   line-height: 50px;
 }
 
@@ -58,9 +63,8 @@
 .header__link {
   color: $color-white;
   font-size: $font-size-md;
-  display: inline-block;
-  line-height: 50px;
   position: relative;
+  line-height: 50px;
   margin-left: 40px;
   text-decoration: none;
   &.active {
@@ -90,14 +94,6 @@
   }
 }
 
-.header__auth,
-.header__greeting,
-.header__avatar,
-.header__avatar-icon {
-  vertical-align: middle;
-  display: inline-block;
-}
-
 .header__avatar {
   width: 38px;
   height: 38px;
@@ -105,22 +101,14 @@
 }
 
 .header__auth-links {
-  display: inline-block;
   font-size: $font-size-xxs;
-  vertical-align: middle;
   line-height: 1.2;
   margin-left: 10px;
 }
 
 .header__basket {
-  display: inline-block;
-  vertical-align: middle;
   line-height: 50px;
   padding-left: 22px;
   margin-left: 22px;
   @include divider-left;
-}
-
-.header__basket-icon {
-  vertical-align: middle;
 }

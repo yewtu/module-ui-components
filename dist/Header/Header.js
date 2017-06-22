@@ -39,7 +39,8 @@ var Header = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).call(this, props));
 
     _this.state = {
-      loginModalOpen: false
+      loginModalOpen: false,
+      navMenuOpen: false
     };
     return _this;
   }
@@ -51,10 +52,15 @@ var Header = function (_React$Component) {
 
       var _props = this.props,
           title = _props.title,
+          titleLink = _props.titleLink,
           navItems = _props.navItems,
           user = _props.user,
           applicationType = _props.type;
 
+      var popupMenuItems = [{
+        label: 'Item 1',
+        link: 'http://yewtu-farm.herokuapp.com/'
+      }];
       return _react2.default.createElement(
         'header',
         { className: 'header header--' + applicationType },
@@ -62,8 +68,8 @@ var Header = function (_React$Component) {
           'div',
           { className: 'header__inner' },
           _react2.default.createElement(
-            'h1',
-            { className: 'header__title heading heading--lg' },
+            'a',
+            { href: titleLink, className: 'header__item-vcentered header__title heading heading--lg link link--unstyled' },
             title
           ),
           _react2.default.createElement(
@@ -73,7 +79,7 @@ var Header = function (_React$Component) {
               return _react2.default.createElement(
                 'a',
                 { key: idx, href: '#',
-                  className: 'header__link header__link-first ' + (idx === 0 ? ' active' : '') },
+                  className: 'header__item-vcentered header__link header__link-first ' + (idx === 0 ? ' active' : '') },
                 item
               );
             })
@@ -83,13 +89,13 @@ var Header = function (_React$Component) {
             { className: 'header__user' },
             user ? _react2.default.createElement(
               'div',
-              { className: 'header__auth' },
+              { className: 'header__item-vcentered header__auth' },
               _react2.default.createElement(
                 'span',
-                { className: 'header__greeting text text--lg padding-right-md' },
+                { className: 'header__item-vcentered header__greeting text text--lg padding-right-md' },
                 user.displayName
               ),
-              _react2.default.createElement('img', { className: 'header__avatar',
+              _react2.default.createElement('img', { className: 'header__item-vcentered header__avatar',
                 src: '/images/avatar-' + user.userName + '.jpg' }),
               _react2.default.createElement(
                 'a',
@@ -103,10 +109,10 @@ var Header = function (_React$Component) {
                 },
                 className: 'btn header__auth' },
               _react2.default.createElement('i', {
-                className: 'header__avatar-icon icon icon--account-circle icon--white icon--xxxl' }),
+                className: 'header__item-vcentered header__avatar-icon icon icon--account-circle icon--white icon--xxxl' }),
               _react2.default.createElement(
                 'span',
-                { className: 'header__auth-links' },
+                { className: 'header__item-vcentered header__auth-links' },
                 _react2.default.createElement(
                   'strong',
                   null,
@@ -118,8 +124,30 @@ var Header = function (_React$Component) {
             ),
             _react2.default.createElement(
               'a',
-              { href: '#', className: 'header__basket' },
-              _react2.default.createElement('i', { className: 'header__basket-icon icon icon--shopping-cart icon--white icon--xxl' })
+              { href: '#', className: 'header__item-vcentered header__basket' },
+              _react2.default.createElement('i', { className: 'header__item-vcentered icon icon--shopping-cart icon--white icon--xxl' })
+            ),
+            _react2.default.createElement(
+              'button',
+              { type: 'button', className: 'btn header__item-vcentered header__basket', onClick: function onClick() {
+                  return _this2.setState({ navMenuOpen: !_this2.state.navMenuOpen });
+                } },
+              _react2.default.createElement('i', { className: 'header__item-vcentered icon icon--menu icon--white icon--xxl' })
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'popup-menu popup-menu--right-align ' + (this.state.navMenuOpen ? ' active' : '') },
+              _react2.default.createElement(
+                'div',
+                { className: 'popup-menu__panel' },
+                popupMenuItems.map(function (item, idx) {
+                  return _react2.default.createElement(
+                    'a',
+                    { className: 'link link--unstyled', href: item.link },
+                    item.label
+                  );
+                })
+              )
             )
           )
         ),
