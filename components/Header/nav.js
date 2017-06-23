@@ -12,12 +12,12 @@ module.exports = [
 		link: `${hostWithQuerystring}3.5.2-Gamification`
 	},
 	{
-		label: 'J3.1.2 CoP Report Design',
-		link: `${hostWithQuerystring}J3.1.2-CoP-Report-Design`
-	},
-	{
 		label: 'J3.4.1 Farm KPI',
 		link: `${hostWithQuerystring}J3.4.1-Farm-KPI`
+	},
+	{
+		label: 'J3.1.2 CoP Report Design',
+		link: `${hostWithQuerystring}J3.1.2-CoP-Report-Design`
 	},
 	{
 		label: 'J5.1.2.1 Ready to publish cows',
@@ -30,26 +30,6 @@ module.exports = [
 	{
 		label: 'J5.1.2.3 Publish Message',
 		link: `${hostWithQuerystring}J5.1.2.3-Publish-Message_Design-v2`
-	},
-	{
-		label: 'J6.2.1 Marketplace Design',
-		link: `${hostWithQuerystring}J6.2.1-Marketplace_Design`
-	},
-	{
-		label: 'J6.2.2.2 Search Results',
-		link: `${hostWithQuerystring}J6.2.2.2-Search-Results-Selected_Design`
-	},
-	{
-		label: 'J6.2.3 Place a Bid',
-		link: `${hostWithQuerystring}J6.2.3-Place-a-bid_Design`
-	},
-	{
-		label: 'J6.2.4 Farmer Received Notification',
-		link: `${hostWithQuerystring}J6.2.4-Farmer-Received-Notification_Design-Copy`
-	},
-	{
-		label: 'J6.2.5 Buyer Confirms Farm\'s Reply',
-		link: `${hostWithQuerystring}J6.2.5-Buyer-Confirms-Farm's-Reply_Design-Alt`
 	},
 	{
 		label: 'J7.2.1 Genetics 1',
@@ -70,5 +50,25 @@ module.exports = [
 	{
 		label: 'J8.1 Consumer Sentiment',
 		link: `${hostWithQuerystring}j8.1-consumer-sentiment`
+	},
+	{
+		label: 'J6.2.1 Marketplace Design',
+		link: `${hostWithQuerystring}J6.2.1-Marketplace_Design`
+	},
+	{
+		label: 'J6.2.2.2 Search Results',
+		link: `${hostWithQuerystring}J6.2.2.2-Search-Results-Selected_Design`
+	},
+	{
+		label: 'J6.2.3 Place a Bid',
+		link: `${hostWithQuerystring}J6.2.3-Place-a-bid_Design`
+	},
+	{
+		label: 'J6.2.4 Farmer Received Notification',
+		link: `${hostWithQuerystring}J6.2.4-Farmer-Received-Notification_Design-Copy`
+	},
+	{
+		label: 'J6.2.5 Buyer Confirms Farm\'s Reply',
+		link: `${hostWithQuerystring}J6.2.5-Buyer-Confirms-Farm's-Reply_Design-Alt`
 	}
 ]
