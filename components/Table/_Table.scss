@@ -28,6 +28,9 @@
   td > * {
     vertical-align: middle;
   }
+  tr.active td {
+    background-color: $color-gray-96;
+  }
 }
 
 .table__first-col {
