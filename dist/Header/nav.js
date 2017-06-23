@@ -51,7 +51,7 @@ module.exports = [{
 	link: hostWithQuerystring + 'J7.4.1-genetics-3'
 }, {
 	label: 'J7.5.1 Genetics 4',
-	link: hostWithQuerystring + 'J7.5.1-genetics-4'
+	link: hostWithQuerystring + 'J7.5.1-genetic-4'
 }, {
 	label: 'J8.1 Consumer Sentiment',
 	link: hostWithQuerystring + 'j8.1-consumer-sentiment'
