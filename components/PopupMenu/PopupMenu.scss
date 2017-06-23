@@ -6,6 +6,7 @@
   position: absolute;
   top: 100%;
   display: none;
+  z-index: 99;
   background-color: $color-white;
   color: $color-gray-40;
   padding: $spacing-md;
@@ -19,6 +20,8 @@
   }
 }
 
-.popup-menu__link {
-
+.popup-menu__item {
+  display: block;
+  margin-bottom: $spacing-sm;
+  white-space: nowrap;
 }
