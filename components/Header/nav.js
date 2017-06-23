@@ -65,7 +65,7 @@ module.exports = [
 	},
 	{
 		label: 'J7.5.1 Genetics 4',
-		link: `${hostWithQuerystring}J7.5.1-genetics-4`
+		link: `${hostWithQuerystring}J7.5.1-genetic-4`
 	},
 	{
 		label: 'J8.1 Consumer Sentiment',
