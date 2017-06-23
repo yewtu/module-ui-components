@@ -60,7 +60,8 @@ var Header = function (_React$Component) {
 			    navItems = _props.navItems,
 			    user = _props.user,
 			    applicationType = _props.type,
-			    showBasket = _props.showBasket;
+			    showBasket = _props.showBasket,
+			    showNavMenu = _props.showNavMenu;
 
 			return _react2.default.createElement(
 				'header',
@@ -131,7 +132,7 @@ var Header = function (_React$Component) {
 							{ href: '#', className: 'header__item-vcentered header__basket' },
 							_react2.default.createElement('i', { className: 'header__item-vcentered icon icon--shopping-cart icon--white icon--xxl' })
 						),
-						_react2.default.createElement(
+						showNavMenu && _react2.default.createElement(
 							'button',
 							{ type: 'button', className: 'btn header__item-vcentered header__basket',
 								onClick: function onClick() {
@@ -139,7 +140,7 @@ var Header = function (_React$Component) {
 								} },
 							_react2.default.createElement('i', { className: 'header__item-vcentered icon icon--menu icon--white icon--xxl' })
 						),
-						_react2.default.createElement(
+						showNavMenu && _react2.default.createElement(
 							'div',
 							{ className: 'popup-menu popup-menu--right-align ' + (this.state.navMenuOpen ? ' active' : '') },
 							_react2.default.createElement(

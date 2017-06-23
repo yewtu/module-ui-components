@@ -14,7 +14,7 @@ export default class Header extends React.Component {
 	}
 
 	render() {
-		const {title, titleLink, navItems, user, type: applicationType, showBasket} = this.props;
+		const {title, titleLink, navItems, user, type: applicationType, showBasket, showNavMenu} = this.props;
 		return (
 			<header className={`header header--${applicationType}`}>
 				<div className="header__inner">
@@ -50,21 +50,26 @@ export default class Header extends React.Component {
 								<i className="header__item-vcentered icon icon--shopping-cart icon--white icon--xxl"/>
 							</a>
 						}
-						<button type="button" className="btn header__item-vcentered header__basket"
-										onClick={() => this.setState({navMenuOpen: !this.state.navMenuOpen})}>
-							<i className="header__item-vcentered icon icon--menu icon--white icon--xxl"/>
-						</button>
-						<div className={`popup-menu popup-menu--right-align ${this.state.navMenuOpen ? ' active' : ''}`}>
-							<div className="popup-menu__panel">
-								{
-									popupMenuItems.map(
-										(item, idx) => <a
-											className="popup-menu__item link link--unstyled"
-											href={`${item.link}&idx=${idx}`}>{item.label}</a>
-									)
-								}
+						{
+							showNavMenu && <button type="button" className="btn header__item-vcentered header__basket"
+											onClick={() => this.setState({navMenuOpen: !this.state.navMenuOpen})}>
+								<i className="header__item-vcentered icon icon--menu icon--white icon--xxl"/>
+							</button>
+						}
+						{
+							showNavMenu &&
+							<div className={`popup-menu popup-menu--right-align ${this.state.navMenuOpen ? ' active' : ''}`}>
+								<div className="popup-menu__panel">
+									{
+										popupMenuItems.map(
+											(item, idx) => <a
+												className="popup-menu__item link link--unstyled"
+												href={`${item.link}&idx=${idx}`}>{item.label}</a>
+										)
+									}
+								</div>
 							</div>
-						</div>
+						}
 					</div>
 				</div>
 				<Modal
