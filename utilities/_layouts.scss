@@ -6,6 +6,9 @@
 $nav-width: 244px;
 $layout-breakpoint: $screen-sm-min;
 
+/*===================================== 2 COLUMN PAGE LAYOUT ==================================*/
+// A container with max width, left nav column and fluid content column
+
 .l-container {
   @include clearfix;
   @include l-container;
@@ -31,6 +34,10 @@ $layout-breakpoint: $screen-sm-min;
     margin-right: 0;
   }
 }
+
+/*======================================= HORIZONTAL LAYOUTS ==================================*/
+// For laying out elements in a horizontal row with control of their proportional widths
+// and vertical / horizontal alignment
 
 .l-inline-parent {
   font-size: 0;
@@ -147,6 +154,7 @@ $layout-breakpoint: $screen-sm-min;
   text-align: right;
 }
 
+/*============================ LAYERING ONE CONTAINER OVER ANOTHER ==============================*/
 .l-position-context {
   position: relative;
 }
@@ -157,4 +165,18 @@ $layout-breakpoint: $screen-sm-min;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
+}
+
+.l-overlay-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+/*===================================== OTHER UTILITIES ========================================*/
+.l-full-height {
+  height: 100%;
 }
