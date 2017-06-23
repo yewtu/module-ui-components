@@ -2,7 +2,7 @@
 const host = 'http://localhost:3000/farm';
 const hostWithQuerystring = `${host}/static?image=`;
 
-export default [
+module.exports = [
 	{
 		label: 'Dashboard',
 		link: `${host}?`
