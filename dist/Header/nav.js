@@ -1,13 +1,10 @@
 'use strict';
 
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-//const host = 'http://yewtu-farm.herokuapp.com/farm';
-var host = 'http://localhost:3000/farm';
+var host = 'http://yewtu-farm.herokuapp.com/farm';
+//const host = 'http://localhost:3000/farm';
 var hostWithQuerystring = host + '/static?image=';
 
-exports.default = [{
+module.exports = [{
 	label: 'Dashboard',
 	link: host + '?'
 }, {
