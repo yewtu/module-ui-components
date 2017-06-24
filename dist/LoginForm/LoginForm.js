@@ -88,7 +88,7 @@ var LoginForm = function (_React$Component) {
 							users.map(function (user, idx) {
 								return _react2.default.createElement(
 									'div',
-									{ className: 'list__item' },
+									{ className: 'list__item', key: idx },
 									_react2.default.createElement(
 										'button',
 										{ type: 'button', className: 'btn btn--xs link',

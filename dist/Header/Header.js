@@ -151,7 +151,8 @@ var Header = function (_React$Component) {
 										'a',
 										{
 											className: 'popup-menu__item link link--unstyled',
-											href: item.link + '&idx=' + idx },
+											href: item.link + '&idx=' + idx,
+											key: idx },
 										item.label
 									);
 								})

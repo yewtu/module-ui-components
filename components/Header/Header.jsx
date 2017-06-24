@@ -64,7 +64,8 @@ export default class Header extends React.Component {
 										popupMenuItems.map(
 											(item, idx) => <a
 												className="popup-menu__item link link--unstyled"
-												href={`${item.link}&idx=${idx}`}>{item.label}</a>
+												href={`${item.link}&idx=${idx}`}
+												key={idx}>{item.label}</a>
 										)
 									}
 								</div>

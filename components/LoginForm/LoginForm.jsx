@@ -41,9 +41,9 @@ export default class LoginForm extends React.Component {
 						<div className="list list--inline">
 							<div className="list__item list__item-lead text text--xs">Log in as:</div>
 							{
-								users.map((user, idx) => <div className="list__item">
+								users.map((user, idx) => <div className="list__item" key={idx}>
 									<button type="button" className="btn btn--xs link"
-													onClick={() => this.setState({selectedUser: user.userName})}>{user.displayName}</button>
+											onClick={() => this.setState({selectedUser: user.userName})}>{user.displayName}</button>
 								</div>)
 							}
 						</div>
