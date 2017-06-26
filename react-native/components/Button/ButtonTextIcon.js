@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
     color: colors.gray20,
     fontWeight: 'bold',
     fontSize: 12,
-    lineHeight: 14,
+    lineHeight: 15,
     textAlign: 'center'
   },
   grayButtonText: {

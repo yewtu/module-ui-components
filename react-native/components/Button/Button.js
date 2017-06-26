@@ -74,12 +74,12 @@ const styles = StyleSheet.create({
   buttonText: {
     fontFamily: fonts.bold,
     fontSize: 12,
-    lineHeight: 12,
+    lineHeight: 16,
     color: colors.red
   },
   primaryButtonText: {
     fontSize: 14,
-    lineHeight: 14,
+    lineHeight: 18,
     color: colors.white,
     textAlign: 'center'
   },
@@ -100,7 +100,7 @@ const styles = StyleSheet.create({
   tagButtonText: {
     color: colors.white,
     fontSize: 11,
-    lineHeight: 11
+    lineHeight: 16
   },
   small: {
     paddingTop: 4,
@@ -114,7 +114,7 @@ const styles = StyleSheet.create({
   },
   largeButtonText: {
     fontSize: 16,
-    lineHeight: 16
+    lineHeight: 20
   },
   smallButtonText: {
     fontFamily: fonts.body,
