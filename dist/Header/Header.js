@@ -61,6 +61,7 @@ var Header = function (_React$Component) {
 			    user = _props.user,
 			    applicationType = _props.type,
 			    showBasket = _props.showBasket,
+			    basketCount = _props.basketCount,
 			    showNavMenu = _props.showNavMenu;
 
 			return _react2.default.createElement(
@@ -130,7 +131,12 @@ var Header = function (_React$Component) {
 						showBasket && _react2.default.createElement(
 							'a',
 							{ href: '#', className: 'header__item-vcentered header__basket' },
-							_react2.default.createElement('i', { className: 'header__item-vcentered icon icon--shopping-cart icon--white icon--xxl' })
+							_react2.default.createElement('i', { className: 'header__item-vcentered icon icon--shopping-cart icon--white icon--xxl' }),
+							basketCount && _react2.default.createElement(
+								'div',
+								{ className: 'header__basket__count' },
+								basketCount
+							)
 						),
 						showNavMenu && _react2.default.createElement(
 							'button',
@@ -191,7 +197,8 @@ Header.propTypes = {
 	navItems: _propTypes2.default.array,
 	user: _propTypes2.default.object,
 	type: _propTypes2.default.string,
-	loginRedirect: _propTypes2.default.string
+	loginRedirect: _propTypes2.default.string,
+	basketCount: _propTypes2.default.number
 };
 
 Header.defaultProps = {

@@ -14,7 +14,7 @@ export default class Header extends React.Component {
 	}
 
 	render() {
-		const {title, titleLink, navItems, user, type: applicationType, showBasket, showNavMenu} = this.props;
+		const {title, titleLink, navItems, user, type: applicationType, showBasket, basketCount, showNavMenu} = this.props;
 		return (
 			<header className={`header header--${applicationType}`}>
 				<div className="header__inner">
@@ -48,6 +48,7 @@ export default class Header extends React.Component {
 						{
 							showBasket && <a href="#" className="header__item-vcentered header__basket">
 								<i className="header__item-vcentered icon icon--shopping-cart icon--white icon--xxl"/>
+								{basketCount && <div className="header__basket__count">{basketCount}</div>}
 							</a>
 						}
 						{
@@ -93,7 +94,8 @@ Header.propTypes = {
 	navItems: PropTypes.array,
 	user: PropTypes.object,
 	type: PropTypes.string,
-	loginRedirect: PropTypes.string
+	loginRedirect: PropTypes.string,
+	basketCount: PropTypes.number
 };
 
 Header.defaultProps = {

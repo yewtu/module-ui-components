@@ -110,5 +110,19 @@
   line-height: 50px;
   padding-left: 22px;
   margin-left: 22px;
+  position: relative;
   @include divider-left;
+}
+
+.header__basket__count {
+  position: absolute;
+  top: 5px;
+  right: -5px;
+  background: #FC5252;
+  color: #fff;
+  width: 15px;
+  border-radius: 10px;
+  font-size: 12px;
+  padding: 1px 4px 2px 4px;
+  line-height: 14px;
 }
