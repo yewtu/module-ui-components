@@ -44,6 +44,14 @@ module.exports = [
 		link: `${hostWithQuerystring}J7.4.1-genetics-3`
 	},
 	{
+		label: 'J7.4.2 Genetic Matching Service 1',
+		link: `${hostWithQuerystring}J7.4.2`
+	},
+	{
+		label: 'J7.4.3 Genetic Matching Service 2',
+		link: `${hostWithQuerystring}J7.4.3`
+	},
+	{
 		label: 'J7.5.1 Genetics 4',
 		link: `${hostWithQuerystring}J7.5.1-genetic-4`
 	},
