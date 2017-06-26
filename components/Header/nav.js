@@ -1,5 +1,5 @@
-const host = 'http://yewtu-farm.herokuapp.com/farm';
-//const host = 'http://localhost:3000/farm';
+//const host = 'http://yewtu-farm.herokuapp.com/farm';
+const host = 'http://localhost:3000/farm';
 const hostWithQuerystring = `${host}/static?image=`;
 
 module.exports = [
@@ -52,6 +52,10 @@ module.exports = [
 		link: `${hostWithQuerystring}j8.1-consumer-sentiment`
 	},
 	{
+		label: 'J6.1.1 Aligned Retail Forecast',
+		link: `${hostWithQuerystring}J6.1.1-aligned-retail-forecast`
+	},
+	{
 		label: 'J6.2.1 Marketplace Design',
 		link: `${hostWithQuerystring}J6.2.1-Marketplace_Design`
 	},
@@ -70,5 +74,9 @@ module.exports = [
 	{
 		label: 'J6.2.5 Buyer Confirms Farm\'s Reply',
 		link: `${hostWithQuerystring}J6.2.5-Buyer-Confirms-Farm's-Reply_Design-Alt`
+	},
+	{
+		label: 'J6.3 Managing Forecast vs Demand',
+		link: `${hostWithQuerystring}J6.3-managing-forecast-vs-demand`
 	}
 ]
