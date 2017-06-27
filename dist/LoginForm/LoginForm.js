@@ -70,8 +70,8 @@ var LoginForm = function (_React$Component) {
 								name: 'username',
 								focus: this.props.shown,
 								value: this.state.selectedUser,
-								onChange: function onChange(val) {
-									return _this2.setState({ selectedUser: val });
+								onChange: function onChange(evt) {
+									return _this2.setState({ selectedUser: evt.target.value });
 								} } })
 					),
 					_react2.default.createElement(

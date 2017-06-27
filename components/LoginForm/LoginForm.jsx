@@ -35,7 +35,7 @@ export default class LoginForm extends React.Component {
 															name: 'username',
 															focus: this.props.shown,
 															value: this.state.selectedUser,
-															onChange: val => this.setState({selectedUser: val})}}/>
+															onChange: evt => this.setState({selectedUser: evt.target.value})}}/>
 					</div>
 					<div className="margin-bottom-md">
 						<div className="list list--inline">
