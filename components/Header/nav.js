@@ -1,5 +1,5 @@
-const host = 'http://yewtu-farm.herokuapp.com/farm';
-//const host = 'http://localhost:3000/farm';
+//const host = 'http://yewtu-farm.herokuapp.com/farm';
+const host = 'http://localhost:3000/farm';
 const hostWithQuerystring = `${host}/static?image=`;
 
 module.exports = [
@@ -33,15 +33,15 @@ module.exports = [
 	},
 	{
 		label: 'J7.2.1 Genetics 1',
-		link: `${hostWithQuerystring}J7.2.1-genetics-1`
+		link: `${hostWithQuerystring}J7.2.1`
 	},
 	{
 		label: 'J7.3.1 Genetics 2',
-		link: `${hostWithQuerystring}J7.3.1-genetics-2`
+		link: `${hostWithQuerystring}J7.3.1`
 	},
 	{
 		label: 'J7.4.1 Genetics 3',
-		link: `${hostWithQuerystring}J7.4.1-genetics-3`
+		link: `${hostWithQuerystring}J7.4.1`
 	},
 	{
 		label: 'J7.4.2 Genetic Matching Service 1',
@@ -53,7 +53,7 @@ module.exports = [
 	},
 	{
 		label: 'J7.5.1 Genetics 4',
-		link: `${hostWithQuerystring}J7.5.1-genetic-4`
+		link: `${hostWithQuerystring}J7.5.1`
 	},
 	{
 		label: 'J8.1 Consumer Sentiment',
@@ -66,6 +66,10 @@ module.exports = [
 	{
 		label: 'J6.2.1 Marketplace Design',
 		link: `${hostWithQuerystring}J6.2.1-Marketplace_Design`
+	},
+	{
+		label: 'J6.2.2.1 Search Results Design',
+		link: `${hostWithQuerystring}J6.2.2.1-Search-Results_Design`
 	},
 	{
 		label: 'J6.2.2.2 Search Results',
@@ -81,7 +85,15 @@ module.exports = [
 	},
 	{
 		label: 'J6.2.5 Buyer Confirms Farm\'s Reply',
+		link: `${hostWithQuerystring}J6.2.5-Buyer-Confirms-Farm's-Reply_Design`
+	},
+	{
+		label: 'J6.2.5 Buyer Confirms Farm\'s Reply Alt',
 		link: `${hostWithQuerystring}J6.2.5-Buyer-Confirms-Farm's-Reply_Design-Alt`
+	},
+	{
+		label: 'J6.2.6 Farm Confirm Commitment',
+		link: `${hostWithQuerystring}J6.2.6-Farm-confirm-commitment_Design`
 	},
 	{
 		label: 'J6.3 Managing Forecast vs Demand',
