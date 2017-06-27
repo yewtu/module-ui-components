@@ -1,5 +1,5 @@
-//const host = 'http://yewtu-farm.herokuapp.com/farm';
-const host = 'http://localhost:3000/farm';
+const host = 'http://yewtu-farm.herokuapp.com/farm';
+//const host = 'http://localhost:3000/farm';
 const hostWithQuerystring = `${host}/static?image=`;
 
 module.exports = [

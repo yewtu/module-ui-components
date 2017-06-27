@@ -1,7 +1,7 @@
 'use strict';
 
-//const host = 'http://yewtu-farm.herokuapp.com/farm';
-var host = 'http://localhost:3000/farm';
+var host = 'http://yewtu-farm.herokuapp.com/farm';
+//const host = 'http://localhost:3000/farm';
 var hostWithQuerystring = host + '/static?image=';
 
 module.exports = [{
