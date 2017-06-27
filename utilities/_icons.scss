@@ -39,14 +39,14 @@ $icons: account-circle check-circle checkbox-checked checkbox-unchecked chevron-
   display: inline-block;
   position: relative;
   padding-left: 1.6em;
-  &.icon-text--large {
-    padding-left: 2.2em;
+  &.icon-text--lg {
+    padding-left: 2em;
   }
   &.icon-text--right {
     padding-left: 0;
     padding-right: 1.6em;
-    &.icon-text--large {
-      padding-right: 2.2em;
+    &.icon-text--lg {
+      padding-right: 2em;
     }
   }
   > i {
