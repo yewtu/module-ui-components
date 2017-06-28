@@ -13,6 +13,7 @@
     color: $color-gray-60;
     padding-top: 24px;
     padding-bottom: 24px;
+    text-align: left;
   }
   td {
     font-weight: bold;
@@ -22,7 +23,15 @@
   th,
   td {
     border-bottom: 2px solid $color-gray-96;
-    text-align: left;
+    &.table__align-right {
+      text-align: right;
+    }
+    &:first-child {
+      padding-left: 24px;
+    }
+    &:last-child {
+      padding-right: 24px;
+    }
   }
   th > *,
   td > * {
@@ -33,6 +42,4 @@
   }
 }
 
-.table__first-col {
-  padding-left: 24px;
-}
+
