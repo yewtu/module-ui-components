@@ -60,10 +60,6 @@ module.exports = [
 		link: `${hostWithQuerystring}j8.1-consumer-sentiment`
 	},
 	{
-		label: 'J6.1.1 Aligned Retail Forecast',
-		link: `${hostWithQuerystring}J6.1.1-aligned-retail-forecast`
-	},
-	{
 		label: 'J6.2.1 Marketplace Design',
 		link: `${hostWithQuerystring}J6.2.1-Marketplace_Design`
 	},
@@ -94,9 +90,5 @@ module.exports = [
 	{
 		label: 'J6.2.6 Farm Confirm Commitment',
 		link: `${hostWithQuerystring}J6.2.6-Farm-confirm-commitment_Design`
-	},
-	{
-		label: 'J6.3 Managing Forecast vs Demand',
-		link: `${hostWithQuerystring}J6.3-managing-forecast-vs-demand`
 	}
 ]
