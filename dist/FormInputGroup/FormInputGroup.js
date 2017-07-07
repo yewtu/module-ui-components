@@ -25,11 +25,12 @@ var FormInputGroup = function FormInputGroup(_ref) {
       label = _ref.label,
       helpText = _ref.helpText,
       input = _ref.input,
-      hasError = _ref.hasError;
+      hasError = _ref.hasError,
+      isInline = _ref.isInline;
 
   return _react2.default.createElement(
     'div',
-    { className: 'form-input-group' },
+    { className: 'form-input-group' + (isInline ? ' form-input-group--inline' : '') },
     _react2.default.createElement(
       'label',
       { className: 'form-control-label', htmlFor: id },

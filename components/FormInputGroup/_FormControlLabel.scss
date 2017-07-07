@@ -21,3 +21,8 @@
 .form-control-label--has-error {
   color: $color-orange-dark;
 }
+
+.form-input-group--inline .form-control-label {
+  display: inline-block;
+  margin-right: $spacing-md;
+}

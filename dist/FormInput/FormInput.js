@@ -52,7 +52,8 @@ var FormInput = function (_React$Component) {
 
       var _props = this.props,
           hasError = _props.hasError,
-          classNames = _props.classNames,
+          _props$classNames = _props.classNames,
+          classNames = _props$classNames === undefined ? '' : _props$classNames,
           id = _props.id,
           name = _props.name,
           type = _props.type,
