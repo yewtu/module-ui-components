@@ -54,7 +54,7 @@ FormInputGroup.propTypes = {
     name: _propTypes2.default.string,
     type: _propTypes2.default.string,
     classNames: _propTypes2.default.string,
-    value: _propTypes2.default.string,
+    value: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.number]),
     onChange: _propTypes2.default.func,
     focus: _propTypes2.default.bool
   })

@@ -19,7 +19,10 @@ FormInputGroup.propTypes = {
     name: PropTypes.string,
     type: PropTypes.string,
     classNames: PropTypes.string,
-    value: PropTypes.string,
+    value: PropTypes.oneOfType([
+			PropTypes.string,
+			PropTypes.number
+		]),
     onChange: PropTypes.func,
     focus: PropTypes.bool
   }),

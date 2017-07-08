@@ -85,7 +85,7 @@ FormInput.propTypes = {
   name: _propTypes2.default.string.isRequired,
   type: _propTypes2.default.string,
   classNames: _propTypes2.default.string,
-  value: _propTypes2.default.string,
+  value: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.number]),
   onChange: _propTypes2.default.func,
   hasError: _propTypes2.default.bool,
   focus: _propTypes2.default.bool
