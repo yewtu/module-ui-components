@@ -134,6 +134,18 @@ $layout-breakpoint: $screen-sm-min;
   }
 }
 
+.l-width-sm-70 {
+  @include media-query($screen-sm-min) {
+    width: 70%;
+  }
+}
+
+.l-width-sm-80 {
+  @include media-query($screen-sm-min) {
+    width: 80%;
+  }
+}
+
 .l-width-md-30 {
   @include media-query($screen-md-min) {
     width: 30%;
@@ -143,6 +155,18 @@ $layout-breakpoint: $screen-sm-min;
 .l-width-md-50 {
   @include media-query($screen-md-min) {
     width: 50%;
+  }
+}
+
+.l-width-md-70 {
+  @include media-query($screen-md-min) {
+    width: 70%;
+  }
+}
+
+.l-width-lg-40 {
+  @include media-query($screen-lg-min) {
+    width: 40%;
   }
 }
 
