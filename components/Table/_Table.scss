@@ -23,6 +23,8 @@
   th,
   td {
     border-bottom: 2px solid $color-gray-96;
+    padding-left: 10px;
+    padding-right: 10px;
     &.table__align-right {
       text-align: right;
     }
@@ -63,6 +65,10 @@
       padding-right: 16px;
     }
   }
+}
+
+.table--auto-width {
+  width: auto;
 }
 
 .table__loading-cell {
