@@ -43,33 +43,38 @@
 
 
 @mixin button-like {
-  height: 36px;
+  height: $form-control-height-md;
   border: 1px solid transparent;
-  padding: 6px 12px;
+  padding: $form-control-padding-md;
   min-width: 110px;
   text-align: center;
   font-size: $font-size-sm;
   border-radius: 2px;
   font-weight: 700;
   line-height: 1.2;
+  transition: background-color 0.15s linear, border-color 0.15s linear;
 }
 
 .btn--primary {
   @include button-like;
   background-color: $color-red;
+  border-color: $color-red;
   color: $color-white;
   &:hover, &:active, &:focus {
-    border-color: transparent;
     color: $color-white;
+    background-color: $color-red-dark;
+    border-color: $color-red-dark;
   }
 }
 
 .btn--secondary {
   @include button-like;
   background-color: $color-yellow;
+  border-color: $color-yellow;
   color: $color-gray-30;
   &:hover, &:active, &:focus {
     background-color: $color-yellow-dark;
+    border-color: $color-yellow-dark;
     color: $color-white;
   }
 }
@@ -77,9 +82,11 @@
 .btn--tertiary {
   @include button-like;
   background-color: $color-gray-60;
+  border-color: $color-gray-60;
   color: $color-gray-96;
   &:hover, &:active, &:focus {
     background-color: $color-gray-40;
+    border-color: $color-gray-40;
     color: $color-white;
   }
 }
@@ -87,9 +94,9 @@
 .btn--confirm {
   @include button-like;
   color: $color-white;
-  background: $color-orange;
+  background-color: $color-orange;
+  border-color: $color-orange;
   &:hover, &:active, &:focus {
-    border-color: transparent;
     color: $color-white;
   }
 }
@@ -97,9 +104,8 @@
 .btn--cancel {
   @include button-like;
   color: $color-white;
-  background: $color-gray-60;
+  background-color: $color-gray-60;
   &:hover, &:active, &:focus {
-    border-color: transparent;
     color: $color-white;
   }
 }
@@ -122,6 +128,9 @@
 
 .btn--sm {
   font-size: $font-size-sm;
+  height: $form-control-height-sm;
+  padding: $form-control-padding-sm;
+  min-width: 80px;
 }
 
 .btn--lg {

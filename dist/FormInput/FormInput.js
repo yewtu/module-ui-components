@@ -58,7 +58,8 @@ var FormInput = function (_React$Component) {
           name = _props.name,
           type = _props.type,
           value = _props.value,
-          onChange = _props.onChange;
+          onChange = _props.onChange,
+          size = _props.size;
       // if an onChange prop has been passed, make this a controlled component
 
       var valueProp = _defineProperty({}, onChange ? 'value' : 'defaultValue', value);
@@ -69,7 +70,7 @@ var FormInput = function (_React$Component) {
         id: id,
         name: name,
         type: type || 'text',
-        className: 'form-input ' + classNames + ' ' + (hasError ? ' form-input--has-error' : ''),
+        className: 'form-input ' + classNames + ' ' + (hasError ? ' form-input--has-error' : '') + ' ' + (size ? ' form-input--' + size : ''),
         onChange: onChange
       }, valueProp));
     }

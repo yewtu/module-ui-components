@@ -11,7 +11,7 @@ class FormInput extends React.Component {
   }
 
   render() {
-    const {hasError, classNames='', id, name, type, value, onChange} = this.props;
+    const {hasError, classNames='', id, name, type, value, onChange, size} = this.props;
     // if an onChange prop has been passed, make this a controlled component
     const valueProp = {
       [onChange ? 'value' : 'defaultValue']: value
@@ -24,7 +24,7 @@ class FormInput extends React.Component {
         id={id}
         name={name}
         type={type || 'text'}
-        className={`form-input ${classNames} ${hasError ? ' form-input--has-error' : ''}`}
+        className={`form-input ${classNames} ${hasError ? ' form-input--has-error' : ''} ${size ? ' form-input--' + size: '' }`}
         onChange={onChange}
         {...valueProp}
       />)

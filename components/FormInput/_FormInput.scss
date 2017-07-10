@@ -13,6 +13,14 @@
     -webkit-appearance: none;
     margin: 0;
   }
+  &[type="number"] {
+    text-align: right;
+  }
+}
+
+.form-input--sm {
+  min-height: $form-control-height-sm;
+  padding: $form-control-padding-sm;
 }
 
 .form-input--inline {
