@@ -52,6 +52,14 @@ $layout-breakpoint: $screen-sm-min;
   }
 }
 
+.l-hcenter-children {
+  text-align: center;
+}
+
+.l-nowrap-children {
+  white-space: nowrap;
+}
+
 .l-inline-child {
   font-size: 1rem;
   display: inline-block;
@@ -63,10 +71,6 @@ $layout-breakpoint: $screen-sm-min;
 
 .l-inline-child-valign-top {
   vertical-align: top;
-}
-
-.l-hcenter-children {
-  text-align: center;
 }
 
 .l-hcentered {
