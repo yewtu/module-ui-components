@@ -85,4 +85,13 @@ Object.defineProperty(exports, 'Popup', {
   }
 });
 
+var _StarRating = require('./StarRating/StarRating');
+
+Object.defineProperty(exports, 'StarRating', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_StarRating).default;
+  }
+});
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
