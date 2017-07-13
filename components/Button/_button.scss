@@ -57,13 +57,13 @@
 
 .btn--primary {
   @include button-like;
-  background-color: $color-red;
-  border-color: $color-red;
+  background-color: $color-red-dark;
+  border-color: $color-red-dark;
   color: $color-white;
   &:hover, &:active, &:focus {
     color: $color-white;
-    background-color: $color-red-dark;
-    border-color: $color-red-dark;
+    background-color: $color-red;
+    border-color: $color-red;
   }
 }
 
