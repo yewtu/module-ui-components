@@ -132,6 +132,12 @@ $layout-breakpoint: $screen-sm-min;
   }
 }
 
+.l-width-sm-40 {
+  @include media-query($screen-sm-min) {
+    width: 40%;
+  }
+}
+
 .l-width-sm-50 {
   @include media-query($screen-sm-min) {
     width: 50%;

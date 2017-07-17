@@ -131,10 +131,15 @@
 }
 
 .btn--sm {
-  font-size: $font-size-sm;
+  font-size: $font-size-xs;
   height: $form-control-height-sm;
-  padding: $form-control-padding-sm;
-  min-width: 80px;
+  padding: $form-control-padding-xs;
+  min-width: initial;
+  @include media-query($screen-sm-min) {
+    font-size: $font-size-sm;
+    padding: $form-control-padding-sm;
+    min-width: 80px;
+  }
 }
 
 .btn--lg {

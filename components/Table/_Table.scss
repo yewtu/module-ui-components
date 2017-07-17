@@ -45,7 +45,7 @@
 }
 
 .table--sm {
-  font-size: $font-size-xs;
+  font-size: $font-size-xxxs;
   th {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -58,11 +58,28 @@
 
   th,
   td {
+    padding-left: 5px;
+    padding-right: 5px;
     &:first-child {
-      padding-left: 16px;
+      padding-left: 8px;
     }
     &:last-child {
-      padding-right: 16px;
+      padding-right: 8px;
+    }
+  }
+
+  @include media-query($screen-sm-min) {
+    font-size: $font-size-xs;
+    th,
+    td {
+      padding-left: 10px;
+      padding-right: 10px;
+      &:first-child {
+        padding-left: 16px;
+      }
+      &:last-child {
+        padding-right: 16px;
+      }
     }
   }
 }
@@ -70,6 +87,14 @@
 .table--auto-width {
   table-layout: auto;
   width: auto;
+}
+
+.table--auto-width-responsive {
+  table-layout: auto;
+  width: 100%;
+  @include media-query($screen-sm-min) {
+    width: auto;
+  }
 }
 
 .table__loading-cell {
