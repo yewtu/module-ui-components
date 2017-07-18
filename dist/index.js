@@ -13,6 +13,15 @@ Object.defineProperty(exports, 'FormInputGroup', {
   }
 });
 
+var _FormSelectGroup = require('./FormSelect/FormSelectGroup');
+
+Object.defineProperty(exports, 'FormSelectGroup', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_FormSelectGroup).default;
+  }
+});
+
 var _FormInput = require('./FormInput/FormInput');
 
 Object.defineProperty(exports, 'FormInput', {
