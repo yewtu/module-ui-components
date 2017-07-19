@@ -5,9 +5,6 @@
   background-image: none;
   border-radius: 2px;
   border: 1px solid $color-gray-80;
-  &::-webkit-calendar-picker-indicator {
-    display: none;
-  }
   &::-webkit-inner-spin-button,
   &::-webkit-outer-spin-button {
     -webkit-appearance: none;
@@ -15,6 +12,12 @@
   }
   &[type="number"] {
     text-align: right;
+  }
+  &::placeholder,
+  &::-webkit-datetime-edit-year-field,
+  &::-webkit-datetime-edit-month-field,
+  &::-webkit-datetime-edit-day-field {
+    color: $color-gray-80;
   }
 }
 
@@ -28,6 +31,10 @@
   width: auto;
 }
 
+.form-input--auto-width {
+  width: auto;
+}
+
 .form-input--has-error {
   background-color: $color-error-background;
   border-color: $color-error-border;
@@ -35,4 +42,33 @@
 
 .form-input--2-digit {
   width: 50px;
+}
+
+.form-input__control-wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+.form-input__prefix-label {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  color: $color-gray-40;
+  transform: translateY(-50%);
+}
+
+.form-input--prefixed {
+  padding-left: 30px;
+}
+
+.form-input__suffix-label {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  color: $color-gray-40;
+  transform: translateY(-50%);
+}
+
+.form-input--suffixed {
+  padding-right: 35px;
 }

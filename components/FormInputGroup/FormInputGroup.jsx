@@ -4,7 +4,7 @@ import FormInput from '../FormInput/FormInput';
 
 const FormInputGroup = ({id, label, helpText, input, hasError, isInline}) => {
   return (<div className={`form-input-group${isInline ? ' form-input-group--inline': ''}`}>
-    <label className="form-control-label" htmlFor={id}>{label}</label>
+    <div><label className="form-control-label" htmlFor={id}>{label}</label></div>
     { helpText && <div className="form-control-help">{helpText}</div> }
     <FormInput id={id} hasError={hasError} {...input}/>
   </div>);
@@ -15,18 +15,7 @@ FormInputGroup.propTypes = {
   label: PropTypes.string,
   helpText: PropTypes.string,
   hasError: PropTypes.bool,
-  input: PropTypes.shape({
-    name: PropTypes.string,
-    type: PropTypes.string,
-    classNames: PropTypes.string,
-    size: PropTypes.string,
-    value: PropTypes.oneOfType([
-			PropTypes.string,
-			PropTypes.number
-		]),
-    onChange: PropTypes.func,
-    focus: PropTypes.bool
-  }),
+  input: PropTypes.object,
 };
 
 export default FormInputGroup;

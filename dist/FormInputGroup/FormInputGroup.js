@@ -32,9 +32,13 @@ var FormInputGroup = function FormInputGroup(_ref) {
     'div',
     { className: 'form-input-group' + (isInline ? ' form-input-group--inline' : '') },
     _react2.default.createElement(
-      'label',
-      { className: 'form-control-label', htmlFor: id },
-      label
+      'div',
+      null,
+      _react2.default.createElement(
+        'label',
+        { className: 'form-control-label', htmlFor: id },
+        label
+      )
     ),
     helpText && _react2.default.createElement(
       'div',
@@ -50,15 +54,7 @@ FormInputGroup.propTypes = {
   label: _propTypes2.default.string,
   helpText: _propTypes2.default.string,
   hasError: _propTypes2.default.bool,
-  input: _propTypes2.default.shape({
-    name: _propTypes2.default.string,
-    type: _propTypes2.default.string,
-    classNames: _propTypes2.default.string,
-    size: _propTypes2.default.string,
-    value: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.number]),
-    onChange: _propTypes2.default.func,
-    focus: _propTypes2.default.bool
-  })
+  input: _propTypes2.default.object
 };
 
 exports.default = FormInputGroup;
