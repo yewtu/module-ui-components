@@ -4,8 +4,6 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
 var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
@@ -22,7 +20,9 @@ var FormSelectGroup = function FormSelectGroup(_ref) {
       helpText = _ref.helpText,
       select = _ref.select,
       hasError = _ref.hasError,
-      isInline = _ref.isInline;
+      isInline = _ref.isInline,
+      _ref$size = _ref.size,
+      size = _ref$size === undefined ? 'md' : _ref$size;
 
   return _react2.default.createElement(
     'div',
@@ -39,7 +39,11 @@ var FormSelectGroup = function FormSelectGroup(_ref) {
     ),
     _react2.default.createElement(
       'select',
-      _extends({ id: id, hasError: hasError }, select),
+      { id: id,
+        hasError: hasError,
+        name: select.name,
+        className: 'form-select ' + (select.classNames || '') + ' ' + (hasError ? ' form-select--has-error' : '') + ' ' + (size ? ' form-select--' + size : '')
+      },
       select.options.map(function (option, idx) {
         return _react2.default.createElement(
           'option',
@@ -60,7 +64,7 @@ FormSelectGroup.propTypes = {
   hasError: _propTypes2.default.bool,
   select: _propTypes2.default.shape({
     name: _propTypes2.default.string,
-    className: _propTypes2.default.string,
+    classNames: _propTypes2.default.string,
     size: _propTypes2.default.string,
     value: _propTypes2.default.string,
     options: _propTypes2.default.array,
