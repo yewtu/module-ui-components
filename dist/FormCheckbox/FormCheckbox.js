@@ -49,10 +49,10 @@ var FormCheckbox = function FormCheckbox(_ref) {
 
 FormCheckbox.propTypes = {
   name: _propTypes2.default.string.isRequired,
-  value: _propTypes2.default.string.isRequired,
+  value: _propTypes2.default.string,
   label: _propTypes2.default.string.isRequired,
   checked: _propTypes2.default.bool,
-  onChange: _propTypes2.default.func.isRequired
+  onChange: _propTypes2.default.func
 };
 
 FormCheckbox.defaultProps = {

@@ -40,7 +40,6 @@ var FormSelectGroup = function FormSelectGroup(_ref) {
     _react2.default.createElement(
       'select',
       { id: id,
-        hasError: hasError,
         name: select.name,
         className: 'form-select ' + (select.classNames || '') + ' ' + (hasError ? ' form-select--has-error' : '') + ' ' + (size ? ' form-select--' + size : '')
       },

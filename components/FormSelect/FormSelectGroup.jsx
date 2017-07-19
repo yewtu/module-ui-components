@@ -6,7 +6,6 @@ const FormSelectGroup = ({id, label, helpText, select, hasError, isInline, size=
     <label className="form-control-label" htmlFor={id}>{label}</label>
     { helpText && <div className="form-control-help">{helpText}</div> }
     <select id={id}
-            hasError={hasError}
             name={select.name}
             className={`form-select ${select.classNames || ''} ${hasError ? ' form-select--has-error' : ''} ${size ? ' form-select--' + size: '' }`}
     >
