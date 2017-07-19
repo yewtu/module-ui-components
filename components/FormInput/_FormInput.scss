@@ -13,12 +13,6 @@
   &[type="number"] {
     text-align: right;
   }
-  &::placeholder,
-  &::-webkit-datetime-edit-year-field,
-  &::-webkit-datetime-edit-month-field,
-  &::-webkit-datetime-edit-day-field {
-    color: $color-gray-80;
-  }
 }
 
 .form-input--sm {
