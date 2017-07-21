@@ -41,6 +41,7 @@ var FormSelectGroup = function FormSelectGroup(_ref) {
       'select',
       { id: id,
         name: select.name,
+        onChange: select.onChange,
         className: 'form-select ' + (select.classNames || '') + ' ' + (hasError ? ' form-select--has-error' : '') + ' ' + (size ? ' form-select--' + size : '')
       },
       select.options.map(function (option, idx) {
