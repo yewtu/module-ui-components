@@ -26,7 +26,8 @@ var FormInputGroup = function FormInputGroup(_ref) {
       helpText = _ref.helpText,
       input = _ref.input,
       hasError = _ref.hasError,
-      isInline = _ref.isInline;
+      isInline = _ref.isInline,
+      suffixLabel = _ref.suffixLabel;
 
   return _react2.default.createElement(
     'div',
@@ -45,7 +46,12 @@ var FormInputGroup = function FormInputGroup(_ref) {
       { className: 'form-control-help' },
       helpText
     ),
-    _react2.default.createElement(_FormInput2.default, _extends({ id: id, hasError: hasError }, input))
+    _react2.default.createElement(_FormInput2.default, _extends({ id: id, hasError: hasError }, input)),
+    suffixLabel && _react2.default.createElement(
+      'div',
+      { className: 'form-control-suffix-label' },
+      suffixLabel
+    )
   );
 };
 
