@@ -19,7 +19,7 @@
 }
 
 .form-control-label--has-error {
-  color: $color-orange-dark;
+  color: $color-red-dark;
 }
 
 .form-input-group--inline .form-control-label {
@@ -30,6 +30,12 @@
 .form-control-help {
   font-size: $font-size-xs;
   color: $color-gray-60;
+  margin-bottom: $spacing-sm;
+}
+
+.form-control-error {
+  font-size: $font-size-xs;
+  color: $color-red-dark;
   margin-bottom: $spacing-sm;
 }
 

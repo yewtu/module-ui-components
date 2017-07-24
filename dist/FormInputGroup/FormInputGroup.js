@@ -25,13 +25,13 @@ var FormInputGroup = function FormInputGroup(_ref) {
       label = _ref.label,
       helpText = _ref.helpText,
       input = _ref.input,
-      hasError = _ref.hasError,
+      error = _ref.error,
       isInline = _ref.isInline,
       suffixLabel = _ref.suffixLabel;
 
   return _react2.default.createElement(
     'div',
-    { className: 'form-input-group' + (isInline ? ' form-input-group--inline' : '') },
+    { className: 'form-input-group' + (isInline ? ' form-input-group--inline' : '') + (error ? ' form-input-group--has-error' : '') },
     _react2.default.createElement(
       'div',
       null,
@@ -46,7 +46,12 @@ var FormInputGroup = function FormInputGroup(_ref) {
       { className: 'form-control-help' },
       helpText
     ),
-    _react2.default.createElement(_FormInput2.default, _extends({ id: id, hasError: hasError }, input)),
+    error && _react2.default.createElement(
+      'div',
+      { className: 'form-control-error' },
+      error
+    ),
+    _react2.default.createElement(_FormInput2.default, _extends({ id: id, hasError: Boolean(error) }, input)),
     suffixLabel && _react2.default.createElement(
       'div',
       { className: 'form-control-suffix-label' },
@@ -56,11 +61,11 @@ var FormInputGroup = function FormInputGroup(_ref) {
 };
 
 FormInputGroup.propTypes = {
-  id: _propTypes2.default.string,
-  label: _propTypes2.default.string,
+  id: _propTypes2.default.string.isRequired,
+  label: _propTypes2.default.string.isRequired,
   helpText: _propTypes2.default.string,
-  hasError: _propTypes2.default.bool,
-  input: _propTypes2.default.object
+  error: _propTypes2.default.string,
+  input: _propTypes2.default.object.isRequired
 };
 
 exports.default = FormInputGroup;
