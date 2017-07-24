@@ -1,7 +1,7 @@
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+	value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -23,45 +23,51 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var getStarTypes = function getStarTypes(starRating) {
-    var stars = [];
-    var starType = void 0;
-    var rating = Math.round(starRating * 2) / 2;
-    for (var i = 1; i <= 5; i++) {
-        starType = i <= rating ? "full" : i - rating === 0.5 ? "half" : "empty";
-        stars.push(starType);
-    }
-    return stars;
+	var stars = [];
+	var starType = void 0;
+	var rating = Math.round(starRating * 2) / 2;
+	for (var i = 1; i <= 5; i++) {
+		starType = i <= rating ? "full" : i - rating === 0.5 ? "half" : "empty";
+		stars.push(starType);
+	}
+	return stars;
 };
 
 var StarRating = function (_React$Component) {
-    _inherits(StarRating, _React$Component);
+	_inherits(StarRating, _React$Component);
 
-    function StarRating() {
-        _classCallCheck(this, StarRating);
+	function StarRating() {
+		_classCallCheck(this, StarRating);
 
-        return _possibleConstructorReturn(this, (StarRating.__proto__ || Object.getPrototypeOf(StarRating)).apply(this, arguments));
-    }
+		return _possibleConstructorReturn(this, (StarRating.__proto__ || Object.getPrototypeOf(StarRating)).apply(this, arguments));
+	}
 
-    _createClass(StarRating, [{
-        key: "render",
-        value: function render() {
-            return _react2.default.createElement(
-                "div",
-                null,
-                getStarTypes(this.props.rating).map(function (type, idx) {
-                    return _react2.default.createElement("i", { key: idx,
-                        className: "icon icon--star-" + type + " icon--yellow icon--xl l-inline-child-valign-center" });
-                })
-            );
-        }
-    }]);
+	_createClass(StarRating, [{
+		key: "render",
+		value: function render() {
+			var size = this.props.size;
+			return _react2.default.createElement(
+				"div",
+				null,
+				getStarTypes(this.props.rating).map(function (type, idx) {
+					return _react2.default.createElement("i", { key: idx,
+						className: "icon icon--star-" + type + " icon--yellow " + (size === 'sm' ? 'icon--md' : 'icon--xl') + " l-inline-child-valign-center" });
+				})
+			);
+		}
+	}]);
 
-    return StarRating;
+	return StarRating;
 }(_react2.default.Component);
 
 exports.default = StarRating;
 
 
 StarRating.propTypes = {
-    rating: _propTypes2.default.number.isRequired
+	rating: _propTypes2.default.number.isRequired,
+	size: _propTypes2.default.string
+};
+
+StarRating.defaultProps = {
+	size: 'md'
 };
