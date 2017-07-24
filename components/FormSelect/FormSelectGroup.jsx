@@ -8,6 +8,7 @@ const FormSelectGroup = ({id, label, helpText, select, hasError, isInline, size=
     <select id={id}
             name={select.name}
             onChange={select.onChange}
+            value={select.value}
             className={`form-select ${select.classNames || ''} ${hasError ? ' form-select--has-error' : ''} ${size ? ' form-select--' + size: '' }`}
     >
 			{
