@@ -29,7 +29,7 @@ var FormCheckbox = function FormCheckbox(_ref) {
   var checkedProp = _defineProperty({}, onChange ? 'checked' : 'defaultChecked', checked);
   return _react2.default.createElement(
     'label',
-    { className: 'form-checkbox t-checkbox-' + name },
+    { className: 'form-checkbox t-checkbox-' + name + '-' + value },
     _react2.default.createElement('input', _extends({ name: name,
       type: 'checkbox',
       value: value,

@@ -7,7 +7,7 @@ const FormCheckbox = ({name, value, checked, onChange, label}) => {
     [onChange ? 'checked' : 'defaultChecked']: checked
   };
   return (
-    <label className={`form-checkbox t-checkbox-${name}`}>
+    <label className={`form-checkbox t-checkbox-${name}-${value}`}>
       <input name={name}
              type="checkbox"
              value={value}
