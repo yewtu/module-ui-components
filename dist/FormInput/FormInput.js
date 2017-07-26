@@ -67,16 +67,17 @@ var FormInput = function (_React$Component) {
 			    suffixLabel = _props.suffixLabel,
 			    required = _props.required,
 			    _props$placeholder = _props.placeholder,
-			    placeholder = _props$placeholder === undefined ? '' : _props$placeholder;
+			    placeholder = _props$placeholder === undefined ? '' : _props$placeholder,
+			    isInline = _props.isInline;
 			// if an onChange prop has been passed, make this a controlled component
 
 			var valueProp = _defineProperty({}, onChange ? 'value' : 'defaultValue', value);
 			return _react2.default.createElement(
 				'div',
-				{ className: 'form-input__control-wrapper' },
+				{ className: 'form-input-wrapper' },
 				prefixLabel && _react2.default.createElement(
 					'div',
-					{ className: 'form-input__prefix-label' },
+					{ className: 'form-input-wrapper__prefix-label' },
 					prefixLabel
 				),
 				_react2.default.createElement('input', _extends({
@@ -86,7 +87,7 @@ var FormInput = function (_React$Component) {
 					id: id,
 					name: name,
 					type: type || 'text',
-					className: 'form-input ' + classNames + ' ' + (hasError ? ' form-input--has-error' : '') + ' ' + (size ? ' form-input--' + size : '') + '\t' + (prefixLabel ? ' form-input--prefixed' : '') + '\t' + (suffixLabel ? ' form-input--suffixed' : ''),
+					className: 'form-input ' + classNames + ' ' + (isInline ? ' form-input--inline' : '') + ' ' + (hasError ? ' form-input--has-error' : '') + ' ' + (size ? ' form-input--' + size : '') + '\t' + (prefixLabel ? ' form-input--prefixed' : '') + '\t' + (suffixLabel ? ' form-input--suffixed' : ''),
 					onChange: onChange
 				}, valueProp, {
 					min: min,
@@ -97,7 +98,7 @@ var FormInput = function (_React$Component) {
 				})),
 				suffixLabel && _react2.default.createElement(
 					'div',
-					{ className: 'form-input__suffix-label' },
+					{ className: 'form-input-wrapper__suffix-label' },
 					suffixLabel
 				)
 			);
@@ -118,8 +119,8 @@ FormInput.propTypes = {
 	onChange: _propTypes2.default.func,
 	hasError: _propTypes2.default.bool,
 	focus: _propTypes2.default.bool,
-	min: _propTypes2.default.number,
-	max: _propTypes2.default.number,
+	min: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.number]),
+	max: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.number]),
 	step: _propTypes2.default.number,
 	prefixLabel: _propTypes2.default.string
 };

@@ -27,11 +27,12 @@ var FormInputGroup = function FormInputGroup(_ref) {
       input = _ref.input,
       error = _ref.error,
       isInline = _ref.isInline,
-      suffixLabel = _ref.suffixLabel;
+      suffixLabel = _ref.suffixLabel,
+      size = _ref.size;
 
   return _react2.default.createElement(
     'div',
-    { className: 'form-input-group' + (isInline ? ' form-input-group--inline' : '') + (error ? ' form-input-group--has-error' : '') },
+    { className: 'form-input-group' + (isInline ? ' form-input-group--inline' : '') + (error ? ' form-input-group--has-error' : '') + ' ' + (size ? ' form-input-group--' + size : '') },
     _react2.default.createElement(
       'div',
       null,
@@ -51,7 +52,7 @@ var FormInputGroup = function FormInputGroup(_ref) {
       { className: 'form-control-error' },
       error
     ),
-    _react2.default.createElement(_FormInput2.default, _extends({ id: id, hasError: Boolean(error) }, input)),
+    _react2.default.createElement(_FormInput2.default, _extends({ id: id, hasError: Boolean(error), size: size }, input)),
     suffixLabel && _react2.default.createElement(
       'div',
       { className: 'form-control-suffix-label' },

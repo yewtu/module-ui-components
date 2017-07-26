@@ -17,7 +17,7 @@ const FormCheckbox = ({name, value, checked, onChange, label}) => {
         className="form-checkbox__icon-active icon icon--checkbox-checked icon--lilac"/>
       <i
         className="form-checkbox__icon-inactive icon icon--checkbox-unchecked icon--gray"/>
-      <span className="text text--gray-50">{label}</span>
+      <span className="form-checkbox__label">{label}</span>
     </label>
   )
 }

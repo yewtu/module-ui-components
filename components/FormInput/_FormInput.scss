@@ -6,8 +6,11 @@
   border-radius: 2px;
   border: 1px solid $color-gray-80;
   &::-webkit-inner-spin-button,
-  &::-webkit-outer-spin-button {
+  &::-webkit-outer-spin-button,
+  &::-webkit-clear-button {
     -webkit-appearance: none;
+    appearance: none;
+    display: none;
     margin: 0;
   }
   &[type="number"] {
@@ -16,8 +19,15 @@
 }
 
 .form-input--sm {
+  font-size: $font-size-xs;
   min-height: $form-control-height-sm;
   padding: $form-control-padding-sm;
+}
+
+.form-input--xs {
+  font-size: $font-size-xxs;
+  min-height: $form-control-height-xs;
+  padding: $form-control-padding-xs;
 }
 
 .form-input--inline {
@@ -37,12 +47,12 @@
   width: 50px;
 }
 
-.form-input__control-wrapper {
+.form-input-wrapper {
   display: inline-block;
   position: relative;
 }
 
-.form-input__prefix-label {
+.form-input-wrapper__prefix-label {
   position: absolute;
   left: 10px;
   top: 50%;
@@ -54,7 +64,7 @@
   padding-left: 30px;
 }
 
-.form-input__suffix-label {
+.form-input-wrapper__suffix-label {
   position: absolute;
   right: 10px;
   top: 50%;

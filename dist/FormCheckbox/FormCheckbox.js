@@ -41,7 +41,7 @@ var FormCheckbox = function FormCheckbox(_ref) {
       className: 'form-checkbox__icon-inactive icon icon--checkbox-unchecked icon--gray' }),
     _react2.default.createElement(
       'span',
-      { className: 'text text--gray-50' },
+      { className: 'form-checkbox__label' },
       label
     )
   );
