@@ -4,8 +4,6 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = require('react');
@@ -18,8 +16,6 @@ var _propTypes2 = _interopRequireDefault(_propTypes);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -29,10 +25,16 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var FormInput = function (_React$Component) {
 	_inherits(FormInput, _React$Component);
 
-	function FormInput() {
+	function FormInput(props) {
 		_classCallCheck(this, FormInput);
 
-		return _possibleConstructorReturn(this, (FormInput.__proto__ || Object.getPrototypeOf(FormInput)).apply(this, arguments));
+		var _this = _possibleConstructorReturn(this, (FormInput.__proto__ || Object.getPrototypeOf(FormInput)).call(this, props));
+
+		_this.onChange = _this.onChange.bind(_this);
+		_this.state = {
+			value: props.value
+		};
+		return _this;
 	}
 
 	_createClass(FormInput, [{
@@ -46,6 +48,17 @@ var FormInput = function (_React$Component) {
 			this.props.focus && this.input.focus();
 		}
 	}, {
+		key: 'componentWillReceiveProps',
+		value: function componentWillReceiveProps(nextProps) {
+			this.setState({ value: nextProps.value });
+		}
+	}, {
+		key: 'onChange',
+		value: function onChange(evt) {
+			this.setState({ value: evt.target.value });
+			if (this.props.onChange) this.props.onChange(evt);
+		}
+	}, {
 		key: 'render',
 		value: function render() {
 			var _this2 = this;
@@ -57,7 +70,6 @@ var FormInput = function (_React$Component) {
 			    id = _props.id,
 			    name = _props.name,
 			    type = _props.type,
-			    value = _props.value,
 			    onChange = _props.onChange,
 			    size = _props.size,
 			    min = _props.min,
@@ -69,9 +81,7 @@ var FormInput = function (_React$Component) {
 			    _props$placeholder = _props.placeholder,
 			    placeholder = _props$placeholder === undefined ? '' : _props$placeholder,
 			    isInline = _props.isInline;
-			// if an onChange prop has been passed, make this a controlled component
 
-			var valueProp = _defineProperty({}, onChange ? 'value' : 'defaultValue', value);
 			return _react2.default.createElement(
 				'div',
 				{ className: 'form-input-wrapper' },
@@ -80,7 +90,7 @@ var FormInput = function (_React$Component) {
 					{ className: 'form-input-wrapper__prefix-label' },
 					prefixLabel
 				),
-				_react2.default.createElement('input', _extends({
+				_react2.default.createElement('input', {
 					ref: function ref(input) {
 						_this2.input = input;
 					},
@@ -88,14 +98,14 @@ var FormInput = function (_React$Component) {
 					name: name,
 					type: type || 'text',
 					className: 'form-input ' + classNames + ' ' + (isInline ? ' form-input--inline' : '') + ' ' + (hasError ? ' form-input--has-error' : '') + ' ' + (size ? ' form-input--' + size : '') + '\t' + (prefixLabel ? ' form-input--prefixed' : '') + '\t' + (suffixLabel ? ' form-input--suffixed' : ''),
-					onChange: onChange
-				}, valueProp, {
+					onChange: this.onChange,
+					value: this.state.value,
 					min: min,
 					max: max,
 					step: step,
 					required: required,
 					placeholder: placeholder
-				})),
+				}),
 				suffixLabel && _react2.default.createElement(
 					'div',
 					{ className: 'form-input-wrapper__suffix-label' },

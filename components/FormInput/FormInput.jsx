@@ -2,12 +2,28 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 class FormInput extends React.Component {
+	constructor(props) {
+		super(props);
+		this.onChange = this.onChange.bind(this);
+		this.state = {
+			value: props.value
+		};
+	}
 	componentDidMount() {
 		this.props.focus && this.input.focus();
 	}
 
 	componentDidUpdate() {
 		this.props.focus && this.input.focus();
+	}
+
+	componentWillReceiveProps(nextProps) {
+		this.setState({value: nextProps.value});
+	}
+
+	onChange(evt) {
+		this.setState({value: evt.target.value});
+		if (this.props.onChange) this.props.onChange(evt);
 	}
 
 	render() {
@@ -17,7 +33,6 @@ class FormInput extends React.Component {
 			id,
 			name,
 			type,
-			value,
 			onChange,
 			size,
 			min,
@@ -29,10 +44,6 @@ class FormInput extends React.Component {
 			placeholder = '',
 			isInline
 		} = this.props;
-		// if an onChange prop has been passed, make this a controlled component
-		const valueProp = {
-			[onChange ? 'value' : 'defaultValue']: value
-		};
 		return (
 			<div className={'form-input-wrapper'}>
 				{ prefixLabel && <div className="form-input-wrapper__prefix-label">{prefixLabel}</div> }
@@ -44,8 +55,8 @@ class FormInput extends React.Component {
 					name={name}
 					type={type || 'text'}
 					className={`form-input ${classNames} ${isInline ? ' form-input--inline' : ''} ${hasError ? ' form-input--has-error' : ''} ${size ? ' form-input--' + size : '' }	${prefixLabel ? ' form-input--prefixed' : ''}	${suffixLabel ? ' form-input--suffixed' : ''}`}
-					onChange={onChange}
-					{...valueProp}
+					onChange={this.onChange}
+					value={this.state.value}
 					min={min}
 					max={max}
 					step={step}
