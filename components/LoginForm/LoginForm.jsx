@@ -14,8 +14,12 @@ export default class LoginForm extends React.Component {
 	render() {
 		const users = [
 			{
-				displayName: 'Tasty Burger',
-				userName: 'tastyburger'
+				displayName: 'Farmer A',
+				userName: 'farmerA'
+			},
+			{
+				displayName: 'Farmer B',
+				userName: 'farmerB'
 			},
 			{
 				displayName: 'Waits & Spencer',
@@ -32,7 +36,7 @@ export default class LoginForm extends React.Component {
 					<div className="margin-bottom-md">
 						<FormInputGroup id="username" label="Username"
 														input={{
-															name: 'username',
+															name: 'userName',
 															focus: this.props.shown,
 															value: this.state.selectedUser,
 															onChange: evt => this.setState({selectedUser: evt.target.value})}}/>

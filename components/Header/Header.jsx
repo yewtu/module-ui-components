@@ -32,8 +32,14 @@ export default class Header extends React.Component {
 								<div className="header__item-vcentered header__auth">
 									<span
 										className="header__item-vcentered header__greeting text text--lg padding-right-md">{user.displayName}</span>
-									<img className="header__item-vcentered header__avatar"
-											 src={`/images/avatar-${user.userName}.jpg`}/>
+									{
+										user.avatarFile ?
+										<img className="header__item-vcentered header__avatar"
+												 src={`/user-avatars/${user.avatarFile}`}/>
+										:
+										<i
+										className="header__item-vcentered header__avatar-icon icon icon--account-circle icon--white icon--xxxl"/>
+									}
 									<a href="/logout" className="header__greeting link text text--white text--xs padding-left-md">Log
 										out</a>
 								</div>

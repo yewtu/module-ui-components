@@ -100,8 +100,9 @@ var Header = function (_React$Component) {
 									className: 'header__item-vcentered header__greeting text text--lg padding-right-md' },
 								user.displayName
 							),
-							_react2.default.createElement('img', { className: 'header__item-vcentered header__avatar',
-								src: '/images/avatar-' + user.userName + '.jpg' }),
+							user.avatarFile ? _react2.default.createElement('img', { className: 'header__item-vcentered header__avatar',
+								src: '/user-avatars/' + user.avatarFile }) : _react2.default.createElement('i', {
+								className: 'header__item-vcentered header__avatar-icon icon icon--account-circle icon--white icon--xxxl' }),
 							_react2.default.createElement(
 								'a',
 								{ href: '/logout', className: 'header__greeting link text text--white text--xs padding-left-md' },

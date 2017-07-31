@@ -47,8 +47,11 @@ var LoginForm = function (_React$Component) {
 			var _this2 = this;
 
 			var users = [{
-				displayName: 'Tasty Burger',
-				userName: 'tastyburger'
+				displayName: 'Farmer A',
+				userName: 'farmerA'
+			}, {
+				displayName: 'Farmer B',
+				userName: 'farmerB'
 			}, {
 				displayName: 'Waits & Spencer',
 				userName: 'waitsandspencer'
@@ -67,7 +70,7 @@ var LoginForm = function (_React$Component) {
 						{ className: 'margin-bottom-md' },
 						_react2.default.createElement(_FormInputGroup2.default, { id: 'username', label: 'Username',
 							input: {
-								name: 'username',
+								name: 'userName',
 								focus: this.props.shown,
 								value: this.state.selectedUser,
 								onChange: function onChange(evt) {
