@@ -10,3 +10,4 @@ export {default as Modal} from './Modal/Modal';
 export {default as LoginForm} from './LoginForm/LoginForm';
 export {default as Popup} from "./Popup/Popup";
 export {default as StarRating} from "./StarRating/StarRating";
+export {default as ErrorMessage} from "./ErrorMessage/ErrorMessage";

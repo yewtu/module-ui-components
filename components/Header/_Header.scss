@@ -54,58 +54,6 @@
   line-height: 50px;
 }
 
-.header__links {
-  display: inline-block;
-  margin-left: 20px;
-  @include divider-left;
-}
-
-.header__link {
-  color: $color-white;
-  font-size: $font-size-md;
-  position: relative;
-  line-height: 50px;
-  margin-left: 40px;
-  text-decoration: none;
-  &.active {
-    font-weight: $font-weight-bold;
-    &:after {
-      content: '';
-      display: block;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 4px;
-      background-color: $color-white;
-    }
-  }
-}
-
-.header__user {
-  display: none;
-  @include media-query($screen-md-min) {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    right: $column-gutter * 2;
-    @include vertically-centre;
-  }
-}
-
-.header__avatar {
-  width: 38px;
-  height: 38px;
-  border-radius: 19px;
-}
-
-.header__auth-links {
-  font-size: $font-size-xxs;
-  line-height: 1.2;
-  margin-left: 10px;
-}
-
 .header__basket {
   line-height: 50px;
   padding-left: 22px;
@@ -124,4 +72,13 @@
   font-size: 12px;
   padding: 1px 4px 2px 4px;
   line-height: 14px;
+}
+
+.header__right-hand {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: $column-gutter * 2;
+  @include vertically-centre;
 }

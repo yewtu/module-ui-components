@@ -112,4 +112,13 @@ Object.defineProperty(exports, 'StarRating', {
   }
 });
 
+var _ErrorMessage = require('./ErrorMessage/ErrorMessage');
+
+Object.defineProperty(exports, 'ErrorMessage', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_ErrorMessage).default;
+  }
+});
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
