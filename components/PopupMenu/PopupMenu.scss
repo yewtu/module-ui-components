@@ -4,7 +4,7 @@
 
 .popup-menu__panel {
   position: absolute;
-  top: 100%;
+  top: calc(100% + 5px);
   display: none;
   z-index: 99;
   background-color: $color-white;

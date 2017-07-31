@@ -14,17 +14,9 @@ var _propTypes = require('prop-types');
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _Modal = require('../Modal/Modal');
+var _UserLogin = require('../UserLogin/UserLogin');
 
-var _Modal2 = _interopRequireDefault(_Modal);
-
-var _LoginForm = require('../LoginForm/LoginForm');
-
-var _LoginForm2 = _interopRequireDefault(_LoginForm);
-
-var _nav = require('./nav');
-
-var _nav2 = _interopRequireDefault(_nav);
+var _UserLogin2 = _interopRequireDefault(_UserLogin);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -52,17 +44,12 @@ var Header = function (_React$Component) {
 	_createClass(Header, [{
 		key: 'render',
 		value: function render() {
-			var _this2 = this;
-
 			var _props = this.props,
 			    title = _props.title,
 			    titleLink = _props.titleLink,
-			    navItems = _props.navItems,
 			    user = _props.user,
 			    applicationType = _props.type,
-			    showBasket = _props.showBasket,
-			    basketCount = _props.basketCount,
-			    showNavMenu = _props.showNavMenu;
+			    loginRedirect = _props.loginRedirect;
 
 			return _react2.default.createElement(
 				'header',
@@ -78,108 +65,12 @@ var Header = function (_React$Component) {
 					),
 					_react2.default.createElement(
 						'div',
-						{ className: 'header__links' },
-						navItems.map(function (item, idx) {
-							return _react2.default.createElement(
-								'a',
-								{ key: idx, href: '#',
-									className: 'header__item-vcentered header__link header__link-first ' + (idx === 0 ? ' active' : '') },
-								item
-							);
-						})
-					),
-					_react2.default.createElement(
-						'div',
-						{ className: 'header__user' },
-						user ? _react2.default.createElement(
+						{ className: 'header__right-hand' },
+						_react2.default.createElement(
 							'div',
-							{ className: 'header__item-vcentered header__auth' },
-							_react2.default.createElement(
-								'span',
-								{
-									className: 'header__item-vcentered header__greeting text text--lg padding-right-md' },
-								user.displayName
-							),
-							user.avatarFile ? _react2.default.createElement('img', { className: 'header__item-vcentered header__avatar',
-								src: '/user-avatars/' + user.avatarFile }) : _react2.default.createElement('i', {
-								className: 'header__item-vcentered header__avatar-icon icon icon--account-circle icon--white icon--xxxl' }),
-							_react2.default.createElement(
-								'a',
-								{ href: '/logout', className: 'header__greeting link text text--white text--xs padding-left-md' },
-								'Log out'
-							)
-						) : _react2.default.createElement(
-							'button',
-							{ type: 'button', onClick: function onClick() {
-									return _this2.setState({ loginModalOpen: true });
-								},
-								className: 'btn header__auth' },
-							_react2.default.createElement('i', {
-								className: 'header__item-vcentered header__avatar-icon icon icon--account-circle icon--white icon--xxxl' }),
-							_react2.default.createElement(
-								'span',
-								{
-									className: 'header__item-vcentered header__auth-links' },
-								_react2.default.createElement(
-									'strong',
-									null,
-									'Sign up'
-								),
-								_react2.default.createElement('br', null),
-								'or Log in'
-							)
-						),
-						showBasket && _react2.default.createElement(
-							'a',
-							{ href: '#', className: 'header__item-vcentered header__basket' },
-							_react2.default.createElement('i', { className: 'header__item-vcentered icon icon--shopping-cart icon--white icon--xxl' }),
-							basketCount && _react2.default.createElement(
-								'div',
-								{ className: 'header__basket__count' },
-								basketCount
-							)
-						),
-						showNavMenu && _react2.default.createElement(
-							'button',
-							{ type: 'button', className: 'btn header__item-vcentered header__basket',
-								onClick: function onClick() {
-									return _this2.setState({ navMenuOpen: !_this2.state.navMenuOpen });
-								} },
-							_react2.default.createElement('i', { className: 'header__item-vcentered icon icon--menu icon--white icon--xxl' })
-						),
-						showNavMenu && _react2.default.createElement(
-							'div',
-							{ className: 'popup-menu popup-menu--right-align ' + (this.state.navMenuOpen ? ' active' : '') },
-							_react2.default.createElement(
-								'div',
-								{ className: 'popup-menu__panel' },
-								_nav2.default.map(function (item, idx) {
-									return _react2.default.createElement(
-										'a',
-										{
-											className: 'popup-menu__item link link--unstyled',
-											href: item.link + '&idx=' + idx,
-											key: idx },
-										item.label
-									);
-								})
-							)
+							{ className: 'header__item-vcentered' },
+							_react2.default.createElement(_UserLogin2.default, { user: user, loginRedirect: loginRedirect })
 						)
-					)
-				),
-				_react2.default.createElement(
-					_Modal2.default,
-					{
-						open: this.state.loginModalOpen,
-						onClose: function onClose() {
-							return _this2.setState({ loginModalOpen: false });
-						},
-						size: 'sm',
-						useMask: true },
-					_react2.default.createElement(
-						'div',
-						{ className: 'l-hcentered l-width-80' },
-						_react2.default.createElement(_LoginForm2.default, { shown: this.state.loginModalOpen, redirect: this.props.loginRedirect })
 					)
 				)
 			);
@@ -198,8 +89,7 @@ Header.propTypes = {
 	navItems: _propTypes2.default.array,
 	user: _propTypes2.default.object,
 	type: _propTypes2.default.string,
-	loginRedirect: _propTypes2.default.string,
-	basketCount: _propTypes2.default.number
+	loginRedirect: _propTypes2.default.string
 };
 
 Header.defaultProps = {

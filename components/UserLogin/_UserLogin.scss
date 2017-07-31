@@ -1,0 +1,19 @@
+
+.user-login__greeting {
+  display: none;
+  @include media-query($screen-sm-min) {
+    display: inline-block
+  }
+}
+
+.user-login__avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 19px;
+}
+
+.user-login__auth-links {
+  font-size: $font-size-xxs;
+  line-height: 1.2;
+  margin-left: 10px;
+}
