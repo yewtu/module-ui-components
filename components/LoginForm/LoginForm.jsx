@@ -57,7 +57,7 @@ export default class LoginForm extends React.Component {
 					</div>
 					<div className="l-inline-parent l-vcenter-children ">
 						<div className="l-inline-child">
-							<button type="submit" className="btn btn--primary">Log in</button>
+							<button type="submit" className="btn btn--primary t-btn-submit-login">Log in</button>
 						</div>
 						<div className="l-inline-child padding-left-md padding-right-md">
 							or

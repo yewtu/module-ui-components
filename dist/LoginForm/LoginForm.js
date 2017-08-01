@@ -117,7 +117,7 @@ var LoginForm = function (_React$Component) {
 							{ className: 'l-inline-child' },
 							_react2.default.createElement(
 								'button',
-								{ type: 'submit', className: 'btn btn--primary' },
+								{ type: 'submit', className: 'btn btn--primary t-btn-submit-login' },
 								'Log in'
 							)
 						),

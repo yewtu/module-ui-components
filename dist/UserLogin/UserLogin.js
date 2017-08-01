@@ -70,7 +70,7 @@ var UserLogin = function (_React$Component) {
 						className: 'header__item-vcentered icon icon--account-circle icon--white icon--xxxl' }),
 					_react2.default.createElement(
 						'a',
-						{ href: '/logout', className: 'user-login__greeting link text text--white text--xs padding-left-md' },
+						{ href: '/logout', className: 'user-login__greeting link text text--white text--xs padding-left-md t-btn-logout' },
 						'Log out'
 					)
 				) : _react2.default.createElement(
@@ -78,7 +78,7 @@ var UserLogin = function (_React$Component) {
 					{ type: 'button', onClick: function onClick() {
 							return _this2.setState({ loginModalOpen: true });
 						},
-						className: 'btn header__auth' },
+						className: 'btn header__auth t-btn-open-login' },
 					_react2.default.createElement('i', {
 						className: 'header__item-vcentered icon icon--account-circle icon--white icon--xxxl' }),
 					_react2.default.createElement(

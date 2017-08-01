@@ -29,12 +29,12 @@ export default class UserLogin extends React.Component {
 									<i
 										className="header__item-vcentered icon icon--account-circle icon--white icon--xxxl"/>
 							}
-							<a href="/logout" className="user-login__greeting link text text--white text--xs padding-left-md">Log
+							<a href="/logout" className="user-login__greeting link text text--white text--xs padding-left-md t-btn-logout">Log
 								out</a>
 						</div>
 						:
 						<button type="button" onClick={() => this.setState({loginModalOpen: true})}
-										className="btn header__auth"><i
+										className="btn header__auth t-btn-open-login"><i
 							className="header__item-vcentered icon icon--account-circle icon--white icon--xxxl"/>
 							<span
 								className="header__item-vcentered user-login__auth-links"><strong>Sign up</strong><br/>or Log in</span>
