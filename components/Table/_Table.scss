@@ -122,7 +122,7 @@
   white-space: nowrap;
 }
 
-.table__cell-hidden-sm {
+.table__cell-hidden-xs {
   display: none;
   @include media-query($screen-sm-min) {
     display: table-cell;
