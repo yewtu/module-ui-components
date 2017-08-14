@@ -7,13 +7,14 @@
   width: 100%;
   th {
     font-family: $heading-font-stack;
-    font-size: $font-size-xs;
+    font-size: $font-size-xxs;
     font-weight: $font-weight-semibold;
     letter-spacing: 1.2px;
     color: $color-gray-60;
     padding-top: 24px;
     padding-bottom: 24px;
     text-align: left;
+    text-transform: uppercase;
   }
   td {
     padding-top: 12px;
@@ -115,4 +116,22 @@
 .table__total-value {
   font-size: $font-size-lg;
   font-weight: $font-weight-bold;
+}
+
+.table__cell-no-wrap {
+  white-space: nowrap;
+}
+
+.table__cell-hidden-sm {
+  display: none;
+  @include media-query($screen-sm-min) {
+    display: table-cell;
+  }
+}
+
+.table__cell-visible-lg {
+  display: none;
+  @include media-query($screen-lg-min) {
+    display: table-cell;
+  }
 }

@@ -122,6 +122,10 @@
   width: 100%;
 }
 
+.btn--xxxs {
+  font-size: $font-size-xxxs;
+}
+
 .btn--xxs {
   font-size: $font-size-xxs;
 }
@@ -138,7 +142,6 @@
   @include media-query($screen-sm-min) {
     font-size: $font-size-sm;
     padding: $form-control-padding-sm;
-    min-width: 80px;
   }
 }
 

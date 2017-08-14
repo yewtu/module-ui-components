@@ -1,6 +1,6 @@
 .hidden-sm {
   display: none;
-  @include media-query($screen-sm-min) {
+  @include media-query($screen-md-min) {
     display: block;
   }
 }
