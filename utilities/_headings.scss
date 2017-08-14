@@ -58,3 +58,14 @@
 .heading--centered {
   text-align: center;
 }
+
+.heading--inline {
+  display: inline-block;
+}
+
+.heading__breadcrumb-separator {
+  display: inline-block;
+  margin-left: $spacing-xs;
+  margin-right: $spacing-xs;
+  vertical-align: sub;
+}
