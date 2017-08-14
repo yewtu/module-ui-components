@@ -35,6 +35,14 @@ $layout-breakpoint: $screen-sm-min;
   }
 }
 
+// extra narrower container
+.l-container-narrow {
+  @include clearfix;
+  @include l-container-narrow;
+  padding-top: $spacing-md;
+  padding-bottom: $spacing-md;
+}
+
 /*======================================= HORIZONTAL LAYOUTS ==================================*/
 // For laying out elements in a horizontal row with control of their proportional widths
 // and vertical / horizontal alignment

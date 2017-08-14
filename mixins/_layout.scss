@@ -37,3 +37,11 @@
   padding-left: $column-gutter-double;
   padding-right: $column-gutter-double;
 }
+
+@mixin l-container-narrow {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: $column-gutter-double;
+  padding-right: $column-gutter-double;
+}
