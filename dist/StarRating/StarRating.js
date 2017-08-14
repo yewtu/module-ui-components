@@ -48,7 +48,7 @@ var StarRating = function (_React$Component) {
 			var size = this.props.size;
 			return _react2.default.createElement(
 				"div",
-				null,
+				{ className: "l-nowrap-children" },
 				getStarTypes(this.props.rating).map(function (type, idx) {
 					return _react2.default.createElement("i", { key: idx,
 						className: "icon icon--star-" + type + " icon--yellow " + (size === 'sm' ? 'icon--md' : 'icon--xl') + " l-inline-child-valign-center" });

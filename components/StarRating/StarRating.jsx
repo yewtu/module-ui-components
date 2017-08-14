@@ -16,7 +16,7 @@ export default class StarRating extends React.Component {
 	render() {
 		const size = this.props.size;
 		return (
-			<div>
+			<div className="l-nowrap-children">
 				{
 					getStarTypes(this.props.rating).map((type, idx) =>
 						<i key={idx}
