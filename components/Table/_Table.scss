@@ -65,7 +65,7 @@
     }
   }
 
-  @include media-query($screen-sm-min) {
+  @include media-query($screen-md-min) {
     font-size: $font-size-xs;
     th,
     td {
