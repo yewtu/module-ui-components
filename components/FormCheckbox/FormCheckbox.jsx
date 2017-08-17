@@ -1,22 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const FormCheckbox = ({name, value, checked, onChange, label}) => {
+const FormCheckbox = ({name, value, checked, onChange, label, showCheckbox}) => {
   // if an onChange prop has been passed, make this a controlled component
   const checkedProp = {
     [onChange ? 'checked' : 'defaultChecked']: checked
   };
   return (
-    <label className={`form-checkbox t-checkbox-${name}-${value}`}>
+    <label className={`form-checkbox t-checkbox-${name}-${value} ${showCheckbox ? '' : 'form-checkbox--no-box'}`}>
       <input name={name}
              type="checkbox"
              value={value}
              onChange={onChange}
              {...checkedProp} />
-      <i
-        className="form-checkbox__icon-active icon icon--checkbox-checked icon--lilac"/>
-      <i
-        className="form-checkbox__icon-inactive icon icon--checkbox-unchecked icon--gray"/>
+      { showCheckbox && <i
+        className="form-checkbox__icon-active icon icon--checkbox-checked icon--lilac"/> }
+      { showCheckbox && <i
+        className="form-checkbox__icon-inactive icon icon--checkbox-unchecked icon--gray"/> }
       <span className="form-checkbox__label">{label}</span>
     </label>
   )
@@ -27,11 +27,13 @@ FormCheckbox.propTypes = {
   value: PropTypes.string,
   label: PropTypes.string.isRequired,
   checked: PropTypes.bool,
-  onChange: PropTypes.func
+  onChange: PropTypes.func,
+  showCheckbox: PropTypes.bool
 };
 
 FormCheckbox.defaultProps = {
-  checked: false
+  checked: false,
+  showCheckbox: true
 };
 
 export default FormCheckbox;

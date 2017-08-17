@@ -3,6 +3,9 @@
   display: block;
   position: relative;
   padding-left: 20px;
+  &.form-checkbox--no-box {
+    padding-left: 0;
+  }
   .icon {
     transform: translateY(-50%);
     top: 50%;

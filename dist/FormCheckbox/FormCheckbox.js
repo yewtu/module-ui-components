@@ -23,21 +23,22 @@ var FormCheckbox = function FormCheckbox(_ref) {
       value = _ref.value,
       checked = _ref.checked,
       onChange = _ref.onChange,
-      label = _ref.label;
+      label = _ref.label,
+      showCheckbox = _ref.showCheckbox;
 
   // if an onChange prop has been passed, make this a controlled component
   var checkedProp = _defineProperty({}, onChange ? 'checked' : 'defaultChecked', checked);
   return _react2.default.createElement(
     'label',
-    { className: 'form-checkbox t-checkbox-' + name + '-' + value },
+    { className: 'form-checkbox t-checkbox-' + name + '-' + value + ' ' + (showCheckbox ? '' : 'form-checkbox--no-box') },
     _react2.default.createElement('input', _extends({ name: name,
       type: 'checkbox',
       value: value,
       onChange: onChange
     }, checkedProp)),
-    _react2.default.createElement('i', {
+    showCheckbox && _react2.default.createElement('i', {
       className: 'form-checkbox__icon-active icon icon--checkbox-checked icon--lilac' }),
-    _react2.default.createElement('i', {
+    showCheckbox && _react2.default.createElement('i', {
       className: 'form-checkbox__icon-inactive icon icon--checkbox-unchecked icon--gray' }),
     _react2.default.createElement(
       'span',
@@ -52,11 +53,13 @@ FormCheckbox.propTypes = {
   value: _propTypes2.default.string,
   label: _propTypes2.default.string.isRequired,
   checked: _propTypes2.default.bool,
-  onChange: _propTypes2.default.func
+  onChange: _propTypes2.default.func,
+  showCheckbox: _propTypes2.default.bool
 };
 
 FormCheckbox.defaultProps = {
-  checked: false
+  checked: false,
+  showCheckbox: true
 };
 
 exports.default = FormCheckbox;
