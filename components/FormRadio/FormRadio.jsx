@@ -7,7 +7,7 @@ const FormRadio = ({name, value, checked, onChange, label}) => {
     [onChange ? 'checked' : 'defaultChecked']: checked
   };
   return (
-    <label className="form-radio">
+    <label className={`form-radio t-radio-${name}-${value}`}>
       <input name={name}
              type="radio"
              value={value}

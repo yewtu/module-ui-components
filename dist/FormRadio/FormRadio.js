@@ -29,7 +29,7 @@ var FormRadio = function FormRadio(_ref) {
   var checkedProp = _defineProperty({}, onChange ? 'checked' : 'defaultChecked', checked);
   return _react2.default.createElement(
     'label',
-    { className: 'form-radio' },
+    { className: 'form-radio t-radio-' + name + '-' + value },
     _react2.default.createElement('input', _extends({ name: name,
       type: 'radio',
       value: value,
