@@ -47,10 +47,16 @@
   @include responsive-invisibility('.hidden-lg');
 }
 
-/* don't use hide, it's deprecated */
-.hidden.hidden,
-.hide.hide {
+.hidden.hidden {
   display: none;
+}
+
+.visible.visible {
+  display: block;
+}
+
+.invisible {
+  visibility: hidden;
 }
 
 .sr-only.sr-only {
@@ -62,12 +68,6 @@
   overflow: hidden;
   clip: rect(0,0,0,0);
   border: 0;
-}
-
-.visible.visible,
-// don't use show, deprecated
-.show.show {
-  display: block;
 }
 
 .visible-xs-inline.visible-xs-inline,
