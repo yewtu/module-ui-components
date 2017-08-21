@@ -23,6 +23,9 @@
     background-color: $color-blue-light;
     font-weight: $font-weight-semibold;
     margin-right: 5px;
+    &:last-child{
+      margin-right: 0;
+    }
   }
 }
 
