@@ -51,7 +51,6 @@
   font-size: $font-size-sm;
   border-radius: 2px;
   font-weight: 700;
-  line-height: 1.2;
   transition: background-color 0.15s linear, border-color 0.15s linear;
 }
 
@@ -69,12 +68,12 @@
 
 .btn--secondary {
   @include button-like;
-  background-color: $color-yellow;
-  border-color: $color-yellow;
-  color: $color-gray-30;
+  background-color: $color-bluegreen-dark;
+  border-color: $color-bluegreen-dark;
+  color: $color-white;
   &:hover, &:active, &:focus {
-    background-color: $color-yellow-dark;
-    border-color: $color-yellow-dark;
+    background-color: $color-bluegreen;
+    border-color: $color-bluegreen;
     color: $color-white;
   }
 }
@@ -163,8 +162,12 @@
     padding: 0;
     border: 0;
     right: 0;
-    top: 60%;
+    top: 50%;
     transform: translateY(-50%);
     -ms-transform: translateY(-50%);
   }
+}
+
+.btn--icon-lg {
+  padding-right: 1.8em;
 }
