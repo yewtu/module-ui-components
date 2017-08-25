@@ -59,6 +59,12 @@
   visibility: hidden;
 }
 
+.invisible-no-height {
+  visibility: hidden;
+  overflow: hidden;
+  height: 0;
+}
+
 .sr-only.sr-only {
   position: absolute;
   width: 1px;
