@@ -4,3 +4,10 @@
     display: block;
   }
 }
+
+.hidden-sm-inline {
+  display: none;
+  @include media-query($screen-md-min) {
+    display: inline;
+  }
+}
