@@ -30,6 +30,9 @@
     &.table__total-row {
       text-align: right;
     }
+    &.table__total-row {
+      border-bottom: 0 none;
+    }
     &:first-child {
       padding-left: 24px;
     }
