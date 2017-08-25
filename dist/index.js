@@ -130,4 +130,13 @@ Object.defineProperty(exports, 'ErrorMessage', {
   }
 });
 
+var _ProvenanceFarm = require('./ProvenanceFarm/ProvenanceFarm');
+
+Object.defineProperty(exports, 'ProvenanceFarm', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_ProvenanceFarm).default;
+  }
+});
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
