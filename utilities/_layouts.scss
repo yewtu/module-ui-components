@@ -223,3 +223,7 @@ $layout-breakpoint: $screen-sm-min;
 .l-full-height {
   min-height: 100%;
 }
+
+.l-auto-width {
+  display: inline-block;
+}
