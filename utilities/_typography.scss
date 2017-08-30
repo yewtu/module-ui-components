@@ -38,8 +38,16 @@
   color: $color-gray-30;
 }
 
+.text--light {
+  font-weight: $font-weight-light;
+}
+
+.text--regular {
+  font-weight: $font-weight-regular;
+}
+
 .text--bold {
-  font-weight: bold;
+  font-weight: $font-weight-bold;
 }
 
 .text--semibold {
