@@ -59,7 +59,7 @@
   background-color: $color-red-dark;
   border-color: $color-red-dark;
   color: $color-white;
-  &:hover, &:active, &:focus {
+  &:hover, &:active, &:focus, &.active {
     color: $color-white;
     background-color: $color-red;
     border-color: $color-red;
@@ -71,7 +71,7 @@
   background-color: $color-bluegreen-dark;
   border-color: $color-bluegreen-dark;
   color: $color-white;
-  &:hover, &:active, &:focus {
+  &:hover, &:active, &:focus, &.active {
     background-color: $color-bluegreen;
     border-color: $color-bluegreen;
     color: $color-white;
@@ -83,7 +83,7 @@
   background-color: $color-gray-60;
   border-color: $color-gray-60;
   color: $color-gray-96;
-  &:hover, &:active, &:focus {
+  &:hover, &:active, &:focus, &.active {
     background-color: $color-gray-40;
     border-color: $color-gray-40;
     color: $color-white;
@@ -95,7 +95,7 @@
   color: $color-white;
   background-color: $color-orange;
   border-color: $color-orange;
-  &:hover, &:active, &:focus {
+  &:hover, &:active, &:focus, &.active {
     color: $color-white;
   }
 }
@@ -104,7 +104,7 @@
   @include button-like;
   color: $color-white;
   background-color: $color-gray-60;
-  &:hover, &:active, &:focus {
+  &:hover, &:active, &:focus, &.active {
     color: $color-white;
   }
 }
@@ -114,6 +114,9 @@
   font-size: $font-size-xs;
   line-height: $font-size-xs;
   text-transform: uppercase;
+  &.btn--xxs {
+    font-size: $font-size-xxs;
+  }
 }
 
 .btn--block {
@@ -121,19 +124,29 @@
   width: 100%;
 }
 
-.btn--xxxs {
+.btn--xxxs.btn--xxxs {
   font-size: $font-size-xxxs;
 }
 
-.btn--xxs {
+.btn--xxs.btn--xxs {
+  font-size: $font-size-xxxs;
+  height: $form-control-height-xxs;
+  padding: $form-control-padding-xxs;
+  line-height: 1;
+  min-width: initial;
+}
+
+.btn--xs.btn--xs {
   font-size: $font-size-xxs;
+  height: $form-control-height-xs;
+  padding: $form-control-padding-xs;
+  min-width: initial;
+  @include media-query($screen-sm-min) {
+    font-size: $font-size-xs;
+  }
 }
 
-.btn--xs {
-  font-size: $font-size-xs;
-}
-
-.btn--sm {
+.btn--sm.btn--sm {
   font-size: $font-size-xs;
   height: $form-control-height-sm;
   padding: $form-control-padding-xs;
@@ -144,7 +157,7 @@
   }
 }
 
-.btn--lg {
+.btn--lg.btn--lg {
   font-size: $font-size-lg;
   padding: $form-control-padding-lg;
   line-height: 1.2;
