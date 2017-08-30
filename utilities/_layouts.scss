@@ -118,6 +118,7 @@ $percentage-map: (
   }
   @each $screenWidth in $screenWidths {
     .l-width-#{$screenWidth}-#{$percentage} {
+      width: 100%;
       @include media-query('$screen-#{$screenWidth}-min') {
         width: map-get($percentage-map, $percentage);
       }
