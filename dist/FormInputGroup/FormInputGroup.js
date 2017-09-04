@@ -26,6 +26,7 @@ var FormInputGroup = function FormInputGroup(_ref) {
       helpText = _ref.helpText,
       input = _ref.input,
       error = _ref.error,
+      showErrorMsg = _ref.showErrorMsg,
       isInline = _ref.isInline,
       suffixLabel = _ref.suffixLabel,
       size = _ref.size;
@@ -47,7 +48,7 @@ var FormInputGroup = function FormInputGroup(_ref) {
       { className: 'form-control-help' },
       helpText
     ),
-    error && _react2.default.createElement(
+    error && showErrorMsg && _react2.default.createElement(
       'div',
       { className: 'form-control-error' },
       error
@@ -66,7 +67,12 @@ FormInputGroup.propTypes = {
   label: _propTypes2.default.string.isRequired,
   helpText: _propTypes2.default.string,
   error: _propTypes2.default.string,
+  showErrorMsg: _propTypes2.default.bool,
   input: _propTypes2.default.object.isRequired
+};
+
+FormInputGroup.defaultProps = {
+  showErrorMsg: true
 };
 
 exports.default = FormInputGroup;

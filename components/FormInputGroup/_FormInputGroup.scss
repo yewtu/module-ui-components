@@ -41,7 +41,9 @@
 .form-control-error {
   font-size: $font-size-xs;
   color: $color-red-dark;
-  margin-bottom: $spacing-sm;
+  .form-input-group & {
+    margin-bottom: $spacing-sm;
+  }
 }
 
 .form-control-suffix-label {
@@ -56,4 +58,8 @@
 
 .form-input-group--xs .form-control-label {
   font-size: $font-size-xs;
+}
+
+.form-input-group--sm .form-control-suffix-label {
+  font-size: $font-size-sm;
 }
