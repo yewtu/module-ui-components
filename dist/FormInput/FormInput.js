@@ -135,4 +135,8 @@ FormInput.propTypes = {
 	prefixLabel: _propTypes2.default.string
 };
 
+FormInput.defaultProps = {
+	value: ''
+};
+
 exports.default = FormInput;
