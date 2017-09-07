@@ -29,7 +29,7 @@ export default class UserLogin extends React.Component {
 									<i
 										className="header__item-vcentered icon icon--account-circle icon--white icon--xxxl"/>
 							}
-							<a href="/logout" className="user-login__greeting link text text--white text--xs padding-left-md t-btn-logout">Log
+							<a href="/logout" className="link text text--white text--xs user-login__logout t-btn-logout">Log
 								out</a>
 						</div>
 						:

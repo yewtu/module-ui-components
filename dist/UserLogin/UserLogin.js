@@ -70,7 +70,7 @@ var UserLogin = function (_React$Component) {
 						className: 'header__item-vcentered icon icon--account-circle icon--white icon--xxxl' }),
 					_react2.default.createElement(
 						'a',
-						{ href: '/logout', className: 'user-login__greeting link text text--white text--xs padding-left-md t-btn-logout' },
+						{ href: '/logout', className: 'link text text--white text--xs user-login__logout t-btn-logout' },
 						'Log out'
 					)
 				) : _react2.default.createElement(

@@ -1,5 +1,5 @@
 
-.user-login__greeting {
+.user-login__greeting.user-login__greeting {
   display: none;
   @include media-query($screen-sm-min) {
     display: inline-block
@@ -16,4 +16,11 @@
   font-size: $font-size-xxs;
   line-height: 1.2;
   margin-left: 10px;
+}
+
+.user-login__logout {
+  padding-left: $spacing-xs;
+  @include media-query($screen-sm-min) {
+    padding-left: $spacing-md;
+  }
 }
