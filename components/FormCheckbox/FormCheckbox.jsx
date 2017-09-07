@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const FormCheckbox = ({name, value, checked, onChange, label, showCheckbox}) => {
+const FormCheckbox = ({name, value, checked, onChange, label, showCheckbox, isInline}) => {
   // if an onChange prop has been passed, make this a controlled component
   const checkedProp = {
     [onChange ? 'checked' : 'defaultChecked']: checked
   };
   return (
-    <label className={`form-checkbox t-checkbox-${name}-${value} ${showCheckbox ? '' : 'form-checkbox--no-box'}`}>
+    <label className={`form-checkbox t-checkbox-${name}-${value} ${showCheckbox ? '' : 'form-checkbox--no-box'} ${isInline ? ' form-checkbox--inline' : ''}`}>
       <input name={name}
              type="checkbox"
              value={value}

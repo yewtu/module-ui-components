@@ -24,13 +24,14 @@ var FormCheckbox = function FormCheckbox(_ref) {
       checked = _ref.checked,
       onChange = _ref.onChange,
       label = _ref.label,
-      showCheckbox = _ref.showCheckbox;
+      showCheckbox = _ref.showCheckbox,
+      isInline = _ref.isInline;
 
   // if an onChange prop has been passed, make this a controlled component
   var checkedProp = _defineProperty({}, onChange ? 'checked' : 'defaultChecked', checked);
   return _react2.default.createElement(
     'label',
-    { className: 'form-checkbox t-checkbox-' + name + '-' + value + ' ' + (showCheckbox ? '' : 'form-checkbox--no-box') },
+    { className: 'form-checkbox t-checkbox-' + name + '-' + value + ' ' + (showCheckbox ? '' : 'form-checkbox--no-box') + ' ' + (isInline ? ' form-checkbox--inline' : '') },
     _react2.default.createElement('input', _extends({ name: name,
       type: 'checkbox',
       value: value,
