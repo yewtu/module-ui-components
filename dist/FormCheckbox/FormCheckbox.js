@@ -25,6 +25,7 @@ var FormCheckbox = function FormCheckbox(_ref) {
       onChange = _ref.onChange,
       label = _ref.label,
       showCheckbox = _ref.showCheckbox,
+      showLabel = _ref.showLabel,
       isInline = _ref.isInline;
 
   // if an onChange prop has been passed, make this a controlled component
@@ -43,7 +44,7 @@ var FormCheckbox = function FormCheckbox(_ref) {
       className: 'form-checkbox__icon-inactive icon icon--checkbox-unchecked icon--gray' }),
     _react2.default.createElement(
       'span',
-      { className: 'form-checkbox__label' },
+      { className: 'form-checkbox__label' + (showLabel === false ? ' sr-only' : '') },
       label
     )
   );
@@ -55,12 +56,14 @@ FormCheckbox.propTypes = {
   label: _propTypes2.default.string.isRequired,
   checked: _propTypes2.default.bool,
   onChange: _propTypes2.default.func,
-  showCheckbox: _propTypes2.default.bool
+  showCheckbox: _propTypes2.default.bool,
+  showLabel: _propTypes2.default.bool
 };
 
 FormCheckbox.defaultProps = {
   checked: false,
-  showCheckbox: true
+  showCheckbox: true,
+  showLabel: true
 };
 
 exports.default = FormCheckbox;

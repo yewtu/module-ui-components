@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const FormCheckbox = ({name, value, checked, onChange, label, showCheckbox, isInline}) => {
+const FormCheckbox = ({name, value, checked, onChange, label, showCheckbox, showLabel, isInline}) => {
   // if an onChange prop has been passed, make this a controlled component
   const checkedProp = {
     [onChange ? 'checked' : 'defaultChecked']: checked
@@ -17,7 +17,7 @@ const FormCheckbox = ({name, value, checked, onChange, label, showCheckbox, isIn
         className="form-checkbox__icon-active icon icon--checkbox-checked icon--lilac"/> }
       { showCheckbox && <i
         className="form-checkbox__icon-inactive icon icon--checkbox-unchecked icon--gray"/> }
-      <span className="form-checkbox__label">{label}</span>
+      <span className={`form-checkbox__label${showLabel === false ? ' sr-only' : ''}`}>{label}</span>
     </label>
   )
 }
@@ -28,12 +28,14 @@ FormCheckbox.propTypes = {
   label: PropTypes.string.isRequired,
   checked: PropTypes.bool,
   onChange: PropTypes.func,
-  showCheckbox: PropTypes.bool
+  showCheckbox: PropTypes.bool,
+  showLabel: PropTypes.bool
 };
 
 FormCheckbox.defaultProps = {
   checked: false,
-  showCheckbox: true
+  showCheckbox: true,
+  showLabel: true
 };
 
 export default FormCheckbox;
