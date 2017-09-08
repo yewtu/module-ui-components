@@ -43,7 +43,7 @@ class FormInput extends React.Component {
 			required,
 			placeholder = '',
 			isInline,
-			readOnly=false
+			isReadOnly=false,
 		} = this.props;
 		return (
 			<div className={'form-input-wrapper'}>
@@ -63,7 +63,7 @@ class FormInput extends React.Component {
 					step={step}
 					required={required}
 					placeholder={placeholder}
-					readOnly={readOnly}
+					readOnly={isReadOnly}
 				/>
 				{ suffixLabel && <div className="form-input-wrapper__suffix-label">{suffixLabel}</div> }
 			</div>
