@@ -80,7 +80,9 @@ var FormInput = function (_React$Component) {
 			    required = _props.required,
 			    _props$placeholder = _props.placeholder,
 			    placeholder = _props$placeholder === undefined ? '' : _props$placeholder,
-			    isInline = _props.isInline;
+			    isInline = _props.isInline,
+			    _props$isReadOnly = _props.isReadOnly,
+			    isReadOnly = _props$isReadOnly === undefined ? false : _props$isReadOnly;
 
 			return _react2.default.createElement(
 				'div',
@@ -104,7 +106,8 @@ var FormInput = function (_React$Component) {
 					max: max,
 					step: step,
 					required: required,
-					placeholder: placeholder
+					placeholder: placeholder,
+					readOnly: isReadOnly
 				}),
 				suffixLabel && _react2.default.createElement(
 					'div',
@@ -132,7 +135,8 @@ FormInput.propTypes = {
 	min: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.number]),
 	max: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.number]),
 	step: _propTypes2.default.number,
-	prefixLabel: _propTypes2.default.string
+	prefixLabel: _propTypes2.default.string,
+	isReadOnly: _propTypes2.default.bool
 };
 
 FormInput.defaultProps = {

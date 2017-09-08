@@ -94,7 +94,7 @@ FormInput.propTypes = {
 	]),
 	step: PropTypes.number,
 	prefixLabel: PropTypes.string,
-	readOnly: PropTypes.bool,
+	isReadOnly: PropTypes.bool,
 };
 
 FormInput.defaultProps = {
