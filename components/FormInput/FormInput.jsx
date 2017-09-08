@@ -42,7 +42,8 @@ class FormInput extends React.Component {
 			suffixLabel,
 			required,
 			placeholder = '',
-			isInline
+			isInline,
+			readOnly=false
 		} = this.props;
 		return (
 			<div className={'form-input-wrapper'}>
@@ -62,6 +63,7 @@ class FormInput extends React.Component {
 					step={step}
 					required={required}
 					placeholder={placeholder}
+					readOnly={readOnly}
 				/>
 				{ suffixLabel && <div className="form-input-wrapper__suffix-label">{suffixLabel}</div> }
 			</div>
@@ -91,7 +93,8 @@ FormInput.propTypes = {
 		PropTypes.number
 	]),
 	step: PropTypes.number,
-	prefixLabel: PropTypes.string
+	prefixLabel: PropTypes.string,
+	readOnly: PropTypes.bool,
 };
 
 FormInput.defaultProps = {
