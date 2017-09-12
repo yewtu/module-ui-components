@@ -46,10 +46,21 @@
 }
 
 .table--sm {
+  @extend .table--compact-spacing;
   font-size: $font-size-xxxs;
+  @include media-query($screen-md-min) {
+    font-size: $font-size-xs;
+  }
+}
+
+.table--lg {
+  font-size: $font-size-md;
+}
+
+.table--compact-spacing {
   th {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 
   td {
@@ -70,7 +81,6 @@
   }
 
   @include media-query($screen-md-min) {
-    font-size: $font-size-xs;
     th,
     td {
       padding-left: 10px;
@@ -83,11 +93,6 @@
       }
     }
   }
-}
-
-
-.table--lg {
-  font-size: $font-size-md;
 }
 
 .table--auto-layout {
