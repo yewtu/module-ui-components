@@ -13,3 +13,4 @@ export {default as Popup} from "./Popup/Popup";
 export {default as StarRating} from "./StarRating/StarRating";
 export {default as ErrorMessage} from "./ErrorMessage/ErrorMessage";
 export {default as ProvenanceFarm} from "./ProvenanceFarm/ProvenanceFarm";
+export {default as Collapsible} from "./Collapsible/Collapsible";

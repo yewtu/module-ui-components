@@ -139,4 +139,13 @@ Object.defineProperty(exports, 'ProvenanceFarm', {
   }
 });
 
+var _Collapsible = require('./Collapsible/Collapsible');
+
+Object.defineProperty(exports, 'Collapsible', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_Collapsible).default;
+  }
+});
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

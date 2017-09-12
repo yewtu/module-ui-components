@@ -1,0 +1,31 @@
+.collapsible__trigger {
+  text-align: left;
+  .icon--chevron-up {
+    display: none;
+  }
+  .icon--chevron-down {
+    display: inline-block;
+  }
+  &.active .icon--chevron-up {
+    display: inline-block;
+  }
+  &.active .icon--chevron-down {
+    display: none;
+  }
+  &:disabled .icon--chevron-down {
+    opacity: 0.5;
+  }
+}
+
+.collapsible__target.active {
+  height: auto;
+}
+
+.collapsible__target {
+  transition: height 400ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  overflow: hidden;
+  height: 0;
+  &.active {
+    height: auto;
+  }
+}
