@@ -4,7 +4,13 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+var _extends2 = require('babel-runtime/helpers/extends');
+
+var _extends3 = _interopRequireDefault(_extends2);
+
+var _defineProperty2 = require('babel-runtime/helpers/defineProperty');
+
+var _defineProperty3 = _interopRequireDefault(_defineProperty2);
 
 var _react = require('react');
 
@@ -16,8 +22,6 @@ var _propTypes2 = _interopRequireDefault(_propTypes);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 var FormRadio = function FormRadio(_ref) {
   var name = _ref.name,
       value = _ref.value,
@@ -26,11 +30,11 @@ var FormRadio = function FormRadio(_ref) {
       label = _ref.label;
 
   // if an onChange prop has been passed, make this a controlled component
-  var checkedProp = _defineProperty({}, onChange ? 'checked' : 'defaultChecked', checked);
+  var checkedProp = (0, _defineProperty3.default)({}, onChange ? 'checked' : 'defaultChecked', checked);
   return _react2.default.createElement(
     'label',
     { className: 'form-radio t-radio-' + name + '-' + value },
-    _react2.default.createElement('input', _extends({ name: name,
+    _react2.default.createElement('input', (0, _extends3.default)({ name: name,
       type: 'radio',
       value: value,
       onChange: onChange

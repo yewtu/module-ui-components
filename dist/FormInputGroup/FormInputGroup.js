@@ -4,7 +4,9 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+var _extends2 = require('babel-runtime/helpers/extends');
+
+var _extends3 = _interopRequireDefault(_extends2);
 
 var _react = require('react');
 
@@ -28,6 +30,7 @@ var FormInputGroup = function FormInputGroup(_ref) {
       error = _ref.error,
       showErrorMsg = _ref.showErrorMsg,
       isInline = _ref.isInline,
+      inlineLabel = _ref.inlineLabel,
       suffixLabel = _ref.suffixLabel,
       size = _ref.size;
 
@@ -35,13 +38,9 @@ var FormInputGroup = function FormInputGroup(_ref) {
     'div',
     { className: 'form-input-group' + (isInline ? ' form-input-group--inline' : '') + (error ? ' form-input-group--has-error' : '') + ' ' + (size ? ' form-input-group--' + size : '') },
     _react2.default.createElement(
-      'div',
-      null,
-      _react2.default.createElement(
-        'label',
-        { className: 'form-control-label', htmlFor: id },
-        label
-      )
+      'label',
+      { className: 'form-control-label ' + (inlineLabel ? 'form-control-label--inline' : ''), htmlFor: id },
+      label
     ),
     helpText && _react2.default.createElement(
       'div',
@@ -53,7 +52,7 @@ var FormInputGroup = function FormInputGroup(_ref) {
       { className: 'form-control-error' },
       error
     ),
-    _react2.default.createElement(_FormInput2.default, _extends({ id: id, hasError: Boolean(error), size: size }, input)),
+    _react2.default.createElement(_FormInput2.default, (0, _extends3.default)({ id: id, hasError: Boolean(error), size: size }, input)),
     suffixLabel && _react2.default.createElement(
       'div',
       { className: 'form-control-suffix-label' },
@@ -72,7 +71,8 @@ FormInputGroup.propTypes = {
 };
 
 FormInputGroup.defaultProps = {
-  showErrorMsg: true
+  showErrorMsg: true,
+  inlineLabel: false
 };
 
 exports.default = FormInputGroup;
