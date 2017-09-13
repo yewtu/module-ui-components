@@ -25,6 +25,8 @@
     "babel-preset-react": "^6.24.1"
   },
   "dependencies": {
+    "@storybook/addon-info": "^3.2.9",
+    "@storybook/addon-options": "^3.2.6",
     "@storybook/react": "^3.2.8",
     "classnames": "^2.2.5",
     "css-loader": "^0.28.7",
