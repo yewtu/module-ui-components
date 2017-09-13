@@ -115,3 +115,11 @@ $icons: account-circle check-circle checkbox-checked checkbox-unchecked chevron-
 .icon--vcenter {
   vertical-align: middle;
 }
+
+.icon--rotate-45 {
+  transition: transform 0.2s ease-in-out;
+  &.active {
+    transform: rotate(45deg);
+  }
+}
+
