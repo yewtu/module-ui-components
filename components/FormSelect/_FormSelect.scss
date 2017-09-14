@@ -13,6 +13,13 @@
   }
 }
 
+.form-select--xs {
+  font-size: $font-size-xxs;
+  min-height: $form-control-height-xs;
+  padding: $form-control-padding-xs;
+  padding-right: 20px;
+}
+
 .form-select--sm {
   font-size: $font-size-xs;
   min-height: $form-control-height-sm;
