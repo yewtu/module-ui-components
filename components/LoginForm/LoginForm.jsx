@@ -31,7 +31,7 @@ export default class LoginForm extends React.Component {
 			}
 		];
 		return (
-			<div className={'login-form'}>
+			<div className={'login-form bg-default'}>
 				<form action={`${this.props.formAction}?redirect=${this.props.redirect}`} method="post">
 					<div className="margin-bottom-md">
 						<FormInputGroup id="username" label="Username"
