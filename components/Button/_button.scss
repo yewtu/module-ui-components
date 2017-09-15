@@ -166,12 +166,13 @@
 
 .btn--icon {
   position: relative;
-  padding-right: 1.2em;
+  padding-right: 2em;
+  min-width: initial;
   > i {
     position: absolute;
     padding: 0;
     border: 0;
-    right: 0;
+    right: 0.7em;
     top: 50%;
     transform: translateY(-50%);
     -ms-transform: translateY(-50%);
