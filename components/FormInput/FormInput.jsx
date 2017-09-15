@@ -33,7 +33,6 @@ class FormInput extends React.Component {
 			id,
 			name,
 			type,
-			onChange,
 			size,
 			min,
 			max,
