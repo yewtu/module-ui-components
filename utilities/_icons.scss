@@ -117,9 +117,22 @@ $icons: account-circle check-circle checkbox-checked checkbox-unchecked chevron-
 }
 
 .icon--rotate-45 {
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.15s ease-in-out;
   &.active {
     transform: rotate(45deg);
   }
 }
 
+.icon--rotate-90 {
+  transition: transform 0.2s ease-in-out;
+  &.active {
+    transform: rotate(90deg);
+  }
+}
+
+.icon--rotate-180 {
+  transition: transform 0.25s ease-in-out;
+  &.active {
+    transform: rotate(-180deg);
+  }
+}
