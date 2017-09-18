@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="72px" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>09n</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="-110.546875%" x2="50%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#EAEAEA" offset="0%"></stop>
+            <stop stop-color="#D0D0D0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Weather-Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="09n">
+            <g transform="translate(3.000000, 11.000000)">
+                <path d="M22.3333333,30.7924528 C17.1786667,30.7924528 13,26.7714717 13,21.8113208 C13,16.8511698 17.1786667,12.8301887 22.3333333,12.8301887 C22.3333333,8.57890566 25.9153333,5.13207547 30.3333333,5.13207547 C32.7286667,5.13207547 34.8673333,6.15335849 36.3333333,7.75841509 C37.9653333,3.24603774 42.4213333,0 47.6666667,0 C54.294,0 59.6666667,5.16992453 59.6666667,11.5471698 C59.6666667,11.7357736 59.6546667,11.9218113 59.646,12.1084906 C63.544,13.4203774 66.3333333,16.9602264 66.3333333,21.1698113 C66.3333333,26.5007547 61.874,30.7924528 56.3333333,30.7924528 L39,30.7924528 L22.3333333,30.7924528 Z" id="Light-Cloud" fill="#FFFFFF" fill-rule="evenodd"></path>
+                <path d="M7,30.7924528 C3.134,30.7924528 0,27.776717 0,24.0566038 C0,20.3364906 3.134,17.3207547 7,17.3207547 C7,14.1322925 9.6865,11.5471698 13,11.5471698 C14.7965,11.5471698 16.4005,12.3131321 17.5,13.5169245 C18.724,10.1326415 22.066,7.69811321 26,7.69811321 C30.9705,7.69811321 35,11.5755566 35,16.3584906 C35,16.4999434 34.991,16.6394717 34.9845,16.7794811 C37.908,17.7633962 40,20.418283 40,23.5754717 C40,27.5736792 36.6555,30.7924528 32.5,30.7924528 L19.5,30.7924528 L7,30.7924528 Z" id="Dark-Cloud" fill="url(#linearGradient-1)" fill-rule="evenodd" transform="translate(20.000000, 19.245283) scale(-1, 1) translate(-20.000000, -19.245283) "></path>
+                <path d="M28.4285714,28.3180593 L22,39.4528302" id="Line" stroke="#77C0F0" stroke-width="3" stroke-linecap="round"></path>
+                <path d="M34.8571429,34.0916442 L26.4285714,49.0754717" id="Line-Copy" stroke="#77C0F0" stroke-width="3" stroke-linecap="round"></path>
+                <path d="M48.1428571,28.3180593 L41.7142857,39.4528302" id="Line-Copy-2" stroke="#77C0F0" stroke-width="3" stroke-linecap="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>
