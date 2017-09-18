@@ -3,6 +3,32 @@ import ButtonLink from './ButtonLink';
 import {storiesOf} from '@storybook/react';
 import {withInfo} from '@storybook/addon-info';
 
+
+storiesOf('Buttons/Text buttons', module)
+	.add('Primary button', withInfo('')(() =>
+		<button className='btn btn--primary'>Submit</button>
+	))
+	.add('Secondary button', withInfo('')(() =>
+		<button className='btn btn--secondary'>Cancel</button>
+	))
+	.add('Tertiary button', withInfo('')(() =>
+		<button className='btn btn--tertiary'>Details</button>
+	));
+
+storiesOf('Buttons/Sizes', module)
+	.add('Large button', withInfo('')(() =>
+		<button className='btn btn--primary btn--lg'>Submit</button>
+	))
+	.add('Small button', withInfo('')(() =>
+		<button className='btn btn--primary btn--sm'>Submit</button>
+	))
+	.add('X-small button', withInfo('')(() =>
+		<button className='btn btn--primary btn--xs'>Submit</button>
+	))
+	.add('XX-small button', withInfo('')(() =>
+		<button className='btn btn--primary btn--xxs'>Submit</button>
+	));
+
 storiesOf('Buttons/ButtonLink', module)
 	.add('Primary', withInfo('')(() =>
 		<ButtonLink linkUrl='test'>Go to dashboard</ButtonLink>
