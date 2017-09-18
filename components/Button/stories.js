@@ -39,7 +39,7 @@ storiesOf('Buttons/ButtonLink', module)
 
 storiesOf('Buttons/Icon buttons', module)
 	.add('Icon with text', withInfo('')(() =>
-		<button className='btn btn--icon btn--primary'><i className='icon icon--white icon--sm icon--plus' />Add</button>
+		<button className='btn btn--icon btn--primary'><i className='icon icon--white icon--plus' />Add</button>
 	))
 	.add('Icon only, no background', withInfo('')(() =>
 		<button className='btn btn--icon-only'><i className='icon icon--gray icon--plus' /></button>
