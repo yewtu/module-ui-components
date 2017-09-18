@@ -9,29 +9,59 @@
   height: 1rem;
 }
 
-$icons: account-circle check-circle checkbox-checked checkbox-unchecked chevron-down chevron-up chevron-left chevron-right cross plus alert shopping-cart health arrow-back arrow-forward done location-symbol menu more close print radio-checked radio-unchecked star-full star-empty star-half beefchart cullcow market live weather-day-atmosphere weather-day-clear weather-day-clouds weather-day-drizzle weather-day-rain weather-day-snow weather-day-thunderstorm weather-night-atmosphere weather-night-clear weather-night-clouds weather-night-drizzle weather-night-rain weather-night-snow weather-night-thunderstorm arrow-left-circle arrow-right-circle;
+$icons: account-circle check-circle chevron-down chevron-up chevron-left chevron-right plus alert shopping-cart health arrow-back arrow-forward done menu more close print radio-checked radio-unchecked beefchart cullcow market live weather-day-atmosphere weather-day-clear weather-day-clouds weather-day-drizzle weather-day-rain weather-day-snow weather-day-thunderstorm weather-night-atmosphere weather-night-clear weather-night-clouds weather-night-drizzle weather-night-rain weather-night-snow weather-night-thunderstorm arrow-left-circle arrow-right-circle;
+
+$white-icons: account-circle chevron-down chevron-up chevron-left chevron-right menu plus print shopping-cart;
+
+$lilac-icons: calendar check-circle checkbox-checked location-symbol radio-checked radio-unchecked shopping-cart;
+
+$gray-icons: beefchart check-circle checkbox-unchecked chevron-down chevron-up chevron-left chevron-right plus shopping-cart radio-unchecked;
+
+$yellow-icons: star-empty star-full star-half;
+
+$green-icons: done;
+
+$red-icons: cross;
 
 @each $icon in $icons {
   .icon--#{$icon} {
-    background-image: url(/icons/#{$icon}.svg);
-    &.icon--white {
-      background-image: url(/icons/#{$icon}-white.svg);
-    }
-    &.icon--lilac {
-      background-image: url(/icons/#{$icon}-lilac.svg);
-    }
-    &.icon--gray {
-      background-image: url(/icons/#{$icon}-gray.svg);
-    }
-    &.icon--yellow {
-      background-image: url(/icons/#{$icon}-yellow.svg);
-    }
-    &.icon--green {
-      background-image: url(/icons/#{$icon}-green.svg);
-    }
-    &.icon--red {
-      background-image: url(/icons/#{$icon}-red.svg);
-    }
+    background-image: url('../public/icons/#{$icon}.svg');
+  }
+}
+
+@each $icon in $white-icons {
+  .icon--#{$icon}.icon--white {
+    background-image: url('../public/icons/#{$icon}-white.svg');
+  }
+}
+
+@each $icon in $lilac-icons {
+  .icon--#{$icon}.icon--lilac {
+    background-image: url('../public/icons/#{$icon}-lilac.svg');
+  }
+}
+
+@each $icon in $gray-icons {
+  .icon--#{$icon}.icon--gray {
+    background-image: url('../public/icons/#{$icon}-gray.svg');
+  }
+}
+
+@each $icon in $yellow-icons {
+  .icon--#{$icon}.icon--yellow {
+    background-image: url('../public/icons/#{$icon}-yellow.svg');
+  }
+}
+
+@each $icon in $green-icons {
+  .icon--#{$icon}.icon--green {
+    background-image: url('../public/icons/#{$icon}-green.svg');
+  }
+}
+
+@each $icon in $red-icons {
+  .icon--#{$icon}.icon--red {
+    background-image: url('../public/icons/#{$icon}-red.svg');
   }
 }
 
