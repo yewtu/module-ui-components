@@ -25,43 +25,43 @@ $red-icons: cross;
 
 @each $icon in $icons {
   .icon--#{$icon} {
-    background-image: url('../public/icons/#{$icon}.svg');
+    background-image: url('/icons/#{$icon}.svg');
   }
 }
 
 @each $icon in $white-icons {
   .icon--#{$icon}.icon--white {
-    background-image: url('../public/icons/#{$icon}-white.svg');
+    background-image: url('/icons/#{$icon}-white.svg');
   }
 }
 
 @each $icon in $lilac-icons {
   .icon--#{$icon}.icon--lilac {
-    background-image: url('../public/icons/#{$icon}-lilac.svg');
+    background-image: url('/icons/#{$icon}-lilac.svg');
   }
 }
 
 @each $icon in $gray-icons {
   .icon--#{$icon}.icon--gray {
-    background-image: url('../public/icons/#{$icon}-gray.svg');
+    background-image: url('/icons/#{$icon}-gray.svg');
   }
 }
 
 @each $icon in $yellow-icons {
   .icon--#{$icon}.icon--yellow {
-    background-image: url('../public/icons/#{$icon}-yellow.svg');
+    background-image: url('/icons/#{$icon}-yellow.svg');
   }
 }
 
 @each $icon in $green-icons {
   .icon--#{$icon}.icon--green {
-    background-image: url('../public/icons/#{$icon}-green.svg');
+    background-image: url('/icons/#{$icon}-green.svg');
   }
 }
 
 @each $icon in $red-icons {
   .icon--#{$icon}.icon--red {
-    background-image: url('../public/icons/#{$icon}-red.svg');
+    background-image: url('/icons/#{$icon}-red.svg');
   }
 }
 
