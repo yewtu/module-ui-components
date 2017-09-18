@@ -6,7 +6,7 @@ export default class ProvenanceFarm extends React.Component {
 		const {farmProvenanceCertifications, size} = this.props;
 		return <span className={`provenance-farm provenance-farm--${size}`}>
 			{
-				farmProvenanceCertifications.map((type, idx) => <img key={idx} height='40px' className="provenance-farm__img" src={`/images/certification-logos/${type.id}.png`} alt={type.label} />)
+				farmProvenanceCertifications.map((type, idx) => <img key={idx} height='40px' className="provenance-farm__img" src={`/img/certification-logos/${type.id}.png`} alt={type.label} />)
 			}
 		</span>;
 	}
