@@ -48,6 +48,9 @@ $icons: account-circle check-circle checkbox-checked checkbox-unchecked chevron-
     &.icon-text--lg {
       padding-right: 2em;
     }
+    &.icon-text--sm {
+      padding-right: 1.2em;
+    }
   }
   > i {
     position: absolute;
