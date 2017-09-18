@@ -17,6 +17,10 @@
   }
 }
 
+.collapsible__trigger-title {
+  margin-right: 0.5em;
+}
+
 .collapsible__target.active {
   height: auto;
 }
