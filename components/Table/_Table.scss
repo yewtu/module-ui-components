@@ -59,6 +59,9 @@
   @include media-query($screen-md-min) {
     font-size: $font-size-md;
   }
+  th {
+    font-size: $font-size-sm;
+  }
 }
 
 .table--compact-spacing {
