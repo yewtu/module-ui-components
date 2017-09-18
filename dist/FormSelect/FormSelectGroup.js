@@ -21,15 +21,15 @@ var FormSelectGroup = function FormSelectGroup(_ref) {
       select = _ref.select,
       hasError = _ref.hasError,
       isInline = _ref.isInline,
-      _ref$size = _ref.size,
-      size = _ref$size === undefined ? 'md' : _ref$size;
+      size = _ref.size,
+      showLabel = _ref.showLabel;
 
   return _react2.default.createElement(
     'div',
     { className: 'form-input-group' + (isInline ? ' form-input-group--inline' : '') },
     _react2.default.createElement(
       'label',
-      { className: 'form-control-label', htmlFor: id },
+      { className: 'form-control-label' + (showLabel ? '' : ' sr-only'), htmlFor: id },
       label
     ),
     helpText && _react2.default.createElement(
@@ -43,7 +43,7 @@ var FormSelectGroup = function FormSelectGroup(_ref) {
         name: select.name,
         onChange: select.onChange,
         value: select.value,
-        className: 'form-select ' + (select.classNames || '') + ' ' + (hasError ? ' form-select--has-error' : '') + ' ' + (size ? ' form-select--' + size : '')
+        className: 'form-select ' + (select.classNames || '') + ' ' + (hasError ? ' form-select--has-error' : '') + ' ' + (size ? ' form-select--' + size : '') + ' ' + (select.autoWidth ? ' form-select--inline' : '')
       },
       select.options.map(function (option, idx) {
         return _react2.default.createElement(
@@ -63,6 +63,7 @@ FormSelectGroup.propTypes = {
   label: _propTypes2.default.string,
   helpText: _propTypes2.default.string,
   hasError: _propTypes2.default.bool,
+  showLabel: _propTypes2.default.bool,
   select: _propTypes2.default.shape({
     name: _propTypes2.default.string,
     classNames: _propTypes2.default.string,
@@ -72,8 +73,14 @@ FormSelectGroup.propTypes = {
     onChange: _propTypes2.default.func,
     focus: _propTypes2.default.bool,
     optionLabelKey: _propTypes2.default.string,
-    optionValueKey: _propTypes2.default.string
+    optionValueKey: _propTypes2.default.string,
+    autoWidth: _propTypes2.default.bool
   })
+};
+
+FormSelectGroup.defaultProps = {
+  size: 'md',
+  showLabel: true
 };
 
 exports.default = FormSelectGroup;

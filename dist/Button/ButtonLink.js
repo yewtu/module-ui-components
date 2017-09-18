@@ -51,11 +51,11 @@ var ButtonLink = function (_React$Component) {
 				'a',
 				{
 					href: linkUrl,
-					className: 'btn btn--' + type + ' btn--icon btn--icon-lg ' + classNames,
+					className: 'btn btn--' + type + ' btn--icon ' + classNames,
 					onClick: onClick
 				},
 				this.props.children,
-				_react2.default.createElement('i', { className: 'icon icon--chevron-right icon--white icon--xl' })
+				_react2.default.createElement('i', { className: 'icon icon--chevron-right icon--white' })
 			);
 		}
 	}]);

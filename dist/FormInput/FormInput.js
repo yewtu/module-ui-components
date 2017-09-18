@@ -78,7 +78,6 @@ var FormInput = function (_React$Component) {
 			    id = _props.id,
 			    name = _props.name,
 			    type = _props.type,
-			    onChange = _props.onChange,
 			    size = _props.size,
 			    min = _props.min,
 			    max = _props.max,

@@ -69,7 +69,7 @@ var LoginForm = function (_React$Component) {
 			}];
 			return _react2.default.createElement(
 				'div',
-				{ className: 'login-form' },
+				{ className: 'login-form bg-default' },
 				_react2.default.createElement(
 					'form',
 					{ action: this.props.formAction + '?redirect=' + this.props.redirect, method: 'post' },

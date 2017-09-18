@@ -66,10 +66,10 @@ var Collapsible = function (_React$Component) {
 					{ className: 'collapsible__trigger btn' + (this.state.collapsed ? '' : ' active'), type: 'button', onClick: this.onToggle },
 					_react2.default.createElement(
 						'span',
-						{ className: 'icon-text icon-text--right' },
+						{ className: 'icon-text icon-text--right icon-text--' + triggerSize },
 						_react2.default.createElement(
 							'span',
-							{ className: triggerTextClasses },
+							{ className: 'collapsible__trigger-title ' + triggerTextClasses },
 							triggerTitle
 						),
 						_react2.default.createElement('i', { className: 'icon icon--chevron-down icon--gray icon--' + triggerSize }),

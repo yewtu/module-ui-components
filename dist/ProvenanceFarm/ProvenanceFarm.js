@@ -49,7 +49,7 @@ var ProvenanceFarm = function (_React$Component) {
 				'span',
 				{ className: 'provenance-farm provenance-farm--' + size },
 				farmProvenanceCertifications.map(function (type, idx) {
-					return _react2.default.createElement('img', { key: idx, height: '40px', className: 'provenance-farm__img', src: '/images/certification-logos/' + type.id + '.png', alt: type.label });
+					return _react2.default.createElement('img', { key: idx, height: '40px', className: 'provenance-farm__img', src: '/img/certification-logos/' + type.id + '.png', alt: type.label });
 				})
 			);
 		}

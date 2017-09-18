@@ -101,5 +101,6 @@ Header.propTypes = {
 
 Header.defaultProps = {
 	type: '',
-	navItems: []
+	navItems: [],
+	user: {}
 };
