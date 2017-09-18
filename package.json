@@ -6,7 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel ./components --out-dir ./dist --presets env,react",
     "watch": "babel ./components --out-dir ./dist --presets env,react --watch",
-    "storybook": "start-storybook -p 9001 -c .storybook -s ./public,./public/img"
+    "storybook": "start-storybook -p 9001 -c .storybook -s ./public,./public/img",
+    "build-storybook": "build-storybook -c .storybook -o ./docs"
   },
   "repository": {
     "type": "git",
