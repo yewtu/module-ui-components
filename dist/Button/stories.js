@@ -81,6 +81,33 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 		_react2.default.createElement('i', { className: 'icon icon--white icon--plus' }),
 		'Add'
 	);
+})).add('Icon only, with toggle', (0, _addonInfo.withInfo)('')(function () {
+	return _react2.default.createElement(
+		'div',
+		{ className: 'bg-gray-60 padding-lg' },
+		_react2.default.createElement(
+			'p',
+			{ className: 'text text--white' },
+			'Use the component\'s state to toggle the \'active\' class from one of the contained icons...'
+		),
+		_react2.default.createElement(
+			'button',
+			{ type: 'button', className: 'btn btn--icon-only-toggle' },
+			_react2.default.createElement('i', { className: 'icon icon--white icon--settings icon--xl active' }),
+			_react2.default.createElement('i', { className: 'icon icon--white icon--cross icon--xl' })
+		),
+		_react2.default.createElement(
+			'p',
+			{ className: 'text text--white' },
+			'... to the other'
+		),
+		_react2.default.createElement(
+			'button',
+			{ type: 'button', className: 'btn btn--icon-only-toggle' },
+			_react2.default.createElement('i', { className: 'icon icon--white icon--settings icon--xl' }),
+			_react2.default.createElement('i', { className: 'icon icon--white icon--cross icon--xl active' })
+		)
+	);
 })).add('Icon only, no background', (0, _addonInfo.withInfo)('')(function () {
 	return _react2.default.createElement(
 		'div',

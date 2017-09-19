@@ -39,11 +39,26 @@ storiesOf('Buttons/ButtonLink', module)
 
 storiesOf('Buttons/Icon buttons', module)
 	.add('Icon with text', withInfo('')(() =>
-		<button className='btn btn--icon btn--primary'><i className='icon icon--white icon--plus' />Add</button>
+		<button className='btn btn--icon btn--primary'><i className='icon icon--white icon--plus'/>Add</button>
 	))
+	.add('Icon only, with toggle', withInfo('')(() =>
+			<div className='bg-gray-60 padding-lg'>
+				<p className='text text--white'>Use the component's state to toggle the 'active' class from one of the contained icons...</p>
+				<button type='button' className='btn btn--icon-only-toggle'>
+					<i className='icon icon--white icon--settings icon--xl active'/>
+					<i className='icon icon--white icon--cross icon--xl'/>
+				</button>
+				<p className='text text--white'>... to the other</p>
+				<button type='button' className='btn btn--icon-only-toggle'>
+					<i className='icon icon--white icon--settings icon--xl'/>
+					<i className='icon icon--white icon--cross icon--xl active'/>
+				</button>
+			</div>
+		)
+	)
 	.add('Icon only, no background', withInfo('')(() =>
 		<div>
 			<p>The button has a hit area of 36px square so about big enough for small screens</p>
-		<button className='btn btn--icon-only'><i className='icon icon--gray icon--plus' /></button>
+			<button className='btn btn--icon-only'><i className='icon icon--gray icon--plus'/></button>
 		</div>
 	));

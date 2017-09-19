@@ -191,3 +191,13 @@
     margin: $spacing-sm;
   }
 }
+
+.btn--icon-only-toggle {
+  @extend .btn--icon-only;
+  > i {
+    display: none;
+    &.active {
+      display: inline-block;
+    }
+  }
+}
