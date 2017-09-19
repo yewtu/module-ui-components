@@ -14,12 +14,12 @@
   background-color: $color-white;
   color: $color-gray-40;
   border-radius: 6px;
+  width: 90%;
   .modal.active & {
     display: block;
   }
   .modal--md & {
     max-width: 800px;
-    width: 90%;
     @include media-query($screen-sm-min) {
       width: 70%;
     }
