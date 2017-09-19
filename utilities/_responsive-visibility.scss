@@ -5,9 +5,30 @@
   }
 }
 
+.hidden-xs-inline {
+  display: none;
+  @include media-query($screen-sm-min) {
+    display: inline;
+  }
+}
+
 .hidden-sm-inline {
   display: none;
   @include media-query($screen-md-min) {
     display: inline;
+  }
+}
+
+.hidden-xs-block {
+  display: none;
+  @include media-query($screen-sm-min) {
+    display: block;
+  }
+}
+
+.hidden-sm-block {
+  display: none;
+  @include media-query($screen-md-min) {
+    display: block;
   }
 }
