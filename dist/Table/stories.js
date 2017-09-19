@@ -200,7 +200,7 @@ var tbody = function tbody() {
 }).add('Fixed header (responsive)', function () {
 	return _react2.default.createElement(
 		'div',
-		{ className: 'padding-xl bg-gray-94 l-width-xs-100 l-width-sm-50' },
+		{ className: 'padding-xl bg-gray-94' },
 		_react2.default.createElement(
 			'p',
 			null,
