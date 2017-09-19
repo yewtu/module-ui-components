@@ -11,6 +11,13 @@ UI components and shared styles for Yewtu apps, both web and native
 
 ### View web component library
 
+We use [Storybook](https://storybook.js.org).
+
+One off task to install CLI:
+```
+yarn global add @storybook/cli
+```
+
 #### Local
 To view all components locally:
 ```
@@ -20,7 +27,7 @@ yarn storybook
 Then go to http://localhost:9001
 
 #### Github pages
-On Github pages: https://yewtu.github.io/module-ui-components
+On [Github pages](https://yewtu.github.io/module-ui-components):.
 
 To publish to Github pages:
 ```
