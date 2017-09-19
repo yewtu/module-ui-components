@@ -153,7 +153,7 @@ var tbody = function tbody() {
 (0, _react3.storiesOf)('Table', module).add('Standard size', function () {
 	return _react2.default.createElement(
 		'div',
-		{ className: 'l-width-50' },
+		{ className: 'l-width-xs-100 l-width-sm-50' },
 		_react2.default.createElement(
 			'table',
 			{ className: 'table' },
@@ -164,7 +164,7 @@ var tbody = function tbody() {
 }).add('Small size', function () {
 	return _react2.default.createElement(
 		'div',
-		{ className: 'l-width-50' },
+		{ className: 'l-width-xs-100 l-width-sm-50' },
 		_react2.default.createElement(
 			'table',
 			{
@@ -176,7 +176,7 @@ var tbody = function tbody() {
 }).add('Large size', function () {
 	return _react2.default.createElement(
 		'div',
-		{ className: 'l-width-50' },
+		{ className: 'l-width-xs-100 l-width-sm-50' },
 		_react2.default.createElement(
 			'table',
 			{
@@ -188,7 +188,7 @@ var tbody = function tbody() {
 }).add('Striped rows', function () {
 	return _react2.default.createElement(
 		'div',
-		{ className: 'l-width-50' },
+		{ className: 'l-width-xs-100 l-width-sm-50' },
 		_react2.default.createElement(
 			'table',
 			{
@@ -209,7 +209,7 @@ var tbody = function tbody() {
 		_react2.default.createElement(
 			'table',
 			{
-				className: 'table table--fixed-header table--auto-layout', style: { height: '150px' } },
+				className: 'table table--fixed-header table--auto-layout', style: { height: '250px' } },
 			_react2.default.createElement(
 				'thead',
 				null,
@@ -223,17 +223,17 @@ var tbody = function tbody() {
 					),
 					_react2.default.createElement(
 						'th',
-						{ style: { width: '25%' } },
+						{ style: { width: '25%' }, className: 'table__align-right' },
 						'DIM'
 					),
 					_react2.default.createElement(
 						'th',
-						{ style: { width: '25%' } },
+						{ style: { width: '25%' }, className: 'table__align-right' },
 						'#Insem.'
 					),
 					_react2.default.createElement(
 						'th',
-						{ style: { width: '25%' } },
+						{ style: { width: '25%' }, className: 'table__align-right' },
 						'PLI'
 					)
 				)
@@ -251,17 +251,17 @@ var tbody = function tbody() {
 					),
 					_react2.default.createElement(
 						'td',
-						{ style: { width: '25%' } },
+						{ style: { width: '25%' }, className: 'table__align-right' },
 						'56'
 					),
 					_react2.default.createElement(
 						'td',
-						{ style: { width: '25%' } },
+						{ style: { width: '25%' }, className: 'table__align-right' },
 						'3'
 					),
 					_react2.default.createElement(
 						'td',
-						{ style: { width: '25%' } },
+						{ style: { width: '25%' }, className: 'table__align-right table__cell-no-wrap' },
 						'-\xA356.00'
 					)
 				),
@@ -275,17 +275,17 @@ var tbody = function tbody() {
 					),
 					_react2.default.createElement(
 						'td',
-						{ style: { width: '25%' } },
+						{ style: { width: '25%' }, className: 'table__align-right' },
 						'33'
 					),
 					_react2.default.createElement(
 						'td',
-						{ style: { width: '25%' } },
+						{ style: { width: '25%' }, className: 'table__align-right' },
 						'2'
 					),
 					_react2.default.createElement(
 						'td',
-						{ style: { width: '25%' } },
+						{ style: { width: '25%' }, className: 'table__align-right table__cell-no-wrap' },
 						'-\xA3634.00'
 					)
 				),
@@ -299,17 +299,17 @@ var tbody = function tbody() {
 					),
 					_react2.default.createElement(
 						'td',
-						{ style: { width: '25%' } },
+						{ style: { width: '25%' }, className: 'table__align-right' },
 						'22'
 					),
 					_react2.default.createElement(
 						'td',
-						{ style: { width: '25%' } },
+						{ style: { width: '25%' }, className: 'table__align-right' },
 						'4'
 					),
 					_react2.default.createElement(
 						'td',
-						{ style: { width: '25%' } },
+						{ style: { width: '25%' }, className: 'table__align-right table__cell-no-wrap' },
 						'\xA3475.00'
 					)
 				),
@@ -323,17 +323,89 @@ var tbody = function tbody() {
 					),
 					_react2.default.createElement(
 						'td',
-						{ style: { width: '25%' } },
+						{ style: { width: '25%' }, className: 'table__align-right' },
 						'33'
 					),
 					_react2.default.createElement(
 						'td',
-						{ style: { width: '25%' } },
+						{ style: { width: '25%' }, className: 'table__align-right' },
 						'2'
 					),
 					_react2.default.createElement(
 						'td',
+						{ style: { width: '25%' }, className: 'table__align-right table__cell-no-wrap' },
+						'-\xA3634.00'
+					)
+				),
+				_react2.default.createElement(
+					'tr',
+					null,
+					_react2.default.createElement(
+						'td',
 						{ style: { width: '25%' } },
+						'456'
+					),
+					_react2.default.createElement(
+						'td',
+						{ style: { width: '25%' }, className: 'table__align-right' },
+						'33'
+					),
+					_react2.default.createElement(
+						'td',
+						{ style: { width: '25%' }, className: 'table__align-right' },
+						'2'
+					),
+					_react2.default.createElement(
+						'td',
+						{ style: { width: '25%' }, className: 'table__align-right table__cell-no-wrap' },
+						'-\xA3634.00'
+					)
+				),
+				_react2.default.createElement(
+					'tr',
+					null,
+					_react2.default.createElement(
+						'td',
+						{ style: { width: '25%' } },
+						'938'
+					),
+					_react2.default.createElement(
+						'td',
+						{ style: { width: '25%' }, className: 'table__align-right' },
+						'22'
+					),
+					_react2.default.createElement(
+						'td',
+						{ style: { width: '25%' }, className: 'table__align-right' },
+						'4'
+					),
+					_react2.default.createElement(
+						'td',
+						{ style: { width: '25%' }, className: 'table__align-right table__cell-no-wrap' },
+						'\xA3475.00'
+					)
+				),
+				_react2.default.createElement(
+					'tr',
+					null,
+					_react2.default.createElement(
+						'td',
+						{ style: { width: '25%' } },
+						'456'
+					),
+					_react2.default.createElement(
+						'td',
+						{ style: { width: '25%' }, className: 'table__align-right' },
+						'33'
+					),
+					_react2.default.createElement(
+						'td',
+						{ style: { width: '25%' }, className: 'table__align-right' },
+						'2'
+					),
+					_react2.default.createElement(
+						'td',
+						{ style: { width: '25%' }, className: 'table__align-right table__cell-no-wrap' },
 						'-\xA3634.00'
 					)
 				)
@@ -343,7 +415,7 @@ var tbody = function tbody() {
 }).add('Footer row with total', function () {
 	return _react2.default.createElement(
 		'div',
-		{ className: 'l-width-50' },
+		{ className: 'l-width-xs-100 l-width-sm-50' },
 		_react2.default.createElement(
 			'table',
 			{

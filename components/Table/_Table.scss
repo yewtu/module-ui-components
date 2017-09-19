@@ -4,9 +4,6 @@
   font-size: $font-size-sm;
   color: $color-gray-40;
   width: 100%;
-  @include media-query($screen-sm-min) {
-    table-layout: fixed;
-  }
   th {
     font-family: $heading-font-stack;
     font-size: $font-size-xxs;

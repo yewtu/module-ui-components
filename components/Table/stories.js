@@ -53,7 +53,7 @@ const tbody = () => (
 
 storiesOf('Table', module)
 	.add('Standard size', () => (
-		<div className='l-width-50'>
+		<div className='l-width-xs-100 l-width-sm-50'>
 			<table className='table'>
 				{ thead() }
 				{ tbody() }
@@ -61,7 +61,7 @@ storiesOf('Table', module)
 		</div>
 	))
 	.add('Small size', () => (
-		<div className='l-width-50'>
+		<div className='l-width-xs-100 l-width-sm-50'>
 			<table
 				className='table table--sm'>
 				{ thead() }
@@ -70,7 +70,7 @@ storiesOf('Table', module)
 		</div>
 	))
 	.add('Large size', () => (
-		<div className='l-width-50'>
+		<div className='l-width-xs-100 l-width-sm-50'>
 			<table
 				className='table table--lg'>
 				{ thead() }
@@ -79,7 +79,7 @@ storiesOf('Table', module)
 		</div>
 	))
 	.add('Striped rows', () => (
-		<div className='l-width-50'>
+		<div className='l-width-xs-100 l-width-sm-50'>
 			<table
 				className='table table--striped-rows'>
 				{ thead() }
@@ -91,46 +91,64 @@ storiesOf('Table', module)
 		<div className='padding-xl bg-gray-94'>
 			<p>The header row is fixed only for SM breakpoint upwards. Table column widths have to be set in % or px for both heading and body cells, so they line up.</p>
 			<table
-				className='table table--fixed-header table--auto-layout' style={{height: '150px'}}>
+				className='table table--fixed-header table--auto-layout' style={{height: '250px'}}>
 				<thead>
 				<tr>
 					<th style={{width: '25%'}}>ID</th>
-					<th style={{width: '25%'}}>DIM</th>
-					<th style={{width: '25%'}}>#Insem.</th>
-					<th style={{width: '25%'}}>PLI</th>
+					<th style={{width: '25%'}} className='table__align-right'>DIM</th>
+					<th style={{width: '25%'}} className='table__align-right'>#Insem.</th>
+					<th style={{width: '25%'}} className='table__align-right'>PLI</th>
 				</tr>
 				</thead>
 				<tbody>
 				<tr>
 					<td style={{width: '25%'}}>123</td>
-					<td style={{width: '25%'}}>56</td>
-					<td style={{width: '25%'}}>3</td>
-					<td style={{width: '25%'}}>-£56.00</td>
+					<td style={{width: '25%'}} className='table__align-right'>56</td>
+					<td style={{width: '25%'}} className='table__align-right'>3</td>
+					<td style={{width: '25%'}} className='table__align-right table__cell-no-wrap'>-£56.00</td>
 				</tr>
 				<tr>
 					<td style={{width: '25%'}}>456</td>
-					<td style={{width: '25%'}}>33</td>
-					<td style={{width: '25%'}}>2</td>
-					<td style={{width: '25%'}}>-£634.00</td>
+					<td style={{width: '25%'}} className='table__align-right'>33</td>
+					<td style={{width: '25%'}} className='table__align-right'>2</td>
+					<td style={{width: '25%'}} className='table__align-right table__cell-no-wrap'>-£634.00</td>
 				</tr>
 				<tr>
 					<td style={{width: '25%'}}>938</td>
-					<td style={{width: '25%'}}>22</td>
-					<td style={{width: '25%'}}>4</td>
-					<td style={{width: '25%'}}>£475.00</td>
+					<td style={{width: '25%'}} className='table__align-right'>22</td>
+					<td style={{width: '25%'}} className='table__align-right'>4</td>
+					<td style={{width: '25%'}} className='table__align-right table__cell-no-wrap'>£475.00</td>
 				</tr>
 				<tr>
 					<td style={{width: '25%'}}>456</td>
-					<td style={{width: '25%'}}>33</td>
-					<td style={{width: '25%'}}>2</td>
-					<td style={{width: '25%'}}>-£634.00</td>
+					<td style={{width: '25%'}} className='table__align-right'>33</td>
+					<td style={{width: '25%'}} className='table__align-right'>2</td>
+					<td style={{width: '25%'}} className='table__align-right table__cell-no-wrap'>-£634.00</td>
+				</tr>
+				<tr>
+					<td style={{width: '25%'}}>456</td>
+					<td style={{width: '25%'}} className='table__align-right'>33</td>
+					<td style={{width: '25%'}} className='table__align-right'>2</td>
+					<td style={{width: '25%'}} className='table__align-right table__cell-no-wrap'>-£634.00</td>
+				</tr>
+				<tr>
+					<td style={{width: '25%'}}>938</td>
+					<td style={{width: '25%'}} className='table__align-right'>22</td>
+					<td style={{width: '25%'}} className='table__align-right'>4</td>
+					<td style={{width: '25%'}} className='table__align-right table__cell-no-wrap'>£475.00</td>
+				</tr>
+				<tr>
+					<td style={{width: '25%'}}>456</td>
+					<td style={{width: '25%'}} className='table__align-right'>33</td>
+					<td style={{width: '25%'}} className='table__align-right'>2</td>
+					<td style={{width: '25%'}} className='table__align-right table__cell-no-wrap'>-£634.00</td>
 				</tr>
 				</tbody>
 			</table>
 		</div>
 	))
 	.add('Footer row with total', () => (
-		<div className='l-width-50'>
+		<div className='l-width-xs-100 l-width-sm-50'>
 			<table
 				className='table'>
 				<thead>
