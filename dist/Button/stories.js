@@ -83,8 +83,17 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 	);
 })).add('Icon only, no background', (0, _addonInfo.withInfo)('')(function () {
 	return _react2.default.createElement(
-		'button',
-		{ className: 'btn btn--icon-only' },
-		_react2.default.createElement('i', { className: 'icon icon--gray icon--plus' })
+		'div',
+		null,
+		_react2.default.createElement(
+			'p',
+			null,
+			'The button has a hit area of 36px square so about big enough for small screens'
+		),
+		_react2.default.createElement(
+			'button',
+			{ className: 'btn btn--icon-only' },
+			_react2.default.createElement('i', { className: 'icon icon--gray icon--plus' })
+		)
 	);
 }));

@@ -42,5 +42,8 @@ storiesOf('Buttons/Icon buttons', module)
 		<button className='btn btn--icon btn--primary'><i className='icon icon--white icon--plus' />Add</button>
 	))
 	.add('Icon only, no background', withInfo('')(() =>
+		<div>
+			<p>The button has a hit area of 36px square so about big enough for small screens</p>
 		<button className='btn btn--icon-only'><i className='icon icon--gray icon--plus' /></button>
+		</div>
 	));
