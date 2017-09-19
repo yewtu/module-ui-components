@@ -3,8 +3,10 @@
   border-collapse: collapse;
   font-size: $font-size-sm;
   color: $color-gray-40;
-  table-layout: fixed;
   width: 100%;
+  @include media-query($screen-sm-min) {
+    table-layout: fixed;
+  }
   th {
     font-family: $heading-font-stack;
     font-size: $font-size-xxs;
@@ -160,62 +162,64 @@
 
 $scrollbar-width: 7px;
 
-.table--fixed-header {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  // set a pixel height here for the individual table; either add another class, or use an inline style
-
-  * {
-    box-sizing: inherit;
-  }
-
-  thead {
+@include media-query($screen-sm-min) {
+  .table--fixed-header {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    width: calc(100% - #{$scrollbar-width})
-  }
+    // set a pixel height here for the individual table; either add another class, or use an inline style
 
-  tbody {
-    overflow-y: scroll;
-    display: inline-block;
-  }
+    * {
+      box-sizing: inherit;
+    }
 
-  thead > tr, tbody > tr, tfoot > tr {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
+    thead {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      width: calc(100% - #{$scrollbar-width})
+    }
 
-  thead, tfoot {
-    flex-shrink: 0;
-  }
+    tbody {
+      overflow-y: scroll;
+      display: inline-block;
+    }
 
-  th, tbody td {
-    overflow-x: hidden;
-    text-overflow: ellipsis;
-    display: inline-block;
-    // set widths here, either % or px, for the individual table's cells, either add more classes or use an inline style
-  }
+    thead > tr, tbody > tr, tfoot > tr {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
 
-  tfoot {
-    display: inline-block;
-  }
+    thead, tfoot {
+      flex-shrink: 0;
+    }
 
-  tfoot td {
-    width: 100%;
-    display: inline-block;
-  }
-  ::-webkit-scrollbar {
-    -webkit-appearance: none;
-    width: $scrollbar-width;
-  }
-  ::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-    background-color: rgba(0,0,0,.5);
-    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+    th, tbody td {
+      overflow-x: hidden;
+      text-overflow: ellipsis;
+      display: inline-block;
+      // set widths here, either % or px, for the individual table's cells, either add more classes or use an inline style
+    }
+
+    tfoot {
+      display: inline-block;
+    }
+
+    tfoot td {
+      width: 100%;
+      display: inline-block;
+    }
+    ::-webkit-scrollbar {
+      -webkit-appearance: none;
+      width: $scrollbar-width;
+    }
+    ::-webkit-scrollbar-thumb {
+      border-radius: 4px;
+      background-color: rgba(0, 0, 0, .5);
+      -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+    }
   }
 }
 
