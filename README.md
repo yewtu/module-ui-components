@@ -34,6 +34,16 @@ To publish to Github pages:
 yarn build-storybook
 ```
 
+## Adding new icons
+
+1. Download icon from [Material Icons](https://material.io/icons)
+2. Save to /public/icons with a simple .svg filename eg. 'settings.svg'
+3. Add the name without file extension eg. 'settings' to the [_icons.scss](https://github.com/yewtu/module-ui-components/blob/master/utilities/_icons.scss#L12-L24) file, for the colour(s) you would like. For each colour, you need to save a copy of the .svg file eg. 'settings-white.svg' and change the fill property
+4. Build your app's stylesheet and you can use the icon (add a colour modifier if required):
+```
+<i className="icon icon--settings icon--white" />
+```
+
 ## React Native
 
 In the /react-native folder
