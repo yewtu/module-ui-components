@@ -31,6 +31,7 @@ var FormInputGroup = function FormInputGroup(_ref) {
       showErrorMsg = _ref.showErrorMsg,
       isInline = _ref.isInline,
       inlineLabel = _ref.inlineLabel,
+      showLabel = _ref.showLabel,
       suffixLabel = _ref.suffixLabel,
       size = _ref.size;
 
@@ -39,7 +40,7 @@ var FormInputGroup = function FormInputGroup(_ref) {
     { className: 'form-input-group' + (isInline ? ' form-input-group--inline' : '') + (error ? ' form-input-group--has-error' : '') + ' ' + (size ? ' form-input-group--' + size : '') },
     _react2.default.createElement(
       'label',
-      { className: 'form-control-label ' + (inlineLabel ? 'form-control-label--inline' : ''), htmlFor: id },
+      { className: 'form-control-label ' + (inlineLabel ? 'form-control-label--inline' : '') + (showLabel ? '' : ' sr-only'), htmlFor: id },
       label
     ),
     helpText && _react2.default.createElement(
@@ -67,12 +68,16 @@ FormInputGroup.propTypes = {
   helpText: _propTypes2.default.string,
   error: _propTypes2.default.string,
   showErrorMsg: _propTypes2.default.bool,
-  input: _propTypes2.default.object.isRequired
+  showLabel: _propTypes2.default.bool,
+  input: _propTypes2.default.object.isRequired,
+  size: _propTypes2.default.string
 };
 
 FormInputGroup.defaultProps = {
   showErrorMsg: true,
-  inlineLabel: false
+  showLabel: true,
+  inlineLabel: false,
+  size: 'md'
 };
 
 exports.default = FormInputGroup;

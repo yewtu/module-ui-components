@@ -59,6 +59,29 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 }).add('With error message', function () {
 	return _react2.default.createElement(_FormInputGroup2.default, { id: 'liveWeight', label: 'Live weight', error: 'Must be greater than 100Kg',
 		input: { name: 'liveWeight' } });
+}).add('Number input', function () {
+	return _react2.default.createElement(
+		'div',
+		null,
+		_react2.default.createElement(
+			'p',
+			null,
+			'Setting both a min and max attribute on the input will collapse the input\'s width'
+		),
+		_react2.default.createElement(_FormInputGroup2.default, {
+			label: 'SCC',
+			id: 'scc',
+			input: {
+				name: 'scc',
+				type: 'number',
+				value: 20,
+				min: 1,
+				max: 9999,
+				step: 1,
+				placeholder: '0',
+				pattern: '\d{1,4}'
+			} })
+	);
 }).add('Currency input', function () {
 	return _react2.default.createElement(_FormInputGroup2.default, {
 		label: 'Live weight',

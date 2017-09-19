@@ -40,6 +40,24 @@ storiesOf('Forms/FormInputGroup', module)
 		<FormInputGroup id='liveWeight' label='Live weight' error='Must be greater than 100Kg'
 										input={{name: 'liveWeight'}}/>
 	))
+	.add('Number input', () => (
+		<div>
+			<p>Setting both a min and max attribute on the input will collapse the input's width</p>
+		<FormInputGroup
+			label='SCC'
+			id='scc'
+			input={{
+				name: 'scc',
+				type: 'number',
+				value: 20,
+				min: 1,
+				max: 9999,
+				step: 1,
+				placeholder: '0',
+				pattern: '\d{1,4}',
+			}}/>
+		</div>
+	))
 	.add('Currency input', () => (
 		<FormInputGroup
 			label='Live weight'

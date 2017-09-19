@@ -30,13 +30,14 @@ var FormCheckbox = function FormCheckbox(_ref) {
       label = _ref.label,
       showCheckbox = _ref.showCheckbox,
       showLabel = _ref.showLabel,
-      isInline = _ref.isInline;
+      isInline = _ref.isInline,
+      size = _ref.size;
 
   // if an onChange prop has been passed, make this a controlled component
   var checkedProp = (0, _defineProperty3.default)({}, onChange ? 'checked' : 'defaultChecked', checked);
   return _react2.default.createElement(
     'label',
-    { className: 'form-checkbox t-checkbox-' + name + '-' + value + ' ' + (showCheckbox ? '' : 'form-checkbox--no-box') + ' ' + (isInline ? ' form-checkbox--inline' : '') },
+    { className: 'form-checkbox t-checkbox-' + name + '-' + value + ' ' + (showCheckbox ? '' : 'form-checkbox--no-box') + ' ' + (isInline ? ' form-checkbox--inline' : '') + ' ' + (size ? 'text text--' + size : '') },
     _react2.default.createElement('input', (0, _extends3.default)({ name: name,
       type: 'checkbox',
       value: value,
@@ -61,13 +62,15 @@ FormCheckbox.propTypes = {
   checked: _propTypes2.default.bool,
   onChange: _propTypes2.default.func,
   showCheckbox: _propTypes2.default.bool,
-  showLabel: _propTypes2.default.bool
+  showLabel: _propTypes2.default.bool,
+  size: _propTypes2.default.string
 };
 
 FormCheckbox.defaultProps = {
   checked: false,
   showCheckbox: true,
-  showLabel: true
+  showLabel: true,
+  size: 'md'
 };
 
 exports.default = FormCheckbox;
