@@ -197,14 +197,14 @@ var tbody = function tbody() {
 			tbody()
 		)
 	);
-}).add('Fixed header', function () {
+}).add('Fixed header (responsive)', function () {
 	return _react2.default.createElement(
 		'div',
-		{ className: 'padding-xl bg-gray-94 l-width-50' },
+		{ className: 'padding-xl bg-gray-94 l-width-xs-100 l-width-sm-50' },
 		_react2.default.createElement(
 			'p',
 			null,
-			'Table column widths have to be set in % or px for both heading and body cells, so they line up.'
+			'The header row is fixed only for SM breakpoint upwards. Table column widths have to be set in % or px for both heading and body cells, so they line up.'
 		),
 		_react2.default.createElement(
 			'table',

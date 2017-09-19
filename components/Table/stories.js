@@ -87,9 +87,9 @@ storiesOf('Table', module)
 			</table>
 		</div>
 	))
-	.add('Fixed header', () => (
-		<div className='padding-xl bg-gray-94 l-width-50'>
-			<p>Table column widths have to be set in % or px for both heading and body cells, so they line up.</p>
+	.add('Fixed header (responsive)', () => (
+		<div className='padding-xl bg-gray-94 l-width-xs-100 l-width-sm-50'>
+			<p>The header row is fixed only for SM breakpoint upwards. Table column widths have to be set in % or px for both heading and body cells, so they line up.</p>
 			<table
 				className='table table--fixed-header table--auto-layout' style={{height: '150px'}}>
 				<thead>
