@@ -68,7 +68,7 @@ var tbody = function tbody() {
 			),
 			_react2.default.createElement(
 				'td',
-				{ className: 'table__align-right' },
+				{ className: 'table__align-right table__cell-no-wrap' },
 				'-\xA356.00'
 			),
 			_react2.default.createElement(
@@ -101,7 +101,7 @@ var tbody = function tbody() {
 			),
 			_react2.default.createElement(
 				'td',
-				{ className: 'table__align-right' },
+				{ className: 'table__align-right table__cell-no-wrap' },
 				'-\xA3634.00'
 			),
 			_react2.default.createElement(
@@ -134,7 +134,7 @@ var tbody = function tbody() {
 			),
 			_react2.default.createElement(
 				'td',
-				{ className: 'table__align-right' },
+				{ className: 'table__align-right table__cell-no-wrap' },
 				'\xA3475.00'
 			),
 			_react2.default.createElement(

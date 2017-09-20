@@ -19,7 +19,7 @@ const tbody = () => (
 		<td>123</td>
 		<td className='table__align-right'>56</td>
 		<td className='table__align-right'>3</td>
-		<td className='table__align-right'>-£56.00</td>
+		<td className='table__align-right table__cell-no-wrap'>-£56.00</td>
 		<td>
 			<div className='text text--xs'>
 				1. Beef
@@ -30,7 +30,7 @@ const tbody = () => (
 		<td>456</td>
 		<td className='table__align-right'>33</td>
 		<td className='table__align-right'>2</td>
-		<td className='table__align-right'>-£634.00</td>
+		<td className='table__align-right table__cell-no-wrap'>-£634.00</td>
 		<td>
 			<div className='text text--xs'>
 				1. Beef
@@ -41,7 +41,7 @@ const tbody = () => (
 		<td>938</td>
 		<td className='table__align-right'>22</td>
 		<td className='table__align-right'>4</td>
-		<td className='table__align-right'>£475.00</td>
+		<td className='table__align-right table__cell-no-wrap'>£475.00</td>
 		<td>
 			<div className='text text--xs'>
 				1. Beef
