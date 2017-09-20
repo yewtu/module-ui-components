@@ -161,10 +161,39 @@ var tbody = function tbody() {
 			tbody()
 		)
 	);
+}).add('Semi-compact spacing', function () {
+	return _react2.default.createElement(
+		'div',
+		{ className: 'l-width-xs-100 l-width-sm-50' },
+		_react2.default.createElement(
+			'table',
+			{
+				className: 'table table--semi-compact-spacing' },
+			thead(),
+			tbody()
+		)
+	);
+}).add('Compact spacing', function () {
+	return _react2.default.createElement(
+		'div',
+		{ className: 'l-width-xs-100 l-width-sm-50' },
+		_react2.default.createElement(
+			'table',
+			{
+				className: 'table table--compact-spacing' },
+			thead(),
+			tbody()
+		)
+	);
 }).add('Small size', function () {
 	return _react2.default.createElement(
 		'div',
 		{ className: 'l-width-xs-100 l-width-sm-50' },
+		_react2.default.createElement(
+			'p',
+			null,
+			'This uses compact spacing plus smaller font'
+		),
 		_react2.default.createElement(
 			'table',
 			{

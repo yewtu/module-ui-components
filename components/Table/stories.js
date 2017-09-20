@@ -60,8 +60,27 @@ storiesOf('Table', module)
 			</table>
 		</div>
 	))
+	.add('Semi-compact spacing', () => (
+		<div className='l-width-xs-100 l-width-sm-50'>
+			<table
+				className='table table--semi-compact-spacing'>
+				{ thead() }
+				{ tbody() }
+			</table>
+		</div>
+	))
+	.add('Compact spacing', () => (
+		<div className='l-width-xs-100 l-width-sm-50'>
+			<table
+				className='table table--compact-spacing'>
+				{ thead() }
+				{ tbody() }
+			</table>
+		</div>
+	))
 	.add('Small size', () => (
 		<div className='l-width-xs-100 l-width-sm-50'>
+			<p>This uses compact spacing plus smaller font</p>
 			<table
 				className='table table--sm'>
 				{ thead() }
