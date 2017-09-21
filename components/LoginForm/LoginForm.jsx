@@ -14,20 +14,16 @@ export default class LoginForm extends React.Component {
 	render() {
 		const users = [
 			{
+				displayName: 'Grosvenor Farms',
+				userName: 'grosvenorfarms'
+			},
+			{
 				displayName: 'Farmer A',
 				userName: 'farmerA'
 			},
 			{
-				displayName: 'Farmer B',
-				userName: 'farmerB'
-			},
-			{
 				displayName: 'Waits & Spencer',
 				userName: 'waitsandspencer'
-			},
-			{
-				displayName: 'The Saffron Badger',
-				userName: 'saffronbadger'
 			}
 		];
 		return (

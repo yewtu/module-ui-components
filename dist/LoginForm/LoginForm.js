@@ -55,17 +55,14 @@ var LoginForm = function (_React$Component) {
 			var _this2 = this;
 
 			var users = [{
+				displayName: 'Grosvenor Farms',
+				userName: 'grosvenorfarms'
+			}, {
 				displayName: 'Farmer A',
 				userName: 'farmerA'
 			}, {
-				displayName: 'Farmer B',
-				userName: 'farmerB'
-			}, {
 				displayName: 'Waits & Spencer',
 				userName: 'waitsandspencer'
-			}, {
-				displayName: 'The Saffron Badger',
-				userName: 'saffronbadger'
 			}];
 			return _react2.default.createElement(
 				'div',
